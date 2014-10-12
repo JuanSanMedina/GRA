@@ -1,4 +1,5 @@
 from django.db import models
+from django.contrib.auth.models import User
 
 class Ecan(models.Model):
     address = models.CharField(max_length=255, blank=True, null=True)
