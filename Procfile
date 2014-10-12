@@ -1,1 +1,1 @@
-web: gunicorn ecan-recognition.wsgi --log-file -
+web: gunicorn api.wsgi --log-file -
