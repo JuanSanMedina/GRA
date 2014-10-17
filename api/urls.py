@@ -1,12 +1,11 @@
 from django.conf.urls import patterns, include, url
 from django.contrib import admin
-from api.ecan import views
+from ecan import views
 
 
 urlpatterns = patterns('',
-    # Examples:
-    url(r'^$', views.home, name='home'),
-    # url(r'^blog/', include('blog.urls')),
-
-    url(r'^admin/', include(admin.site.urls)),
+	# Examples:
+	url(r'^admin/', include(admin.site.urls)),
+	url(r'^ecan/', include('ecan.urls')),
+	url(r'^$', views.home, name='home'),
 )
