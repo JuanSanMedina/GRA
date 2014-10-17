@@ -95,13 +95,6 @@ if USER =='JuanSantiagoMedina':
 		'PORT': '',
 		}
 	}
-else:
-	DATABASES = {
-	'default': {
-		'ENGINE': 'django.db.backends.sqlite3',
-		'NAME': os.path.join(BASE_DIR, 'db.sqlite3'),
-		}
-	}
 
 if USER != 'JuanSantiagoMedina':
 	DEBUG = False
@@ -111,6 +104,13 @@ if USER != 'JuanSantiagoMedina':
 	GS_BUCKET_NAME = 'emfiles'
 	DEFAULT_FILE_STORAGE = 'storages.backends.gs.GSBotoStorage'
 	GS_QUERYSTRING_AUTH = False
+
+	# DATABASES = {
+	# 'default': {
+	# 	'ENGINE': 'django.db.backends.sqlite3',
+	# 	'NAME': os.path.join(BASE_DIR, 'db.sqlite3'),
+	# 	}
+	# }
 
 # Internationalization
 # https://docs.djangoproject.com/en/1.7/topics/i18n/
