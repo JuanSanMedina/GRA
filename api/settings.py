@@ -104,7 +104,7 @@ if USER != 'JuanSantiagoMedina':
 		'NAME': os.path.join(BASE_DIR, 'db.sqlite3'),
 		}
 	}
-	DEBUG = False
+	DEBUG = True
 	DATABASES['default'] =  dj_database_url.config()
 	GS_ACCESS_KEY_ID = "GOOGBNGARUE72UFMSGKP"
 	GS_SECRET_ACCESS_KEY = 'JPfZ2IxvnE1q2eGi/bTeuUlHRqSuYN+j0zI1o38t'
