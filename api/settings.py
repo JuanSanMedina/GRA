@@ -79,10 +79,8 @@ ROOT_URLCONF = 'api.urls'
 
 WSGI_APPLICATION = 'api.wsgi.application'
 
-
 # Database
 # https://docs.djangoproject.com/en/1.7/ref/settings/#databases
-
 
 
 if USER =='JuanSantiagoMedina':
@@ -105,7 +103,7 @@ else:
 		}
 	}
 
-if USER != 'JuanSantiagoMedina' and USER != 'A':
+if USER != 'JuanSantiagoMedina':
 	DEBUG = False
 	DATABASES['default'] =  dj_database_url.config()
 	GS_ACCESS_KEY_ID = "GOOGBNGARUE72UFMSGKP"
@@ -130,7 +128,7 @@ USE_TZ = True
 
 # Static files (CSS, JavaScript, Images)
 # https://docs.djangoproject.com/en/1.7/howto/static-files/
-# STATIC_ROOT = os.path.join(PROJECT_ROOT, 'static')
+
 STATIC_URL = '/static/'
 PROJECT_ROOT = os.path.normpath(os.path.dirname(__file__))
 STATIC_ROOT = os.path.join(PROJECT_ROOT, 'static')
