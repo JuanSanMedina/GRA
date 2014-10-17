@@ -16,9 +16,22 @@ def upload_item(request):
 			if form.is_valid():
 				print 'valid'
 				form.save()
+
+				#do the processing here
+				return "name = coke can"
+
 				return HttpResponseRedirect('/success/url/')
 	else:
 			form = UploadItemForm()
 	response_data = {}
 	response_data['result'] = 'works'
 	return HttpResponse(json.dumps(response_data), content_type="application/json")
+
+
+def view_item(request):
+    print request.GET.get('id')
+
+    item = Item.objects.get(pk=1)
+    response_data = {}
+    response_data['image_url'] = item.image_color.url
+    return HttpResponse(json.dumps(response_data), content_type="application/json")

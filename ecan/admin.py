@@ -16,3 +16,4 @@ class EcanAdmin(admin.ModelAdmin):
 
 admin.site.register(Ecan, EcanAdmin)
 
+admin.site.register(Item)
