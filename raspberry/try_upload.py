@@ -1,7 +1,7 @@
 import requests
 # from pprint import pprint
 
-# url = 'http://127.0.0.1:8000/ecan/upload/'
+#url = 'http://127.0.0.1:8000/ecan/upload/'
 url = 'http://ecan-recognition.herokuapp.com/ecan/upload/'
 
 data = {'ecan':'1', 'weight':'2.3'}

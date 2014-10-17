@@ -4,7 +4,7 @@ from ecan.models import Ecan, Item
 
 class ItemInline(admin.StackedInline):
 	model = Item
-	extra = 1
+	extra = 0
 
 class EcanAdmin(admin.ModelAdmin):
 	fieldsets = [
