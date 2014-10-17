@@ -6,7 +6,7 @@ class ItemInline(admin.StackedInline):
 	model = Item
 	extra = 1
 
-class ManageAdmin(admin.ModelAdmin):
+class EcanAdmin(admin.ModelAdmin):
 	fieldsets = [
 		('Location',{'fields': ['address' ,'latitude', 'longitude']}),
 	]
@@ -14,5 +14,5 @@ class ManageAdmin(admin.ModelAdmin):
 	list_filter = ['created']
 	search_fields = ['address']
 
-admin.site.register(Ecan, ManageAdmin)
+admin.site.register(Ecan, EcanAdmin)
 
