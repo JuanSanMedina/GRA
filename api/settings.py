@@ -85,7 +85,7 @@ WSGI_APPLICATION = 'api.wsgi.application'
 
 
 if USER =='JuanSantiagoMedina':
-	DEBUG = False
+	DEBUG = True
 	DATABASES = {
 	'default': {
 		'ENGINE': 'django.db.backends.postgresql_psycopg2',
