@@ -24,6 +24,7 @@ USER = getuser()
 
 ADMINS = (
 	('Sean', 'sean@emrals.com'),
+	('Juan', 'juansantiago.medina@gmail.com')
 )
 
 MANAGERS = ADMINS
