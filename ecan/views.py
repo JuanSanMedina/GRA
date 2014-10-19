@@ -53,3 +53,11 @@ def view_item(request):
 	response_data = {}
 	response_data['image_url'] = item.image_color.url
 	return HttpResponse(json.dumps(response_data), content_type="application/json")
+
+def view_ip(request):
+	print 'juan'
+	print request.GET['pk']
+	ecan = get_object_or_404(Ecan, pk=request.GET['pk'])
+	response_data = {}
+	response_data['ip'] = ecan.ip
+	return HttpResponse(json.dumps(response_data), content_type="application/json")
