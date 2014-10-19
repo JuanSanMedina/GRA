@@ -8,7 +8,7 @@ class ItemInline(admin.StackedInline):
 
 class EcanAdmin(admin.ModelAdmin):
 	fieldsets = [
-		('Location',{'fields': ['address' ,'latitude', 'longitude']}),
+		('Location',{'fields': ['address' ,'latitude', 'longitude', 'ip']}),
 	]
 	inlines = [ItemInline]
 	list_filter = ['created']

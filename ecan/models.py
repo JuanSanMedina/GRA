@@ -3,6 +3,7 @@ from django.contrib.auth.models import User
 
 class Ecan(models.Model):
 	address = models.CharField(max_length=255, blank=True, null=True)
+	ip = models.CharField(max_length=255, blank=True, null=True)
 	latitude = models.FloatField(blank=True, null=True)
 	longitude = models.FloatField(blank=True, null=True)
 	created = models.DateTimeField(auto_now_add=True, blank=True, null=True)
