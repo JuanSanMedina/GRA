@@ -16,7 +16,7 @@ class Item(models.Model):
 	user = models.ForeignKey(User,blank=True, null=True)
 	image_color = models.ImageField(upload_to="color_im")
 	image_ir = models.ImageField(upload_to="ir_im")
-	weight = models.CharField(max_length=255, blank=True, null=True)
+	weight = models.FloatField(max_length=255, blank=True, null=True)
 	created = models.DateTimeField(auto_now_add=True, blank=True, null=True)
 	modified = models.DateTimeField(auto_now=True, blank=True, null=True)
 	def __unicode__(self):
