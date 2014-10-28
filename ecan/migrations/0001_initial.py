@@ -17,6 +17,7 @@ class Migration(migrations.Migration):
             fields=[
                 ('id', models.AutoField(verbose_name='ID', serialize=False, auto_created=True, primary_key=True)),
                 ('address', models.CharField(max_length=255, null=True, blank=True)),
+                ('ip', models.CharField(max_length=255, null=True, blank=True)),
                 ('latitude', models.FloatField(null=True, blank=True)),
                 ('longitude', models.FloatField(null=True, blank=True)),
                 ('created', models.DateTimeField(auto_now_add=True, null=True)),
@@ -30,9 +31,9 @@ class Migration(migrations.Migration):
             name='Item',
             fields=[
                 ('id', models.AutoField(verbose_name='ID', serialize=False, auto_created=True, primary_key=True)),
-                ('image_color', models.ImageField(upload_to=b'items')),
-                ('image_ir', models.ImageField(upload_to=b'recognition')),
-                ('weight', models.CharField(max_length=255, null=True, blank=True)),
+                ('image_picam', models.ImageField(upload_to=b'picam_im')),
+                ('image_usb', models.ImageField(upload_to=b'usb_im')),
+                ('weight', models.FloatField(max_length=255, null=True, blank=True)),
                 ('created', models.DateTimeField(auto_now_add=True, null=True)),
                 ('modified', models.DateTimeField(auto_now=True, null=True)),
                 ('ecan', models.ForeignKey(to='ecan.Ecan')),

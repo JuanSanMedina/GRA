@@ -11,6 +11,7 @@ https://docs.djangoproject.com/en/1.7/ref/settings/
 # Build paths inside the project like this: os.path.join(BASE_DIR, ...)
 import os
 import dj_database_url
+import posixpath
 
 BASE_DIR = os.path.dirname(os.path.dirname(__file__))
 
@@ -131,16 +132,25 @@ USE_TZ = True
 # Static files (CSS, JavaScript, Images)
 # https://docs.djangoproject.com/en/1.7/howto/static-files/
 
-MEDIA_URL = '/media/'
-BASE_DIR = os.path.dirname(os.path.abspath(__file__))
-STATIC_ROOT = 'staticfiles'
-STATIC_URL = '/static/'
+# MEDIA_URL = '/media/'
+# BASE_DIR = os.path.dirname(os.path.abspath(__file__))
+# STATIC_ROOT = 'staticfiles'
+# STATIC_URL = '/static/'
 
-STATICFILES_DIRS = (
-    os.path.join(BASE_DIR, 'static'),
-)
+# STATICFILES_DIRS = (
+#     os.path.join(BASE_DIR, 'static'),
+# )
 
-# PROJECT_ROOT = os.path.normpath(os.path.dirname(__file__))
+PROJECT_ROOT = os.path.normpath(os.path.dirname(__file__))
+MEDIA_ROOT = os.path.join(PROJECT_ROOT, 'site_media', 'media')
+MEDIA_URL = '/site_media/media/'
+STATIC_ROOT = os.path.join(PROJECT_ROOT, 'site_media', 'static')
+SITE_MEDIA_URL = '/site_media/'
+STATIC_URL = '/site_media/'
+ADMIN_TOOLS_MEDIA_URL = '/site_media/'
+ADMIN_MEDIA_PREFIX = posixpath.join(STATIC_URL, "admin/")
+STATICFILES_DIRS = (os.path.join(PROJECT_ROOT, 'site_media'),)
+
 # STATIC_ROOT = os.path.join(PROJECT_ROOT, 'static')
 
 EMAIL_HOST = 'smtp.sendgrid.net'

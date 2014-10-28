@@ -33,4 +33,5 @@ def get():
 	elif data[2] == DATA_MODE_GRAMS:
 		grams = raw_weight
 		weight = grams
+	print weight, type(weight)
 	return weight

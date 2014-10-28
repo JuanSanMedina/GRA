@@ -7,12 +7,13 @@ from django.db import models, migrations
 class Migration(migrations.Migration):
 
     dependencies = [
-        ('ecan', '0002_auto_20141016_1156'),
+        ('ecan', '0001_initial'),
     ]
 
     operations = [
-        migrations.RemoveField(
+        migrations.AlterField(
             model_name='item',
-            name='user',
+            name='weight',
+            field=models.FloatField(null=True),
         ),
     ]

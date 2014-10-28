@@ -7,22 +7,22 @@ import json
 
 # Create your views here.
 def home(request):
-		return render(request, 'ecan/home.html')
+	return render(request, 'ecan/home.html')
 
 @csrf_exempt
 def upload_item(request):
 	if request.method == 'POST':
-			form = UploadItemForm(request.POST, request.FILES)
-			if form.is_valid():
-				print 'valid'
-				form.save()
+		form = UploadItemForm(request.POST, request.FILES)
+		if form.is_valid():
+			print 'valid'
+			form.save()
 
-				#do the processing here
-				response_data = {}
-				response_data['result'] = 'is valid'
-				return HttpResponse(json.dumps(response_data), content_type="application/json")
+			#do the processing here
+			response_data = {}
+			response_data['result'] = 'is valid'
+			return HttpResponse(json.dumps(response_data), content_type="application/json")
 	else:
-			form = UploadItemForm()
+		form = UploadItemForm()
 	response_data = {}
 	response_data['result'] = 'get'
 	return HttpResponse(json.dumps(response_data), content_type="application/json")
@@ -30,18 +30,18 @@ def upload_item(request):
 @csrf_exempt
 def upload_ecan(request):
 	if request.method == 'POST':
-			form = UploadEcanForm(request.POST, request.FILES)
-			if form.is_valid():
-				instance = get_object_or_404(Ecan, pk=request.POST['pk'])
-				form = UploadEcanForm(request.POST or None, instance=instance)
-				form.save()
-				# #do the processing here
-				# return "name = coke can"
-				response_data = {}
-				response_data['result'] = 'is valid'
-				return HttpResponse(json.dumps(response_data), content_type="application/json")
+		form = UploadEcanForm(request.POST, request.FILES)
+		if form.is_valid():
+			instance = get_object_or_404(Ecan, pk=request.POST['pk'])
+			form = UploadEcanForm(request.POST or None, instance=instance)
+			form.save()
+			# #do the processing here
+			# return "name = coke can"
+			response_data = {}
+			response_data['result'] = 'is valid'
+			return HttpResponse(json.dumps(response_data), content_type="application/json")
 	else:
-			form = UploadEcanForm()
+		form = UploadEcanForm()
 	response_data = {}
 	response_data['result'] = 'get'
 	return HttpResponse(json.dumps(response_data), content_type="application/json")
@@ -55,8 +55,6 @@ def view_item(request):
 	return HttpResponse(json.dumps(response_data), content_type="application/json")
 
 def view_ip(request):
-	print 'juan'
-	print request.GET['pk']
 	ecan = get_object_or_404(Ecan, pk=request.GET['pk'])
 	response_data = {}
 	response_data['ip'] = ecan.ip
