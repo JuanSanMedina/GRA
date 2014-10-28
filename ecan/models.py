@@ -20,4 +20,4 @@ class Item(models.Model):
 	created = models.DateTimeField(auto_now_add=True, blank=True, null=True)
 	modified = models.DateTimeField(auto_now=True, blank=True, null=True)
 	def __unicode__(self):
-		return self.weight
+		return str(self.weight)
