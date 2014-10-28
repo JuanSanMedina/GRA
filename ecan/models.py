@@ -21,13 +21,3 @@ class Item(models.Model):
 	modified = models.DateTimeField(auto_now=True, blank=True, null=True)
 	def __unicode__(self):
 		return self.weight
-	def save(self, *args, **kwargs):
-		if self.pk is None:
-			saved_image_picam = self.image_picam
-			saved_image_usb = self.image_usb
-			self.image_picam = None
-			self.image_usb = None
-			super(Item, self).save(*args, **kwargs)
-			self.image_picam = saved_image_picam
-			self.image_usb = saved_image_usb
-		super(Item, self).save(*args, **kwargs)
