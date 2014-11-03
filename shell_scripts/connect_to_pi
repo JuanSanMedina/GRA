@@ -1,0 +1,3 @@
+#!/bin/bash
+output=$(get_pi_ip /dev/null)
+ssh "$output" -l pi

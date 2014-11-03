@@ -1,0 +1,11 @@
+#!/bin/bash
+# b=0
+# a="notjuan_gray"
+for f in *; do
+	# b=$((b+1))
+	# name="$a$b.png"
+	convert "$f"	-resize 40x40^ \
+	-gravity center	-extent 40x40 "$f"
+	mogrify -type Grayscale "$f"
+	# mv "$f" "$name"
+done
