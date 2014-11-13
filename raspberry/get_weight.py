@@ -7,6 +7,10 @@ def get():
 	PRODUCT_ID = 0x8004
 	# find the USB device
 	device = usb.core.find(idVendor=VENDOR_ID, idProduct=PRODUCT_ID)
+	reattach = False
+	if device.is_kernel_driver_active(0):
+		reattach = True
+		device.detach_kernel_driver(0)
 	# use the first/default configuration
 	device.set_configuration()
 	# first endpoint
@@ -23,15 +27,17 @@ def get():
 				attempts -= 1
 				continue
 
-	DATA_MODE_GRAMS = 2
-	DATA_MODE_OUNCES = 11
-
 	raw_weight = data[4] + data[5] * 256
-	if data[2] == DATA_MODE_OUNCES:
-		ounces = raw_weight * 0.1
-		weight = ounces/0.035274
-	elif data[2] == DATA_MODE_GRAMS:
-		grams = raw_weight
-		weight = grams
-	print weight, type(weight)
-	return weight
+	device.detach_kernel_driver(0)
+	return float(raw_weight)
+
+
+#	DATA_MODE_GRAMS = 2
+#	DATA_MODE_OUNCES = 11
+#	if data[2] == DATA_MODE_OUNCES:
+#		ounces = raw_weight * 0.1
+#		weight = ounces
+#	elif data[2] == DATA_MODE_GRAMS:
+#		grams = raw_weight
+#		weight = grams
+#	print weight, type(weight)
