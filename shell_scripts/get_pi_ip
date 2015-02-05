@@ -1,4 +1,4 @@
-#! /usr/local/bin/python
+#! /anaconda/bin/python
 import requests
 # import sys
 

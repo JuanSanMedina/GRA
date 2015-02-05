@@ -1,2 +1,4 @@
 #!/bin/bash
-chmod 755 /Users/JuanSantiagoMedina/shell_scripts/*
+DIR="$( cd "$( dirname "${BASH_SOURCE[0]}" )" && pwd )"
+chmod 755 "$DIR"/*
+# chmod 755 /Users/JuanSantiagoMedina/shell_scripts/*

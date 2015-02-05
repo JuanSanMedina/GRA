@@ -1,7 +1,7 @@
 from django.shortcuts import render, render_to_response, get_object_or_404
 from django.http import HttpResponseRedirect, HttpResponse
-from ecan.forms import UploadItemForm, UploadEcanForm
-from ecan.models import Ecan, Item 
+from ecan.forms import UploadItemForm, UploadEcanForm, UploadBack_GroundForm, UploadSampleForm
+from ecan.models import Ecan, Item, Back_Ground, Sample
 from django.views.decorators.csrf import csrf_exempt
 import json
 
@@ -13,18 +13,55 @@ def home(request):
 def upload_item(request):
 	if request.method == 'POST':
 		form = UploadItemForm(request.POST, request.FILES)
+		# print form
 		if form.is_valid():
 			print 'valid'
-			form.save()
+			a = form.save()
 
 			#do the processing here
 			response_data = {}
-			response_data['result'] = 'is valid'
+			response_data['result'] = 'valid'
+			response_data['id'] = str(a.pk)
+			return HttpResponse(json.dumps(response_data), content_type="application/json")
+		else:
+			print form
+			response_data = {}
+			response_data['result'] = 'not valid'
+			response_data['id'] = ''
 			return HttpResponse(json.dumps(response_data), content_type="application/json")
 	else:
+		print 'get'
 		form = UploadItemForm()
 	response_data = {}
 	response_data['result'] = 'get'
+	response_data['id'] = ''
+	return HttpResponse(json.dumps(response_data), content_type="application/json")
+
+@csrf_exempt
+def upload_bg(request):
+	if request.method == 'POST':
+		form = UploadBack_GroundForm(request.POST, request.FILES)
+		# print form
+		if form.is_valid():
+			print 'valid'
+			a = form.save()
+			#do the processing here
+			response_data = {}
+			response_data['result'] = 'valid'
+			response_data['id'] = str(a.pk)
+			return HttpResponse(json.dumps(response_data), content_type="application/json")
+		else:
+			print form
+			response_data = {}
+			response_data['result'] = 'not valid'
+			response_data['id'] = ''
+			return HttpResponse(json.dumps(response_data), content_type="application/json")
+	else:
+		print 'get'
+		form = UploadItemForm()
+	response_data = {}
+	response_data['result'] = 'get'
+	response_data['id'] = ''
 	return HttpResponse(json.dumps(response_data), content_type="application/json")
 
 @csrf_exempt
@@ -45,6 +82,36 @@ def upload_ecan(request):
 	response_data = {}
 	response_data['result'] = 'get'
 	return HttpResponse(json.dumps(response_data), content_type="application/json")
+
+@csrf_exempt
+def upload_sample(request):
+	if request.method == 'POST':
+		form = UploadSampleForm(request.POST, request.FILES)
+		# print form
+		if form.is_valid():
+			print 'valid'
+			a = form.save()
+
+			#do the processing here
+			response_data = {}
+			response_data['result'] = 'valid'
+			response_data['id'] = str(a.pk)
+			return HttpResponse(json.dumps(response_data), content_type="application/json")
+		else:
+			print form
+			response_data = {}
+			response_data['result'] = 'not valid'
+			response_data['id'] = ''
+			return HttpResponse(json.dumps(response_data), content_type="application/json")
+	else:
+		print 'get'
+		form = UploadSampleForm()
+	response_data = {}
+	response_data['result'] = 'get'
+	response_data['id'] = ''
+	return HttpResponse(json.dumps(response_data), content_type="application/json")
+
+
 
 
 def view_item(request):
