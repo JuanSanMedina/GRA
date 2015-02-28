@@ -95,28 +95,45 @@ WSGI_APPLICATION = 'api.wsgi.application'
 if USER == 'JuanSantiagoMedina':
     DEBUG = True
     DATABASES = {
+        # 'default': {
+        #     'ENGINE': 'django.db.backends.postgresql_psycopg2',
+        #     'NAME': 'ecan_recognition',
+        #     'USER': 'admin',
+        #     'PASSWORD': 'admin',
+        #     'HOST': '127.0.0.1',
+        #     'PORT': '5432',
+        #     }
         'default': {
-            'ENGINE': 'django.db.backends.postgresql_psycopg2',
-            'NAME': 'ecan_recognition',
-            'USER': 'admin',
-            'PASSWORD': 'admin',
-            'HOST': '127.0.0.1',
-            'PORT': '6543',
+            'ENGINE': 'django.db.backends.mysql',
+            'NAME': 'ecan',
+            'USER': ' ',
+            'PASSWORD': '',
+            'HOST': 'localhost',   # Or an IP Address that your DB is hosted on
+            'PORT': '3306',
             }
         }
 
 if USER == 'jsm601':
     DEBUG = True
     DATABASES = {
-        'default': {
+        'other': {
             'ENGINE': 'django.db.backends.postgresql_psycopg2',
             'NAME': 'ecan_recognition',
             'USER': 'jsm601',
             'PASSWORD': 'jsm601',
             'HOST': '127.0.0.1',
             'PORT': '6543',
+            },
+        'default': {
+            'ENGINE': 'django.db.backends.mysql',
+            'NAME': 'ecan',
+            'USER': ' ',
+            'PASSWORD': '',
+            'HOST': 'localhost',   # Or an IP Address that your DB is hosted on
+            'PORT': '3306',
             }
         }
+
 
 if USER != 'JuanSantiagoMedina' and USER != 'jsm601':
     DATABASES = {
@@ -150,10 +167,11 @@ MEDIA_ROOT = os.path.join(PROJECT_ROOT, 'site_media', 'media')
 MEDIA_URL = '/site_media/media/'
 STATIC_ROOT = os.path.join(PROJECT_ROOT, 'site_media', 'static')
 SITE_MEDIA_URL = '/site_media/'
-STATIC_URL = '/site_media/'
+STATIC_URL = '/static/'
 ADMIN_TOOLS_MEDIA_URL = '/site_media/'
 ADMIN_MEDIA_PREFIX = posixpath.join(STATIC_URL, "admin/")
-STATICFILES_DIRS = (os.path.join(PROJECT_ROOT, 'site_media'),)
+STATICFILES_DIRS = (os.path.join(PROJECT_ROOT, 'site_media'), '/static/stylesheets/')
+
 
 EMAIL_HOST = 'smtp.sendgrid.net'
 EMAIL_HOST_USER = 'app22474969@heroku.com'

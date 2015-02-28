@@ -14,7 +14,7 @@
             "follow_symlinks": true,
             "path": "./..",
             "folder_exclude_patterns": [".ipynb*"],
-            "file_exclude_patterns": ["*.sqlite3"]
+            "file_exclude_patterns": ["*.sqlite3", "Icon*"]
         }
     ],
     "settings":

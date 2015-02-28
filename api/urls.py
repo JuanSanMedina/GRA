@@ -4,10 +4,10 @@ from ecan import views
 from api import settings
 
 urlpatterns = patterns('',
-	# Examples:
-	url(r'^admin/', include(admin.site.urls)),
-	url(r'^ecan/', include('ecan.urls', namespace="ecan")),
-)
+                       # Examples:
+                       url(r'^admin/', include(admin.site.urls)),
+                       url(r'^ecan/', include('ecan.urls', namespace="ecan")),
+                       )
 
 # if settings.SERVE_MEDIA:
 #     urlpatterns += patterns("",
