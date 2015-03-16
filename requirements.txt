@@ -5,7 +5,7 @@ pandas==0.15.2
 scikit-learn==0.15.2
 matplotlib==1.4.2
 
-## Ipython and dependencies
+## iPython and dependencies
 ipython==2.3.1
 Jinja2==2.7.3
 tornado==4.1
@@ -33,7 +33,7 @@ psycopg2==2.5.2
 ## The following requirements were added by pip --freeze:
 MarkupSafe==0.23
 backports.ssl-match-hostname==3.4.0.2
-certifi==14.05.14
+certifi==14.5.14
 gnureadline==6.3.3
 mock==1.0.1
 nose==1.3.4
@@ -41,5 +41,5 @@ pyparsing==2.0.3
 python-dateutil==2.4.0
 pytz==2014.10
 six==1.9.0
-wsgiref==0.1.2
 pexpect==3.3
+cmd2==0.6.8
