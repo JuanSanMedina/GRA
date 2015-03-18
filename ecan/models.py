@@ -31,28 +31,76 @@ class Back_Ground(models.Model):
         return str(self.pk)
 
 
-class Item(models.Model):
-    ecan = models.ForeignKey(Ecan)
-    bg = models.ForeignKey(Back_Ground, null=True)
-    user = models.ForeignKey(User, blank=True, null=True)
-    im = models.ImageField(upload_to='pi_cam/')
-    weight = models.CharField(max_length=255, blank=True, null=True)
-    item_class = models.CharField(max_length=255, blank=True, null=True)
-    test_train = models.CharField(max_length=255, blank=True, null=True)
-    created = models.DateTimeField(auto_now_add=True, blank=True, null=True)
-    modified = models.DateTimeField(auto_now=True, blank=True, null=True)
-    # image_usb = models.ImageField(upload_to="usb_im", blank=True, null=True)
-
-    def __unicode__(self):
-        return str(self.pk)
-
-
 class Sample(models.Model):
     ecan = models.ForeignKey(Ecan)
     user = models.ForeignKey(User, blank=True, null=True)
     im = models.ImageField(upload_to='sample/', blank=True, null=True)
     created = models.DateTimeField(auto_now_add=True, blank=True, null=True)
     modified = models.DateTimeField(auto_now=True, blank=True, null=True)
+
+    def __unicode__(self):
+        return str(self.pk)
+
+
+class Brand(models.Model):
+    user = models.ForeignKey(User, blank=True, null=True)
+    created = models.DateTimeField(auto_now_add=True, blank=True, null=True)
+    modified = models.DateTimeField(auto_now=True, blank=True, null=True)
+    value = models.CharField(max_length=255, blank=True, null=True)
+
+    def __unicode__(self):
+        return str(self.pk)
+
+
+class Shape(models.Model):
+    user = models.ForeignKey(User, blank=True, null=True)
+    created = models.DateTimeField(auto_now_add=True, blank=True, null=True)
+    modified = models.DateTimeField(auto_now=True, blank=True, null=True)
+    value = models.CharField(max_length=255, blank=True, null=True)
+
+    def __unicode__(self):
+        return str(self.pk)
+
+
+class Material(models.Model):
+    user = models.ForeignKey(User, blank=True, null=True)
+    created = models.DateTimeField(auto_now_add=True, blank=True, null=True)
+    modified = models.DateTimeField(auto_now=True, blank=True, null=True)
+    value = models.CharField(max_length=255, blank=True, null=True)
+
+    def __unicode__(self):
+        return str(self.pk)
+
+
+class Description(models.Model):
+    user = models.ForeignKey(User, blank=True, null=True)
+    created = models.DateTimeField(auto_now_add=True, blank=True, null=True)
+    modified = models.DateTimeField(auto_now=True, blank=True, null=True)
+    value = models.CharField(max_length=255, blank=True, null=True)
+
+    def __unicode__(self):
+        return str(self.pk)
+
+
+class Item(models.Model):
+    # Foreing
+    ecan = models.ForeignKey(Ecan)
+    bg = models.ForeignKey(Back_Ground, null=True)
+    user = models.ForeignKey(User, blank=True, null=True)
+    brand = models.ForeignKey(Brand, blank=True, null=True)
+    shape = models.ForeignKey(Shape, blank=True, null=True)
+    material = models.ForeignKey(Material, blank=True, null=True)
+    description = models.ForeignKey(Description, blank=True, null=True)
+
+    # Automatic
+    im = models.ImageField(upload_to='pi_cam/')
+    created = models.DateTimeField(auto_now_add=True, blank=True, null=True)
+    modified = models.DateTimeField(auto_now=True, blank=True, null=True)
+    weight = models.CharField(max_length=255, blank=True, null=True)
+
+    # User input
+    identifier = models.CharField(max_length=255, blank=True, null=True)
+    transparency = models.CharField(max_length=255, blank=True, null=True)
 
     def __unicode__(self):
         return str(self.pk)
