@@ -5,7 +5,7 @@
             "file_regex": "^[ ]*File \"(...*?)\", line ([0-9]*)",
             "name": "Anaconda Python Builder",
             "selector": "source.python",
-            "shell_cmd": "~/.virtualenvs/ecan_venv/bin/python -u \"$file\""
+            "shell_cmd": "~/.virtualenvs/ecan/bin/python -u \"$file\""
         }
     ],
     "folders":
@@ -19,7 +19,7 @@
     ],
     "settings":
     {
-        "python_interpreter": "~/.virtualenvs/ecan_venv/bin/python",
+        "python_interpreter": "~/.virtualenvs/ecan/bin/python",
         "tab_size": 4,
         "indent_using_spaces":true,
         "translate_tabs_to_spaces": true

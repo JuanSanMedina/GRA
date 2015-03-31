@@ -2,13 +2,14 @@
 import requests
 # import sys
 
-def getip(which = 'local'):
-	if which == 'local':
-		#url = 'http://127.0.0.1:8000/ecan/view-ip/'
-		url = 'http://ecan-recognition.herokuapp.com/ecan/view-ip/'
-		data = {'pk':'1'}
-		r = requests.get(url, params = data)
-		print r.json()['ip']
+
+def getip(which='local'):
+    if which == 'local':
+        url = 'http://ecan-recognition.herokuapp.com/ecan/view-ip/'
+        # url = 'http://127.0.0.1:8000/ecan/view-ip/'
+        data = {'pk': '1'}
+        r = requests.get(url, params=data)
+        print r.json()['ip']
 
 # getip(sys.argv[1])
 getip()

@@ -4,6 +4,46 @@
 		"selected_items":
 		[
 			[
+				"I",
+				"Item	class"
+			],
+			[
+				"it",
+				"item_att	statement"
+			],
+			[
+				"A",
+				"ATT_KEYS	statement"
+			],
+			[
+				"oto",
+				"oto_del	statement"
+			],
+			[
+				"att",
+				"attrs	param"
+			],
+			[
+				"sel",
+				"select"
+			],
+			[
+				"attr",
+				"attributes"
+			],
+			[
+				"o",
+				"object	class"
+			],
+			[
+				"upl",
+				"upload_insert"
+			],
+			[
+				"b",
+				"begidx	param"
+			],
+			[
 				"style",
 				"stylesheets"
 			],
@@ -474,114 +514,185 @@
 			[
 				"se",
 				"searchGreaterNotSorted"
-			],
-			[
-				"mid",
-				"mid+1"
-			],
-			[
-				"mi",
-				"mid+1"
-			],
-			[
-				"gv",
-				"gv2"
-			],
-			[
-				"g",
-				"gv1"
-			],
-			[
-				"sear",
-				"searchGreaterBinSearch"
-			],
-			[
-				"ser",
-				"searchGreaterNotSorted"
-			],
-			[
-				"so",
-				"sortedInputList"
-			],
-			[
-				"sol",
-				"solveDict"
-			],
-			[
-				"un",
-				"uniqueList"
-			],
-			[
-				"inter",
-				"keys_intersection"
 			]
 		]
 	},
 	"buffers":
 	[
 		{
-			"contents": "# sudo du -sh /\n# https://docs.djangoproject.com/en/1.7/topics/db/queries/#field-lookups-intro\n# http://opensourcehacker.com/2012/10/24/ssh-key-and-passwordless-login-basics-for-developers/\n# https://help.ubuntu.com/community/SSH/OpenSSH/PortForwarding\n\nfrom django.db import models\nfrom django.contrib.auth.models import User\nimport os\n\n\nclass Ecan(models.Model):\n    address = models.CharField(max_length=255, blank=True, null=True)\n    ip = models.CharField(max_length=255, blank=True, null=True)\n    latitude = models.FloatField(blank=True, null=True)\n    longitude = models.FloatField(blank=True, null=True)\n    created = models.DateTimeField(auto_now_add=True, blank=True, null=True)\n    modified = models.DateTimeField(auto_now=True, blank=True, null=True)\n\n    def __unicode__(self):\n        return self.address\n\n\nclass Back_Ground(models.Model):\n    ecan = models.ForeignKey(Ecan)\n    user = models.ForeignKey(User, blank=True, null=True)\n    im = models.ImageField(upload_to='back_ground/')\n    created = models.DateTimeField(auto_now_add=True, blank=True, null=True)\n    modified = models.DateTimeField(auto_now=True, blank=True, null=True)\n\n    def __unicode__(self):\n        return str(self.pk)\n\n\nclass Item(models.Model):\n    ecan = models.ForeignKey(Ecan)\n    bg = models.ForeignKey(Back_Ground, null=True)\n    user = models.ForeignKey(User, blank=True, null=True)\n\n    # Automatic\n    im = models.ImageField(upload_to='pi_cam/')\n    created = models.DateTimeField(auto_now_add=True, blank=True, null=True)\n    modified = models.DateTimeField(auto_now=True, blank=True, null=True)\n    weight = models.CharField(max_length=255, blank=True, null=True)\n    identifier = models.CharField(max_length=255, blank=True, null=True)\n\n    # User input\n    item_class = models.CharField(max_length=255, blank=True, null=True)\n    shape = models.CharField(max_length=255, blank=True, null=True)\n    material = models.CharField(max_length=255, blank=True, null=True)\n    brand = models.CharField(max_length=255, blank=True, null=True)\n    transparency = models.CharField(max_length=255, blank=True, null=True)\n\n    # image_usb = models.ImageField(upload_to=\"usb_im\", blank=True, null=True)\n\n    def __unicode__(self):\n        return str(self.pk)\n\n\nclass Sample(models.Model):\n    ecan = models.ForeignKey(Ecan)\n    user = models.ForeignKey(User, blank=True, null=True)\n    im = models.ImageField(upload_to='sample/', blank=True, null=True)\n    created = models.DateTimeField(auto_now_add=True, blank=True, null=True)\n    modified = models.DateTimeField(auto_now=True, blank=True, null=True)\n\n    def __unicode__(self):\n        return str(self.pk)\n",
+			"file": "/Users/jsm601/Documents/Google_Drive/Academico_Profesional/NYU/GRA/ecan-recognition/raspberry/interface.py",
+			"settings":
+			{
+				"buffer_size": 14223,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "/Users/jsm601/Documents/Google_Drive/Academico_Profesional/NYU/GRA/ecan-recognition/raspberry/upload_functions.py",
+			"settings":
+			{
+				"buffer_size": 3283,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "/Users/jsm601/Documents/Google_Drive/Academico_Profesional/NYU/GRA/ecan-recognition/ecan/views.py",
+			"settings":
+			{
+				"buffer_size": 8559,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"contents": "{\n \"metadata\": {\n  \"name\": \"\",\n  \"signature\": \"sha256:e0968d04c1b6c421c5820e47dbabb2b5aeabe8abee0761db957ad47548f561d0\"\n },\n \"nbformat\": 3,\n \"nbformat_minor\": 0,\n \"worksheets\": []\n}",
+			"file": "/Users/jsm601/Documents/Google_Drive/Academico_Profesional/NYU/GRA/ecan-recognition/ipython/hog_032415_model.ipynb",
+			"file_size": -1,
+			"file_write_time": -1,
+			"settings":
+			{
+				"buffer_size": 181,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "/Users/jsm601/Documents/Google_Drive/Academico_Profesional/NYU/GRA/ecan-recognition/ipython/compute_hog.ipynb",
+			"settings":
+			{
+				"buffer_size": 4014,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "/Users/jsm601/Documents/Google_Drive/Academico_Profesional/NYU/GRA/ecan-recognition/ipython/hog_032415_ml.ipynb",
+			"settings":
+			{
+				"buffer_size": 4643,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"contents": "",
+			"settings":
+			{
+				"buffer_size": 0,
+				"line_ending": "Unix"
+			}
+		},
+		{
 			"file": "/Users/jsm601/Documents/Google_Drive/Academico_Profesional/NYU/GRA/ecan-recognition/ecan/models.py",
-			"file_size": 2330,
-			"file_write_time": 130680827260000000,
 			"settings":
 			{
-				"buffer_size": 2648,
+				"buffer_size": 4488,
 				"line_ending": "Unix"
-			}
-		},
-		{
-			"contents": "'im':,\n'created':,\n'modified':,\n'weight':,\n'identifier':,\n'item_class':,\n'shape':,\n'material':,\n'brand':,\n'transparency':,",
-			"settings":
-			{
-				"buffer_size": 122,
-				"line_ending": "Unix"
-			}
-		},
-		{
-			"contents": "# Functions\nimport get_weight\nfrom set_stepper import *\nfrom upload_functions import *\n\n# Set GPIOs and url\nset_gpio()\nurl = 'http://128.122.72.105:8000'\n\n\n\n# User Interface #\ntry:\n\n    # Check if gram scale is connected and/or turned on\n    while True:\n        try:\n            print 'Does this weight make sense?'\n            print get_weight.get()\n            break\n        except 'NoneType':\n            print \"Please connect and turn on the scale\"\n\n    # Start process #\n    cont = 'y'\n    while cont == 'y':\n\n        # Take preview of object #\n        # Previews are available at api/site_media/media/sample\n        preview = raw_input(\"Preview? [y/n]\")\n        if preview == 'y':\n            while preview == 'y':\n                take = raw_input(\"Take? [y/n]\")\n                if take == 'y':\n                    get_preview(url)\n                preview = raw_input(\"Keep doing this? [y/n]\")\n\n        # Collect data #\n        samples = raw_input(\"Number of samples? [max: 512]\")\n        item_attributes = {}\n        item_attributes['item_class'] = raw_input(\"What class? \")\n        item_attributes['test_train'] = raw_input(\"Train or test? [1/0]\")\n        result = get_data(int(samples), item_attributes, url)\n        print result\n        cont = raw_input(\"Continue? [y/n] \")\n        if cont != 'y' and cont != 'n':\n            cont = 'n'\n            GPIO.cleanup()\n\nexcept ValueError:\n    GPIO.cleanup()\nexcept KeyboardInterrupt:\n    GPIO.cleanup()\n",
-			"file": "/Users/jsm601/Documents/Google_Drive/Academico_Profesional/NYU/GRA/ecan-recognition/raspberry/run_interface.py",
-			"file_size": 1403,
-			"file_write_time": 130705757710000000,
-			"settings":
-			{
-				"buffer_size": 1458,
-				"line_ending": "Unix"
-			}
-		},
-		{
-			"file": "GRA.sublime-project",
-			"settings":
-			{
-				"buffer_size": 710,
-				"line_ending": "Unix"
-			}
-		},
-		{
-			"file": "/Users/jsm601/Documents/Google_Drive/Academico_Profesional/NYU/GRA/ecan-recognition/classes.txt",
-			"settings":
-			{
-				"buffer_size": 212,
-				"line_ending": "Unix"
-			}
-		},
-		{
-			"contents": "Spring\n# Please enter the commit message for your changes. Lines starting\n# with '#' will be ignored, and an empty message aborts the commit.\n# On branch master\n# Changes to be committed:\n#   (use \"git reset HEAD <file>...\" to unstage)\n#\n#	modified:   .DS_Store\n#	modified:   .gitignore\n#	modified:   api/settings.py\n#	modified:   api/templates/admin/base_site.html\n#	deleted:    api/templates/ecan/home.html\n#	modified:   api/urls.py\n#	modified:   ecan/admin.py\n#	modified:   ecan/forms.py\n#	modified:   ecan/migrations/__init__.py\n#	modified:   ecan/models.py\n#	modified:   ecan/urls.py\n#	modified:   ecan/views.py\n#	modified:   ipython/image_processing.ipynb\n#	modified:   raspberry/.DS_Store\n#	renamed:    raspberry/get_data_v2.py -> raspberry/drafts/get_data_v2.py\n#	deleted:    raspberry/get_data_v3.py\n#	modified:   raspberry/get_weight.py\n#	deleted:    raspberry/stepper.py\n#	modified:   raspberry/upload_item.py\n#	modified:   requirements.txt\n#	modified:   sublime_project/GRA.sublime-project\n#	modified:   sublime_project/GRA.sublime-workspace\n#\n",
-			"settings":
-			{
-				"buffer_size": 1056,
-				"line_ending": "Unix",
-				"name": "COMMIT_EDITMSG",
-				"scratch": true
 			}
 		}
 	],
 	"build_system": "Anaconda Python Builder",
 	"command_palette":
 	{
-		"height": 272.0,
+		"height": 162.0,
 		"selected_items":
 		[
+			[
+				"push",
+				"Git: Push"
+			],
+			[
+				"qc",
+				"Git: Quick Commit"
+			],
+			[
+				"pus",
+				"Git: Push"
+			],
+			[
+				"qc ",
+				"Git: Quick Commit"
+			],
+			[
+				"pu",
+				"Git: Push"
+			],
+			[
+				"pull",
+				"Git: Pull"
+			],
+			[
+				"q a",
+				"Git: Quick Add"
+			],
+			[
+				"git p",
+				"Git: Push"
+			],
+			[
+				"git push",
+				"Git: Push"
+			],
+			[
+				"q ad",
+				"Git: Quick Add"
+			],
+			[
+				"qui",
+				"Git: Quick Add"
+			],
+			[
+				"q",
+				"Git: Quick Commit"
+			],
+			[
+				"qa",
+				"Git: Quick Add"
+			],
+			[
+				"git pul",
+				"Git: Pull"
+			],
+			[
+				"QC",
+				"Git: Quick Commit"
+			],
+			[
+				"q c",
+				"Git: Quick Commit"
+			],
+			[
+				"stat",
+				"Git: Status"
+			],
+			[
+				"lis",
+				"Package Control: List Packages"
+			],
+			[
+				"g q a",
+				"Git: Quick Add"
+			],
+			[
+				"GIT PUL",
+				"Git: Pull"
+			],
+			[
+				"git qu c",
+				"Git: Quick Commit"
+			],
+			[
+				"git add",
+				"Git: Quick Add"
+			],
+			[
+				"git stat",
+				"Git: Status"
+			],
+			[
+				"git ",
+				"Git: Push"
+			],
+			[
+				"git quic",
+				"Git: Quick Commit"
+			],
 			[
 				"git pus",
 				"Git: Push"
@@ -591,20 +702,8 @@
 				"Git: Commit"
 			],
 			[
-				"git ",
-				"Git: Quick Add"
-			],
-			[
 				"git che",
 				"Git: Checkout"
-			],
-			[
-				"git push",
-				"Git: Push"
-			],
-			[
-				"git p",
-				"Git: Pull"
 			],
 			[
 				"git",
@@ -617,10 +716,6 @@
 			[
 				"git bran",
 				"Git: Checkout New Branch"
-			],
-			[
-				"git add",
-				"Git: Quick Add"
 			],
 			[
 				"remote",
@@ -693,10 +788,6 @@
 			[
 				"remo",
 				"Package Control: Remove Package"
-			],
-			[
-				"git stat",
-				"Git: Status"
 			],
 			[
 				"ip",
@@ -929,20 +1020,52 @@
 	"expanded_folders":
 	[
 		"/Users/jsm601/Documents/Google_Drive/Academico_Profesional/NYU/GRA/ecan-recognition",
-		"/Users/jsm601/Documents/Google_Drive/Academico_Profesional/NYU/GRA/ecan-recognition/api",
 		"/Users/jsm601/Documents/Google_Drive/Academico_Profesional/NYU/GRA/ecan-recognition/ecan",
-		"/Users/jsm601/Documents/Google_Drive/Academico_Profesional/NYU/GRA/ecan-recognition/raspberry",
-		"/Users/jsm601/Documents/Google_Drive/Academico_Profesional/NYU/GRA/ecan-recognition/sublime_project"
+		"/Users/jsm601/Documents/Google_Drive/Academico_Profesional/NYU/GRA/ecan-recognition/ecan/static",
+		"/Users/jsm601/Documents/Google_Drive/Academico_Profesional/NYU/GRA/ecan-recognition/ecan/static/ecan",
+		"/Users/jsm601/Documents/Google_Drive/Academico_Profesional/NYU/GRA/ecan-recognition/ecan/static/ecan/images",
+		"/Users/jsm601/Documents/Google_Drive/Academico_Profesional/NYU/GRA/ecan-recognition/ecan/templates",
+		"/Users/jsm601/Documents/Google_Drive/Academico_Profesional/NYU/GRA/ecan-recognition/ecan/templates/ecan",
+		"/Users/jsm601/Documents/Google_Drive/Academico_Profesional/NYU/GRA/ecan-recognition/ipython",
+		"/Users/jsm601/Documents/Google_Drive/Academico_Profesional/NYU/GRA/ecan-recognition/shell_scripts"
 	],
 	"file_history":
 	[
-		"/Users/jsm601/Documents/Google_Drive/Academico_Profesional/NYU/GRA/ecan-recognition/ecan/templates/ecan/sample.html",
+		"/Users/jsm601/Documents/Google_Drive/Academico_Profesional/NYU/GRA/ecan-recognition/api/site_media/media/pi_cam/im_Q00j09b",
+		"/Users/jsm601/Documents/Google_Drive/Academico_Profesional/NYU/GRA/ecan-recognition/raspberry/upload_functions.py",
+		"/Users/jsm601/Documents/Google_Drive/Academico_Profesional/NYU/GRA/ecan-recognition/shell_scripts/get_pi_ip",
+		"/Users/jsm601/Library/Application Support/Sublime Text 3/Packages/User/Anaconda.sublime-settings",
+		"/Users/jsm601/Documents/Google_Drive/Academico_Profesional/NYU/GRA/ecan-recognition/ecan/urls.py",
 		"/Users/jsm601/Documents/Google_Drive/Academico_Profesional/NYU/GRA/ecan-recognition/ecan/views.py",
-		"/Users/jsm601/Documents/Google_Drive/Academico_Profesional/NYU/GRA/ecan-recognition/requirements.txt",
+		"/Users/jsm601/Documents/Google_Drive/Academico_Profesional/NYU/GRA/ecan-recognition/api/urls.py",
+		"/Users/jsm601/Documents/Google_Drive/Academico_Profesional/NYU/GRA/ecan-recognition/ecan/forms.py",
+		"/Users/jsm601/Documents/Google_Drive/Academico_Profesional/NYU/GRA/ecan-recognition/ecan/templates/ecan/sample.html",
+		"/Users/jsm601/Documents/Google_Drive/Academico_Profesional/NYU/GRA/ecan-recognition/api.txt",
+		"/Users/jsm601/.bash_profile",
+		"/Users/jsm601/Documents/Google_Drive/Academico_Profesional/NYU/GRA/ecan-recognition/raspberry/weight.py",
 		"/Users/jsm601/Documents/Google_Drive/Academico_Profesional/NYU/GRA/ecan-recognition/api/settings.py",
+		"/Users/jsm601/Documents/Google_Drive/Academico_Profesional/NYU/GRA/ecan-recognition/ecan/models.py",
+		"/Users/jsm601/Documents/Google_Drive/Academico_Profesional/NYU/GRA/ecan-recognition/ecan/templates/ecan/index.html",
+		"/Users/jsm601/Documents/Google_Drive/Academico_Profesional/NYU/GRA/ecan-recognition/sublime_project/GRA.sublime-project",
+		"/Users/jsm601/Library/Application Support/Sublime Text 3/Packages/User/Preferences.sublime-settings",
 		"/Users/jsm601/Library/Application Support/Sublime Text 3/Packages/User/pm.sublime-settings",
-		"/Users/jsm601/.my.cnf",
+		"/Users/jsm601/Documents/Google_Drive/Academico_Profesional/NYU/GRA/ecan-recognition/raspberry/requirements.txt",
+		"/Users/jsm601/Documents/Google_Drive/Academico_Profesional/NYU/GRA/ecan-recognition/api/site_media/media/pi_cam/im_qCEBKBz",
+		"/Users/jsm601/Documents/Google_Drive/Academico_Profesional/NYU/GRA/ecan-recognition/api/site_media/media/pi_cam/im_Q61lcq9",
+		"/Users/jsm601/Documents/Google_Drive/Academico_Profesional/Software/Sublime/ST3/User/Projects - JuanSanMedina/library.json",
+		"/Users/jsm601/Documents/Google_Drive/Academico_Profesional/NYU/GRA/ecan-recognition/raspberry/run_interfacev2.py",
+		"/Users/jsm601/Documents/Google_Drive/Academico_Profesional/NYU/GRA/ecan-recognition/raspberry/run_interface.py",
 		"/Users/jsm601/Documents/Google_Drive/Academico_Profesional/Software/Sublime/ST3/User/Projects/1PP-16/library.json",
+		"/Users/jsm601/Documents/Google_Drive/Academico_Profesional/Software/Sublime/ST3/User/Projects - 1PP-16/library.json",
+		"/Users/jsm601/Documents/Google_Drive/Academico_Profesional/Software/Sublime/ST3/User/Projects/JuanSanMedina/library.json",
+		"/Users/jsm601/Documents/Google_Drive/Academico_Profesional/NYU/GRA/ecan-recognition/raspberry/helloworld_interface.py",
+		"/Users/jsm601/Documents/Google_Drive/Academico_Profesional/NYU/GRA/ecan-recognition/classes.txt",
+		"/Users/jsm601/Documents/Google_Drive/Academico_Profesional/NYU/GRA/ecan-recognition/raspberry/get_weight.py",
+		"/Users/jsm601/Documents/Google_Drive/Academico_Profesional/NYU/GRA/ecan-recognition/api/site_media/media/pi_cam/im_gI4lZIQ",
+		"/Users/jsm601/Documents/Google_Drive/Academico_Profesional/NYU/GRA/ecan-recognition/api/site_media/media/pi_cam/im_gsI16TI",
+		"/Users/jsm601/Documents/Google_Drive/Academico_Profesional/NYU/GRA/ecan-recognition/api/site_media/media/pi_cam/im_GItJiXp",
+		"/Users/jsm601/Documents/Google_Drive/Academico_Profesional/NYU/GRA/ecan-recognition/requirements.txt",
+		"/Users/jsm601/.my.cnf",
 		"/Users/JuanSantiagoMedina/Documents/Google_Drive/Academico_Profesional/NYU/GRA/ecan-recognition/ecan/views.py",
 		"/Users/JuanSantiagoMedina/Documents/Google_Drive/Academico_Profesional/NYU/GRA/ecan-recognition/ecan/urls.py",
 		"/Users/JuanSantiagoMedina/Documents/Google_Drive/Academico_Profesional/NYU/GRA/ecan-recognition/ecan/static/ecan/stylesheets/print.css",
@@ -965,11 +1088,9 @@
 		"/Users/JuanSantiagoMedina/Documents/Google_Drive/Academico_Profesional/NYU/GRA/ecan-recognition/sublime_project/Juan Santiago Medina Martínez’s MacBook/library.json",
 		"/Users/JuanSantiagoMedina/Library/Application Support/Sublime Text 3/Packages/User/Preferences.sublime-settings",
 		"/Users/JuanSantiagoMedina/Documents/Google_Drive/Academico_Profesional/NYU/GRA/ecan-recognition/.gitignore",
-		"/Users/jsm601/Documents/Google_Drive/Academico_Profesional/NYU/GRA/ecan-recognition/sublime_project/GRA.sublime-project",
 		"/Users/JuanSantiagoMedina/Documents/Google_Drive/Academico_Profesional/NYU/GRA/ecan-recognition/sublime_project/ecan-recognition/.gitignore",
 		"/Users/JuanSantiagoMedina/Documents/Google_Drive/Academico_Profesional/NYU/GRA/ecan-recognition/sublime_project/ecan-recognition/try.py",
 		"/Users/JuanSantiagoMedina/Documents/Google_Drive/Academico_Profesional/NYU/GRA/ecan-recognition/sublime_project/ecan-recognition/requirements.txt",
-		"/Users/jsm601/.bash_profile",
 		"/Users/jsm601/Library/Application Support/Sublime Text 3/Packages/User/SublimeREPL.sublime-settings",
 		"/Users/jsm601/Documents/Google_Drive/Academico_Profesional/NYU/Fall_2014/GRA/GRA_Sublime_Project/ecan-recognition/requirements.txt",
 		"/Users/jsm601/Documents/Google_Drive/Academico_Profesional/NYU/Fall_2014/GRA/GRA_Sublime_Project/GRA.sublime-project",
@@ -1037,51 +1158,131 @@
 		"/Users/JuanSantiagoMedina/Documents/Google_Drive/Academico_Profesional/NYU/Fall_2014/Principles of Urban Informatics/Assignments_PUI/Assignment 8/computational_investement_quiz.py",
 		"/Users/JuanSantiagoMedina/Documents/Google_Drive/Academico_Profesional/NYU/Fall_2014/Principles of Urban Informatics/Assignments_PUI/Assignment 8/problem3.py",
 		"/Users/JuanSantiagoMedina/Documents/Google_Drive/Academico_Profesional/NYU/Fall_2014/Foundations of Urban Science/Assignments_FoUS/Final Paper/bolsa.py",
-		"/Users/JuanSantiagoMedina/Documents/Google_Drive/Academico_Profesional/NYU/Fall_2014/Foundations of Urban Science/Assignments_FoUS/Final Paper/web3.py",
-		"/Users/JuanSantiagoMedina/Documents/Google_Drive/Academico_Profesional/Mayo/PDI/Projects/Pdi_MATLAB/Pdi-Python/correlation_matrix.py",
-		"/Users/JuanSantiagoMedina/Documents/Google_Drive/Academico_Profesional/NYU/Fall_2014/Applied Data Science/Assingments_ADS/ads14/image_exploration_part2.py",
-		"/Users/JuanSantiagoMedina/Documents/Google_Drive/Academico_Profesional/NYU/Fall_2014/Applied Data Science/Assingments_ADS/ads14/correlation_accuracy.py",
-		"/Users/JuanSantiagoMedina/Documents/Google_Drive/Academico_Profesional/NYU/Fall_2014/Applied Data Science/Assingments_ADS/ads14/regression_accuracy.py",
-		"/Users/JuanSantiagoMedina/Documents/Google_Drive/Academico_Profesional/NYU/Fall_2014/Applied Data Science/Assingments_ADS/ads14/image_exploration_part1.py",
-		"/Users/JuanSantiagoMedina/Documents/Google_Drive/Academico_Profesional/NYU/Fall_2014/Applied Data Science/Assingments_ADS/ads14/image_manipulation.py",
-		"/Users/JuanSantiagoMedina/Documents/Google_Drive/Academico_Profesional/NYU/Fall_2014/Principles of Urban Informatics/Assignments_PUI/Assignment 11/skeleton_problem3.py",
-		"/Users/JuanSantiagoMedina/Documents/Google_Drive/Academico_Profesional/NYU/Fall_2014/Principles of Urban Informatics/Assignments_PUI/Assignment 11/skeleton_problem2.py",
-		"/Users/JuanSantiagoMedina/Documents/Google_Drive/Academico_Profesional/NYU/Fall_2014/Principles of Urban Informatics/Assignments_PUI/Assignment 11/skeleton_problem1.py",
-		"/Users/JuanSantiagoMedina/Documents/Google_Drive/Academico_Profesional/NYU/Fall_2014/Principles of Urban Informatics/Assignments_PUI/Assignment 7/problem2_2.py",
-		"/Users/JuanSantiagoMedina/Documents/Google_Drive/Academico_Profesional/NYU/Fall_2014/Principles of Urban Informatics/Assignments_PUI/Assignment 7/problem2_1.py",
-		"/Users/JuanSantiagoMedina/Documents/Google_Drive/Academico_Profesional/NYU/Fall_2014/Principles of Urban Informatics/Assignments_PUI/Assignment 7/problem3_1.py",
-		"/Library/Python/2.7/site-packages/matplotlib/mpl-data/matplotlibrc",
-		"/Users/JuanSantiagoMedina/Documents/Google_Drive/Academico_Profesional/NYU/Fall_2014/Principles of Urban Informatics/Assignments_PUI/Assignment 7/problem2_extra.py",
-		"/Users/JuanSantiagoMedina/Documents/Google_Drive/Academico_Profesional/NYU/Fall_2014/Principles of Urban Informatics/Assignments_PUI/Assignment 10/problem1.py",
-		"/Users/JuanSantiagoMedina/Documents/Google_Drive/Academico_Profesional/NYU/Fall_2014/Applied Data Science/Assingments_ADS/Image sessions/ads14/stl_tools_vj/stl_tools_vj/numpy2stl_vj.py",
-		"/Users/JuanSantiagoMedina/Documents/Google_Drive/Academico_Profesional/NYU/Fall_2014/Applied Data Science/Assingments_ADS/Image sessions/ads14/stl_tools/stl_tools/numpy2stl.py",
-		"/Users/JuanSantiagoMedina/Documents/Google_Drive/Academico_Profesional/NYU/Fall_2014/Principles of Urban Informatics/Assignments_PUI/Assignment 8/problem1a.py",
-		"/Users/JuanSantiagoMedina/Documents/Google_Drive/Academico_Profesional/NYU/Fall_2014/Principles of Urban Informatics/Assignments_PUI/Assignment 7/problem1_2.py",
-		"/Users/JuanSantiagoMedina/Documents/Google_Drive/Academico_Profesional/NYU/Fall_2014/Principles of Urban Informatics/Assignments_PUI/Assignment 8/problem4b.py",
-		"/Users/JuanSantiagoMedina/Documents/Google_Drive/Academico_Profesional/NYU/Fall_2014/Urban ICT and City Operations/Assignments_UICT/Assignment 2/ICT HW2/Data-Pipeline/4-Heatmaps/scouts_complaints.txt",
-		"/Users/JuanSantiagoMedina/Documents/Google_Drive/Academico_Profesional/NYU/Fall_2014/GRA/ecan-recognition/raspberry/get_data_v3.py",
-		"/Users/JuanSantiagoMedina/Documents/Google_Drive/Academico_Profesional/NYU/Fall_2014/Principles of Urban Informatics/Assignments_PUI/Assignment 9/shapeWithAgencies.py",
-		"/Users/JuanSantiagoMedina/Documents/Google_Drive/Academico_Profesional/NYU/Fall_2014/Principles of Urban Informatics/Assignments_PUI/Assignment 9/edit.py",
-		"/Users/JuanSantiagoMedina/Documents/Google_Drive/Academico_Profesional/NYU/Fall_2014/Principles of Urban Informatics/Assignments_PUI/Assignment 9/problem1.py",
-		"/Users/JuanSantiagoMedina/Documents/Google_Drive/Academico_Profesional/NYU/Fall_2014/Principles of Urban Informatics/Assignments_PUI/Assignment 9/problem2.py"
+		"/Users/JuanSantiagoMedina/Documents/Google_Drive/Academico_Profesional/NYU/Fall_2014/Foundations of Urban Science/Assignments_FoUS/Final Paper/web3.py"
 	],
 	"find":
 	{
-		"height": 30.0
+		"height": 35.0
 	},
 	"find_in_files":
 	{
-		"height": 0.0,
+		"height": 97.0,
 		"where_history":
 		[
+			"<open folders>",
+			"<open files>",
 			""
 		]
 	},
 	"find_state":
 	{
-		"case_sensitive": false,
+		"case_sensitive": true,
 		"find_history":
 		[
+			"'y'",
+			" 'y'",
+			"y",
+			"flag",
+			"weight",
+			")\n",
+			"delete",
+			"upload",
+			"pep8",
+			"ignore",
+			"Do not",
+			"do no",
+			"do not",
+			"'",
+			"url(r'",
+			"                       ",
+			"os.",
+			"'''",
+			"forward",
+			"stepper",
+			"Back",
+			"KF",
+			"| ",
+			"get_w",
+			"get",
+			"do_ge",
+			"do_gfe",
+			"weigh",
+			"get",
+			"do_g",
+			"do_we",
+			"do_pre",
+			"do_prE",
+			"do_pre",
+			"':\n",
+			"select",
+			" \")",
+			"select",
+			" \")",
+			"select",
+			"selec",
+			"print '\\n'",
+			"print '\\n",
+			"print '\\n'",
+			"print '\\n' ",
+			"take",
+			"do_",
+			"MEDIA_URL",
+			"ecan_venv",
+			"preview",
+			"pre",
+			"get",
+			"self.",
+			"objects",
+			"lower",
+			"indent",
+			"tab",
+			"description",
+			"Description",
+			"Brand",
+			"brand",
+			"Description",
+			"'arg'",
+			"print",
+			"FRIENDS",
+			"name",
+			"arg",
+			"brand",
+			"insert_url ",
+			"self.BRANDS",
+			"brand",
+			" ' + result",
+			"current",
+			" print result",
+			"print result",
+			"split",
+			"' '.join",
+			"url",
+			"print",
+			"jason",
+			"wei",
+			"shape",
+			"materialS",
+			"shape",
+			"SHAPE",
+			"shape",
+			"do_insert_shape",
+			"brand",
+			"Brand",
+			"BRAND",
+			"brand",
+			"greeting",
+			"person",
+			"name",
+			"show",
+			"shape",
+			"Shape",
+			"material",
+			"Material",
+			"Shape",
+			"UploadBrandForm",
+			"UploadItemForm",
+			"cmd",
+			"Brand",
 			"models",
 			"material",
 			"shape",
@@ -1105,111 +1306,7 @@
 			"./../static/ecan/",
 			"home",
 			"draw",
-			"./",
-			"/Users/JuanSantiagoMedina",
-			"Light",
-			"Tu",
-			" ",
-			"Advanced",
-			"d",
-			"e",
-			"N",
-			"false",
-			"true",
-			"false",
-			"tab",
-			"in",
-			"inde",
-			"indent",
-			"tex",
-			"\n		",
-			"ANALY",
-			"BUS",
-			"FOR",
-			"MINING",
-			"DATA",
-			"true",
-			"false",
-			"import",
-			"false",
-			"import",
-			"extra",
-			"python",
-			",",
-			"origami_auto_zoom_on_focus",
-			"false",
-			"true",
-			"false",
-			"new",
-			"custom",
-			"meta",
-			"custom",
-			"juan",
-			"juana",
-			"al",
-			"a",
-			"ˇˇ",
-			"false",
-			"'",
-			"false",
-			"file",
-			"fi",
-			"file",
-			"fi",
-			"light",
-			"    ",
-			"     ",
-			"    ",
-			"mod",
-			" ",
-			"REPL",
-			":",
-			"				",
-			" ",
-			"=",
-			"4",
-			"range(4)",
-			"ax0",
-			"fig0",
-			"fig0,",
-			"rotation",
-			"jason",
-			"[",
-			"Rahman",
-			"vstac",
-			",",
-			"axes[0]",
-			"axes[1]",
-			"ny",
-			"gdp",
-			"df",
-			"=",
-			"csv_read",
-			"xx",
-			"avg_corr2",
-			"columns",
-			"]'",
-			", ",
-			",",
-			" ",
-			"       ",
-			"         ",
-			",",
-			" ",
-			"    ",
-			"       ",
-			"     ",
-			"    ",
-			"   ",
-			"           ",
-			"s",
-			"c",
-			"')\n",
-			"facecolor",
-			"face\nface",
-			"face\nfacecolor",
-			"face",
-			": 2"
+			"./"
 		],
 		"highlight": true,
 		"in_selection": false,
@@ -1217,6 +1314,11 @@
 		"regex": false,
 		"replace_history":
 		[
+			"common_name",
+			"Common_Name",
+			"Logo",
+			"logo",
+			"Name",
 			"juan",
 			"juana",
 			"\"",
@@ -1234,24 +1336,24 @@
 	"groups":
 	[
 		{
-			"selected": 2,
+			"selected": 5,
 			"sheets":
 			[
 				{
 					"buffer": 0,
-					"file": "/Users/jsm601/Documents/Google_Drive/Academico_Profesional/NYU/GRA/ecan-recognition/ecan/models.py",
+					"file": "/Users/jsm601/Documents/Google_Drive/Academico_Profesional/NYU/GRA/ecan-recognition/raspberry/interface.py",
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 2648,
+						"buffer_size": 14223,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								2110,
-								1397
+								6015,
+								6015
 							]
 						],
 						"settings":
@@ -1261,26 +1363,27 @@
 							"translate_tabs_to_spaces": true
 						},
 						"translation.x": 0.0,
-						"translation.y": 510.0,
+						"translation.y": 2369.0,
 						"zoom_level": 1.0
 					},
-					"stack_index": 2,
+					"stack_index": 5,
 					"type": "text"
 				},
 				{
 					"buffer": 1,
+					"file": "/Users/jsm601/Documents/Google_Drive/Academico_Profesional/NYU/GRA/ecan-recognition/raspberry/upload_functions.py",
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 122,
+						"buffer_size": 3283,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								122,
-								122
+								944,
+								944
 							]
 						],
 						"settings":
@@ -1290,27 +1393,27 @@
 							"translate_tabs_to_spaces": true
 						},
 						"translation.x": 0.0,
-						"translation.y": 0.0,
+						"translation.y": 224.0,
 						"zoom_level": 1.0
 					},
-					"stack_index": 1,
+					"stack_index": 7,
 					"type": "text"
 				},
 				{
 					"buffer": 2,
-					"file": "/Users/jsm601/Documents/Google_Drive/Academico_Profesional/NYU/GRA/ecan-recognition/raspberry/run_interface.py",
+					"file": "/Users/jsm601/Documents/Google_Drive/Academico_Profesional/NYU/GRA/ecan-recognition/ecan/views.py",
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 1458,
+						"buffer_size": 8559,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								475,
-								475
+								5950,
+								5956
 							]
 						],
 						"settings":
@@ -1320,19 +1423,19 @@
 							"translate_tabs_to_spaces": true
 						},
 						"translation.x": 0.0,
-						"translation.y": 0.0,
+						"translation.y": 3098.0,
 						"zoom_level": 1.0
 					},
-					"stack_index": 0,
+					"stack_index": 3,
 					"type": "text"
 				},
 				{
 					"buffer": 3,
-					"file": "GRA.sublime-project",
-					"semi_transient": true,
+					"file": "/Users/jsm601/Documents/Google_Drive/Academico_Profesional/NYU/GRA/ecan-recognition/ipython/hog_032415_model.ipynb",
+					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 710,
+						"buffer_size": 181,
 						"regions":
 						{
 						},
@@ -1345,72 +1448,132 @@
 						],
 						"settings":
 						{
-							"syntax": "Packages/JavaScript/JSON.tmLanguage",
-							"tab_size": 4,
-							"translate_tabs_to_spaces": true
-						},
-						"translation.x": 0.0,
-						"translation.y": 0.0,
-						"zoom_level": 1.0
-					},
-					"stack_index": 3,
-					"type": "text"
-				},
-				{
-					"buffer": 4,
-					"file": "/Users/jsm601/Documents/Google_Drive/Academico_Profesional/NYU/GRA/ecan-recognition/classes.txt",
-					"semi_transient": false,
-					"settings":
-					{
-						"buffer_size": 212,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								56,
-								56
-							]
-						],
-						"settings":
-						{
 							"syntax": "Packages/Text/Plain text.tmLanguage"
 						},
 						"translation.x": 0.0,
 						"translation.y": 0.0,
 						"zoom_level": 1.0
 					},
-					"stack_index": 4,
+					"stack_index": 2,
 					"type": "text"
 				},
 				{
-					"buffer": 5,
-					"semi_transient": false,
+					"buffer": 4,
+					"file": "/Users/jsm601/Documents/Google_Drive/Academico_Profesional/NYU/GRA/ecan-recognition/ipython/compute_hog.ipynb",
+					"semi_transient": true,
 					"settings":
 					{
-						"buffer_size": 1056,
+						"buffer_size": 4014,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								6,
-								6
+								0,
+								0
 							]
 						],
 						"settings":
 						{
-							"git_repo": "/Users/jsm601/Documents/Google_Drive/Academico_Profesional/NYU/GRA/ecan-recognition",
-							"git_view": "commit",
-							"syntax": "Packages/SublimeGit/syntax/SublimeGit Commit Message.tmLanguage"
+							"syntax": "Packages/Text/Plain text.tmLanguage",
+							"tab_size": 2,
+							"translate_tabs_to_spaces": true
 						},
 						"translation.x": 0.0,
 						"translation.y": 0.0,
 						"zoom_level": 1.0
 					},
-					"stack_index": 5,
+					"stack_index": 1,
+					"type": "text"
+				},
+				{
+					"buffer": 5,
+					"file": "/Users/jsm601/Documents/Google_Drive/Academico_Profesional/NYU/GRA/ecan-recognition/ipython/hog_032415_ml.ipynb",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 4643,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								202,
+								202
+							]
+						],
+						"settings":
+						{
+							"open_with_edit": true,
+							"syntax": "Packages/Text/Plain text.tmLanguage",
+							"tab_size": 2,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 0,
+					"type": "text"
+				},
+				{
+					"buffer": 6,
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 0,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								0,
+								0
+							]
+						],
+						"settings":
+						{
+							"auto_name": "",
+							"syntax": "Packages/Text/Plain text.tmLanguage"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 6,
+					"type": "text"
+				},
+				{
+					"buffer": 7,
+					"file": "/Users/jsm601/Documents/Google_Drive/Academico_Profesional/NYU/GRA/ecan-recognition/ecan/models.py",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 4488,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								4157,
+								4157
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/Python/Python.tmLanguage",
+							"tab_size": 4,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 1408.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 4,
 					"type": "text"
 				}
 			]
@@ -1459,6 +1622,14 @@
 	{
 		"height": 232.0
 	},
+	"output.git-commit":
+	{
+		"height": 140.0
+	},
+	"output.git-pull":
+	{
+		"height": 140.0
+	},
 	"output.git-push":
 	{
 		"height": 116.0
@@ -1466,7 +1637,7 @@
 	"project": "GRA.sublime-project",
 	"replace":
 	{
-		"height": 56.0
+		"height": 66.0
 	},
 	"save_all_on_build": true,
 	"select_file":
@@ -1561,7 +1732,7 @@
 	"show_open_files": false,
 	"show_tabs": true,
 	"side_bar_visible": true,
-	"side_bar_width": 294.0,
+	"side_bar_width": 227.0,
 	"status_bar_visible": true,
 	"template_settings":
 	{

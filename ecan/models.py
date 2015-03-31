@@ -6,7 +6,7 @@
 from django.db import models
 from django.contrib.auth.models import User
 import os
-
+from picklefield.fields import PickledObjectField
 
 class Ecan(models.Model):
     address = models.CharField(max_length=255, blank=True, null=True)
@@ -42,7 +42,7 @@ class Sample(models.Model):
         return str(self.pk)
 
 
-class Brand(models.Model):
+class Logo(models.Model):
     user = models.ForeignKey(User, blank=True, null=True)
     created = models.DateTimeField(auto_now_add=True, blank=True, null=True)
     modified = models.DateTimeField(auto_now=True, blank=True, null=True)
@@ -72,7 +72,7 @@ class Material(models.Model):
         return str(self.pk)
 
 
-class Description(models.Model):
+class Common_Name(models.Model):
     user = models.ForeignKey(User, blank=True, null=True)
     created = models.DateTimeField(auto_now_add=True, blank=True, null=True)
     modified = models.DateTimeField(auto_now=True, blank=True, null=True)
@@ -87,20 +87,32 @@ class Item(models.Model):
     ecan = models.ForeignKey(Ecan)
     bg = models.ForeignKey(Back_Ground, null=True)
     user = models.ForeignKey(User, blank=True, null=True)
-    brand = models.ForeignKey(Brand, blank=True, null=True)
+    logo = models.ForeignKey(Logo, blank=True, null=True)
     shape = models.ForeignKey(Shape, blank=True, null=True)
     material = models.ForeignKey(Material, blank=True, null=True)
-    description = models.ForeignKey(Description, blank=True, null=True)
+    common_name = models.ForeignKey(Common_Name, blank=True, null=True)
 
     # Automatic
-    im = models.ImageField(upload_to='pi_cam/')
     created = models.DateTimeField(auto_now_add=True, blank=True, null=True)
     modified = models.DateTimeField(auto_now=True, blank=True, null=True)
+    im = models.ImageField(upload_to='pi_cam/')
     weight = models.CharField(max_length=255, blank=True, null=True)
+    identifier = models.CharField(max_length=255, blank=True, null=True)
 
     # User input
-    identifier = models.CharField(max_length=255, blank=True, null=True)
     transparency = models.CharField(max_length=255, blank=True, null=True)
+
+    def __unicode__(self):
+        return str(self.pk)
+
+
+class Feature(models.Model):
+    created = models.DateTimeField(auto_now_add=True, blank=True, null=True)
+    modified = models.DateTimeField(auto_now=True, blank=True, null=True)
+    item = models.ForeignKey(Item, null=True)
+    name = models.CharField(max_length=255, blank=True, null=True)
+    description = PickledObjectField()
+    feature = PickledObjectField()
 
     def __unicode__(self):
         return str(self.pk)

@@ -1,5 +1,5 @@
 from django.forms import ModelForm
-from ecan.models import Item, Ecan, Back_Ground, Sample, Shape, Material, Brand, Description
+from ecan.models import Item, Ecan, Back_Ground, Sample, Shape, Material, Logo, Common_Name
 
 
 class UploadItemForm(ModelForm):
@@ -26,9 +26,9 @@ class UploadSampleForm(ModelForm):
         fields = "__all__"
 
 
-class UploadBrandForm(ModelForm):
+class UploadLogoForm(ModelForm):
     class Meta:
-        model = Brand
+        model = Logo
         fields = "__all__"
 
 
@@ -44,7 +44,7 @@ class UploadMaterialForm(ModelForm):
         fields = "__all__"
 
 
-class UploadDescriptionForm(ModelForm):
+class UploadCommon_NameForm(ModelForm):
     class Meta:
-        model = Description
+        model = Common_Name
         fields = "__all__"
