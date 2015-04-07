@@ -2,13 +2,18 @@ from django.shortcuts import render, render_to_response, get_object_or_404
 from django.http import HttpResponseRedirect, HttpResponse
 from ecan.forms import UploadItemForm, UploadEcanForm, UploadBack_GroundForm, UploadSampleForm
 from ecan.forms import UploadLogoForm, UploadShapeForm, UploadMaterialForm, UploadCommon_NameForm
-from ecan.models import Item, Ecan, Back_Ground, Sample, Shape, Material, Logo, Common_Name
+from ecan.models import Item, Ecan, Back_Ground, Sample, Shape, Material, Logo, Common_Name, Feature
 from django.views.decorators.csrf import csrf_exempt
 import json
 from django.template import RequestContext
 import os
 from django.conf import settings
 import subprocess
+from PIL import Image
+from skimage.feature import hog
+import numpy as np
+import StringIO
+from django.core.files.uploadedfile import InMemoryUploadedFile
 
 
 # Create your views here.
@@ -51,6 +56,7 @@ def upload_item(request):
             response_data['bg'] = str(a.bg.pk)
             response_data['lg'] = str(a.logo.value)
             response_data['tr'] = str(a.transparency)
+            response_data['id'] = str(a.identifier)
 
             return HttpResponse(
                 json.dumps(response_data),
@@ -190,22 +196,9 @@ def view_ip(request):
 
 def delete_object(request):
     try:
-        oto_del = Item.objects.filter(identifier=request.GET['identifier'])
-        print len(oto_del)
-        mr = settings.MEDIA_ROOT
-        oto_bg = oto_del[0].bg
-        os.system('rm %s' % os.path.join(mr,
-                  oto_bg.im.path.encode('ascii', 'replace')))
-        oto_bg.delete()
-        print "bg deleted"
-        print len(oto_del)
-        for e in oto_del:
-            path = os.path.join(mr, e.im.path.encode('ascii', 'replace'))
-            print path
-            os.remove(path)
-        print "ims deleted"
-        [e.delete() for e in oto_del]
-        print "objects deleted"
+        identifier = request.GET['identifier']
+        Item.objects.filter(identifier=identifier).delete()
+        print 'delete'
         response_data = {'result': 'valid'}
     except Exception as e:
         response_data = {'result':  str(e)}
