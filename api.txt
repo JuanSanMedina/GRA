@@ -1,0 +1,40 @@
+# pip
+pip freeze -r requirements.txt
+
+# Python
+## Open ipython within django
+python manage.py shell_plus --notebook
+
+# Run server on 1 MTC local network
+python manage.py runserver 128.122.72.105:8000
+
+# Database
+## Set DB
+python manage.py syncdb
+python manage.py makemigrations
+python manage.py migrate
+
+## Run databse shell
+python manage.py dbshell
+
+## Reset DATABASE
+python manage.py reset_db
+
+## Reset table
+TRUNCATE TABLE someTable RESTART IDENTITY; # for psql
+
+
+## Raspberry Pi
+wrokon ecan
+sudo /home/pi/Envs/ecan/bin/python interface.py
+
+
+# Delete files
+delete from ecan_item where id > XX;
+
+select im from ecan_item where id > 300
+\o out.txt;
+
+for f in $(cat out.txt); do rm $f; done
+
+sds

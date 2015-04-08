@@ -1,0 +1,17 @@
+Train = 1
+Test = 0
+
+Soda Can: 1
+Fork: 2
+Knife: 3
+spoon:
+
+selecty
+
+
+SELECT *
+    FROM ecan_item
+    INTO OUTFILE "~/Desktop/item.csv"
+    FIELDS TERMINATED BY ','
+    ENCLOSED BY '"'
+    LINES TERMINATED BY '\n';2
