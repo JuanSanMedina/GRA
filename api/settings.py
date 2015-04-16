@@ -118,12 +118,14 @@ if USER == 'jsm601':
     DATABASES = {
         'other': {
             'ENGINE': 'django.db.backends.postgresql_psycopg2',
-            'NAME': 'ecan_recognition',
+            'NAME': 'rudolph',
             'USER': 'jsm601',
-            'PASSWORD': 'jsm601',
+            'PASSWORD': '',
             'HOST': '127.0.0.1',
-            'PORT': '6543',
+            'PORT': '5432',
             },
+
+
         'default': {
             'ENGINE': 'django.db.backends.mysql',
             'NAME': 'ecan',

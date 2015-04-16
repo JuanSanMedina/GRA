@@ -520,30 +520,6 @@
 	"buffers":
 	[
 		{
-			"file": "/Users/jsm601/Documents/Google_Drive/Academico_Profesional/NYU/GRA/ecan-recognition/raspberry/interface.py",
-			"settings":
-			{
-				"buffer_size": 14223,
-				"line_ending": "Unix"
-			}
-		},
-		{
-			"file": "/Users/jsm601/Documents/Google_Drive/Academico_Profesional/NYU/GRA/ecan-recognition/raspberry/upload_functions.py",
-			"settings":
-			{
-				"buffer_size": 3283,
-				"line_ending": "Unix"
-			}
-		},
-		{
-			"file": "/Users/jsm601/Documents/Google_Drive/Academico_Profesional/NYU/GRA/ecan-recognition/ecan/views.py",
-			"settings":
-			{
-				"buffer_size": 8559,
-				"line_ending": "Unix"
-			}
-		},
-		{
 			"contents": "{\n \"metadata\": {\n  \"name\": \"\",\n  \"signature\": \"sha256:e0968d04c1b6c421c5820e47dbabb2b5aeabe8abee0761db957ad47548f561d0\"\n },\n \"nbformat\": 3,\n \"nbformat_minor\": 0,\n \"worksheets\": []\n}",
 			"file": "/Users/jsm601/Documents/Google_Drive/Academico_Profesional/NYU/GRA/ecan-recognition/ipython/hog_032415_model.ipynb",
 			"file_size": -1,
@@ -555,18 +531,21 @@
 			}
 		},
 		{
-			"file": "/Users/jsm601/Documents/Google_Drive/Academico_Profesional/NYU/GRA/ecan-recognition/ipython/compute_hog.ipynb",
+			"file": "/Users/jsm601/Documents/Google_Drive/Academico_Profesional/NYU/drive_GRA/ecan-recognition/shell_scripts/removeicon",
 			"settings":
 			{
-				"buffer_size": 4014,
+				"buffer_size": 49,
 				"line_ending": "Unix"
 			}
 		},
 		{
-			"file": "/Users/jsm601/Documents/Google_Drive/Academico_Profesional/NYU/GRA/ecan-recognition/ipython/hog_032415_ml.ipynb",
+			"contents": "{% load staticfiles %}\n<!DOCTYPE html>\n<html>\n    <head>\n        <meta charset='utf-8'>\n        <meta http-equiv=\"X-UA-Compatible\" content=\"chrome=1\">\n        <meta name=\"viewport\" content=\"width=device-width, initial-scale=1, maximum-scale=1\">\n        <link href='https://fonts.googleapis.com/css?family=Architects+Daughter' rel='stylesheet' type='text/css'>\n        <link rel=\"stylesheet\" type=\"text/css\" href=\"{% static 'ecan/stylesheets/pygment_trac.css' %}\" media=\"screen\">\n        <link rel=\"stylesheet\" type=\"text/css\" href=\"{% static 'ecan/stylesheets/print.css' %}\" media=\"print\">\n        <link rel=\"stylesheet\" type=\"text/css\" href=\"{% static 'ecan/stylesheets/stylesheet.css' %}\" media=\"screen\">\n        <!--[if lt IE 9]>\n        <script src=\"//html5shiv.googlecode.com/svn/trunk/html5.js\"></script>\n        <![endif]-->\n        <title>Learncss by JuanSanMedina</title>\n    </head>\n    <body>\n        <header>\n            <div class=\"inner\">\n                <h1>Waste Classification</h1>\n                <h2></h2>\n                <a href=\"https://github.com/JuanSanMedina/learnCSS\" class=\"button\"><small>View project on</small> GitHub</a>\n            </div>\n        </header>\n        <div id=\"content-wrapper\">\n            <div class=\"inner clearfix\">\n                <section id=\"main-content\">\n                    <h3>\n                    <a id=\"welcome-to-github-pages\" class=\"anchor\" href=\"#welcome-to-github-pages\" aria-hidden=\"true\"><span class=\"octicon octicon-link\"></span></a>Welcome to GitHub Pages.</h3>\n                    <p>This automatic page generator is the easiest way to create beautiful pages for all of your projects. Author your page content here using GitHub Flavored Markdown, select a template crafted by a designer, and publish. After your page is generated, you can check out the new branch:</p>\n                    <pre><code>$ cd your_repo_root/repo_name\n                        $ git fetch origin\n                        $ git checkout gh-pages\n                    </code></pre>\n                    <p>If you're using the GitHub for Mac, simply sync your repository and you'll see the new branch.</p>\n                    <h3>\n                    <a id=\"designer-templates\" class=\"anchor\" href=\"#designer-templates\" aria-hidden=\"true\"><span class=\"octicon octicon-link\"></span></a>Designer Templates</h3>\n                    <p>We've crafted some handsome templates for you to use. Go ahead and continue to layouts to browse through them. You can easily go back to edit your page before publishing. After publishing your page, you can revisit the page generator and switch to another theme. Your Page content will be preserved if it remained markdown format.</p>\n                    <h3>\n                    <a id=\"rather-drive-stick\" class=\"anchor\" href=\"#rather-drive-stick\" aria-hidden=\"true\"><span class=\"octicon octicon-link\"></span></a>Rather Drive Stick?</h3>\n                    <p>If you prefer to not use the automatic generator, push a branch named <code>gh-pages</code> to your repository to create a page manually. In addition to supporting regular HTML content, GitHub Pages support Jekyll, a simple, blog aware static site generator written by our own Tom Preston-Werner. Jekyll makes it easy to create site-wide headers and footers without having to copy them across every page. It also offers intelligent blog support and other advanced templating features.</p>\n                    <h3>\n                    <a id=\"authors-and-contributors\" class=\"anchor\" href=\"#authors-and-contributors\" aria-hidden=\"true\"><span class=\"octicon octicon-link\"></span></a>Authors and Contributors</h3>\n                    <p>You can <a href=\"https://github.com/blog/821\" class=\"user-mention\">@mention</a> a GitHub username to generate a link to their profile. The resulting <code>&lt;a&gt;</code> element will link to the contributor's GitHub Profile. For example: In 2007, Chris Wanstrath (<a href=\"https://github.com/defunkt\" class=\"user-mention\">@defunkt</a>), PJ Hyett (<a href=\"https://github.com/pjhyett\" class=\"user-mention\">@pjhyett</a>), and Tom Preston-Werner (<a href=\"https://github.com/mojombo\" class=\"user-mention\">@mojombo</a>) founded GitHub.</p>\n                    <h3>\n                    <a id=\"support-or-contact\" class=\"anchor\" href=\"#support-or-contact\" aria-hidden=\"true\"><span class=\"octicon octicon-link\"></span></a>Support or Contact</h3>\n                    <p>Having trouble with Pages? Check out the documentation at <a href=\"https://help.github.com/pages\">https://help.github.com/pages</a> or contact <a href=\"mailto:support@github.com\">support@github.com</a> and we’ll help you sort it out.</p>\n                </section>\n                <aside id=\"sidebar\">\n                    <a href=\"https://github.com/JuanSanMedina/learnCSS/zipball/master\" class=\"button\">\n                        <small>Download</small>\n                        .zip file\n                    </a>\n                    <a href=\"https://github.com/JuanSanMedina/learnCSS/tarball/master\" class=\"button\">\n                        <small>Download</small>\n                        .tar.gz file\n                    </a>\n                    <p class=\"repo-owner\"><a href=\"https://github.com/JuanSanMedina/learnCSS\"></a> is maintained by <a href=\"https://github.com/JuanSanMedina\">JuanSanMedina</a>.</p>\n                    <p>This page was generated by <a href=\"https://pages.github.com\">GitHub Pages</a> using the Architect theme by <a href=\"https://twitter.com/jasonlong\">Jason Long</a>.</p>\n                </aside>\n            </div>\n        </div>\n    </body>\n</html>",
+			"file": "/Users/JuanSantiagoMedina/Documents/Google_Drive/Academico_Profesional/NYU/drive_GRA/ecan-recognition/ecan/templates/ecan/index.html",
+			"file_size": 4972,
+			"file_write_time": 130732776180000000,
 			"settings":
 			{
-				"buffer_size": 4643,
+				"buffer_size": 5603,
 				"line_ending": "Unix"
 			}
 		},
@@ -577,20 +556,17 @@
 				"buffer_size": 0,
 				"line_ending": "Unix"
 			}
-		},
-		{
-			"file": "/Users/jsm601/Documents/Google_Drive/Academico_Profesional/NYU/GRA/ecan-recognition/ecan/models.py",
-			"settings":
-			{
-				"buffer_size": 4488,
-				"line_ending": "Unix"
-			}
 		}
 	],
 	"build_system": "Anaconda Python Builder",
+	"build_system_choices":
+	[
+	],
+	"build_varint": "",
 	"command_palette":
 	{
 		"height": 162.0,
+		"last_filter": "",
 		"selected_items":
 		[
 			[
@@ -1019,24 +995,20 @@
 	},
 	"expanded_folders":
 	[
-		"/Users/jsm601/Documents/Google_Drive/Academico_Profesional/NYU/GRA/ecan-recognition",
-		"/Users/jsm601/Documents/Google_Drive/Academico_Profesional/NYU/GRA/ecan-recognition/ecan",
-		"/Users/jsm601/Documents/Google_Drive/Academico_Profesional/NYU/GRA/ecan-recognition/ecan/static",
-		"/Users/jsm601/Documents/Google_Drive/Academico_Profesional/NYU/GRA/ecan-recognition/ecan/static/ecan",
-		"/Users/jsm601/Documents/Google_Drive/Academico_Profesional/NYU/GRA/ecan-recognition/ecan/static/ecan/images",
-		"/Users/jsm601/Documents/Google_Drive/Academico_Profesional/NYU/GRA/ecan-recognition/ecan/templates",
-		"/Users/jsm601/Documents/Google_Drive/Academico_Profesional/NYU/GRA/ecan-recognition/ecan/templates/ecan",
-		"/Users/jsm601/Documents/Google_Drive/Academico_Profesional/NYU/GRA/ecan-recognition/ipython",
-		"/Users/jsm601/Documents/Google_Drive/Academico_Profesional/NYU/GRA/ecan-recognition/shell_scripts"
+		"/Users/jsm601/Documents/Google_Drive/Academico_Profesional/NYU/drive_GRA/ecan-recognition",
+		"/Users/jsm601/Documents/Google_Drive/Academico_Profesional/NYU/drive_GRA/ecan-recognition/shell_scripts"
 	],
 	"file_history":
 	[
-		"/Users/jsm601/Documents/Google_Drive/Academico_Profesional/NYU/GRA/ecan-recognition/api/site_media/media/pi_cam/im_Q00j09b",
+		"/Users/jsm601/Documents/Google_Drive/Academico_Profesional/NYU/GRA/ecan-recognition/ecan/models.py",
+		"/Users/jsm601/Documents/Google_Drive/Academico_Profesional/NYU/GRA/ecan-recognition/ecan/views.py",
 		"/Users/jsm601/Documents/Google_Drive/Academico_Profesional/NYU/GRA/ecan-recognition/raspberry/upload_functions.py",
+		"/Users/jsm601/Documents/Google_Drive/Academico_Profesional/NYU/GRA/ecan-recognition/raspberry/interface.py",
+		"/Users/jsm601/Documents/Google_Drive/Academico_Profesional/NYU/GRA/ecan-recognition/ipython/hog_032415_ml.ipynb",
+		"/Users/jsm601/Documents/Google_Drive/Academico_Profesional/NYU/GRA/ecan-recognition/api/site_media/media/pi_cam/im_Q00j09b",
 		"/Users/jsm601/Documents/Google_Drive/Academico_Profesional/NYU/GRA/ecan-recognition/shell_scripts/get_pi_ip",
 		"/Users/jsm601/Library/Application Support/Sublime Text 3/Packages/User/Anaconda.sublime-settings",
 		"/Users/jsm601/Documents/Google_Drive/Academico_Profesional/NYU/GRA/ecan-recognition/ecan/urls.py",
-		"/Users/jsm601/Documents/Google_Drive/Academico_Profesional/NYU/GRA/ecan-recognition/ecan/views.py",
 		"/Users/jsm601/Documents/Google_Drive/Academico_Profesional/NYU/GRA/ecan-recognition/api/urls.py",
 		"/Users/jsm601/Documents/Google_Drive/Academico_Profesional/NYU/GRA/ecan-recognition/ecan/forms.py",
 		"/Users/jsm601/Documents/Google_Drive/Academico_Profesional/NYU/GRA/ecan-recognition/ecan/templates/ecan/sample.html",
@@ -1044,7 +1016,6 @@
 		"/Users/jsm601/.bash_profile",
 		"/Users/jsm601/Documents/Google_Drive/Academico_Profesional/NYU/GRA/ecan-recognition/raspberry/weight.py",
 		"/Users/jsm601/Documents/Google_Drive/Academico_Profesional/NYU/GRA/ecan-recognition/api/settings.py",
-		"/Users/jsm601/Documents/Google_Drive/Academico_Profesional/NYU/GRA/ecan-recognition/ecan/models.py",
 		"/Users/jsm601/Documents/Google_Drive/Academico_Profesional/NYU/GRA/ecan-recognition/ecan/templates/ecan/index.html",
 		"/Users/jsm601/Documents/Google_Drive/Academico_Profesional/NYU/GRA/ecan-recognition/sublime_project/GRA.sublime-project",
 		"/Users/jsm601/Library/Application Support/Sublime Text 3/Packages/User/Preferences.sublime-settings",
@@ -1156,13 +1127,11 @@
 		"/Users/JuanSantiagoMedina/Library/Application Support/Sublime Text 2/Packages/Default/Default (OSX).sublime-keymap",
 		"/Users/JuanSantiagoMedina/Documents/Google_Drive/Finanzas/BVCdata/CI_quiz.py",
 		"/Users/JuanSantiagoMedina/Documents/Google_Drive/Academico_Profesional/NYU/Fall_2014/Principles of Urban Informatics/Assignments_PUI/Assignment 8/computational_investement_quiz.py",
-		"/Users/JuanSantiagoMedina/Documents/Google_Drive/Academico_Profesional/NYU/Fall_2014/Principles of Urban Informatics/Assignments_PUI/Assignment 8/problem3.py",
-		"/Users/JuanSantiagoMedina/Documents/Google_Drive/Academico_Profesional/NYU/Fall_2014/Foundations of Urban Science/Assignments_FoUS/Final Paper/bolsa.py",
-		"/Users/JuanSantiagoMedina/Documents/Google_Drive/Academico_Profesional/NYU/Fall_2014/Foundations of Urban Science/Assignments_FoUS/Final Paper/web3.py"
+		"/Users/JuanSantiagoMedina/Documents/Google_Drive/Academico_Profesional/NYU/Fall_2014/Principles of Urban Informatics/Assignments_PUI/Assignment 8/problem3.py"
 	],
 	"find":
 	{
-		"height": 35.0
+		"height": 37.0
 	},
 	"find_in_files":
 	{
@@ -1179,6 +1148,8 @@
 		"case_sensitive": true,
 		"find_history":
 		[
+			"code",
+			"image",
 			"'y'",
 			" 'y'",
 			"y",
@@ -1304,9 +1275,7 @@
 			"stylesheets",
 			"ecan/",
 			"./../static/ecan/",
-			"home",
-			"draw",
-			"./"
+			"home"
 		],
 		"highlight": true,
 		"in_selection": false,
@@ -1336,101 +1305,11 @@
 	"groups":
 	[
 		{
-			"selected": 5,
+			"selected": 1,
 			"sheets":
 			[
 				{
 					"buffer": 0,
-					"file": "/Users/jsm601/Documents/Google_Drive/Academico_Profesional/NYU/GRA/ecan-recognition/raspberry/interface.py",
-					"semi_transient": false,
-					"settings":
-					{
-						"buffer_size": 14223,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								6015,
-								6015
-							]
-						],
-						"settings":
-						{
-							"syntax": "Packages/Python/Python.tmLanguage",
-							"tab_size": 4,
-							"translate_tabs_to_spaces": true
-						},
-						"translation.x": 0.0,
-						"translation.y": 2369.0,
-						"zoom_level": 1.0
-					},
-					"stack_index": 5,
-					"type": "text"
-				},
-				{
-					"buffer": 1,
-					"file": "/Users/jsm601/Documents/Google_Drive/Academico_Profesional/NYU/GRA/ecan-recognition/raspberry/upload_functions.py",
-					"semi_transient": false,
-					"settings":
-					{
-						"buffer_size": 3283,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								944,
-								944
-							]
-						],
-						"settings":
-						{
-							"syntax": "Packages/Python/Python.tmLanguage",
-							"tab_size": 4,
-							"translate_tabs_to_spaces": true
-						},
-						"translation.x": 0.0,
-						"translation.y": 224.0,
-						"zoom_level": 1.0
-					},
-					"stack_index": 7,
-					"type": "text"
-				},
-				{
-					"buffer": 2,
-					"file": "/Users/jsm601/Documents/Google_Drive/Academico_Profesional/NYU/GRA/ecan-recognition/ecan/views.py",
-					"semi_transient": false,
-					"settings":
-					{
-						"buffer_size": 8559,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								5950,
-								5956
-							]
-						],
-						"settings":
-						{
-							"syntax": "Packages/Python/Python.tmLanguage",
-							"tab_size": 4,
-							"translate_tabs_to_spaces": true
-						},
-						"translation.x": 0.0,
-						"translation.y": 3098.0,
-						"zoom_level": 1.0
-					},
-					"stack_index": 3,
-					"type": "text"
-				},
-				{
-					"buffer": 3,
 					"file": "/Users/jsm601/Documents/Google_Drive/Academico_Profesional/NYU/GRA/ecan-recognition/ipython/hog_032415_model.ipynb",
 					"semi_transient": false,
 					"settings":
@@ -1448,37 +1327,9 @@
 						],
 						"settings":
 						{
+							"bs_sintax": "plain text",
+							"buffer_scroll_name": "ea0588d8",
 							"syntax": "Packages/Text/Plain text.tmLanguage"
-						},
-						"translation.x": 0.0,
-						"translation.y": 0.0,
-						"zoom_level": 1.0
-					},
-					"stack_index": 2,
-					"type": "text"
-				},
-				{
-					"buffer": 4,
-					"file": "/Users/jsm601/Documents/Google_Drive/Academico_Profesional/NYU/GRA/ecan-recognition/ipython/compute_hog.ipynb",
-					"semi_transient": true,
-					"settings":
-					{
-						"buffer_size": 4014,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								0,
-								0
-							]
-						],
-						"settings":
-						{
-							"syntax": "Packages/Text/Plain text.tmLanguage",
-							"tab_size": 2,
-							"translate_tabs_to_spaces": true
 						},
 						"translation.x": 0.0,
 						"translation.y": 0.0,
@@ -1488,28 +1339,26 @@
 					"type": "text"
 				},
 				{
-					"buffer": 5,
-					"file": "/Users/jsm601/Documents/Google_Drive/Academico_Profesional/NYU/GRA/ecan-recognition/ipython/hog_032415_ml.ipynb",
+					"buffer": 1,
+					"file": "/Users/jsm601/Documents/Google_Drive/Academico_Profesional/NYU/drive_GRA/ecan-recognition/shell_scripts/removeicon",
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 4643,
+						"buffer_size": 49,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								202,
-								202
+								49,
+								49
 							]
 						],
 						"settings":
 						{
 							"open_with_edit": true,
-							"syntax": "Packages/Text/Plain text.tmLanguage",
-							"tab_size": 2,
-							"translate_tabs_to_spaces": true
+							"syntax": "Packages/Text/Plain text.tmLanguage"
 						},
 						"translation.x": 0.0,
 						"translation.y": 0.0,
@@ -1519,7 +1368,37 @@
 					"type": "text"
 				},
 				{
-					"buffer": 6,
+					"buffer": 2,
+					"file": "/Users/JuanSantiagoMedina/Documents/Google_Drive/Academico_Profesional/NYU/drive_GRA/ecan-recognition/ecan/templates/ecan/index.html",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 5603,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								3001,
+								3005
+							]
+						],
+						"settings":
+						{
+							"bs_sintax": "html",
+							"buffer_scroll_name": "59983154",
+							"syntax": "Packages/HTML/HTML.tmLanguage"
+						},
+						"translation.x": 0.0,
+						"translation.y": 1256.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 3,
+					"type": "text"
+				},
+				{
+					"buffer": 3,
 					"semi_transient": false,
 					"settings":
 					{
@@ -1537,43 +1416,14 @@
 						"settings":
 						{
 							"auto_name": "",
+							"bs_sintax": "plain text",
 							"syntax": "Packages/Text/Plain text.tmLanguage"
 						},
 						"translation.x": 0.0,
 						"translation.y": 0.0,
 						"zoom_level": 1.0
 					},
-					"stack_index": 6,
-					"type": "text"
-				},
-				{
-					"buffer": 7,
-					"file": "/Users/jsm601/Documents/Google_Drive/Academico_Profesional/NYU/GRA/ecan-recognition/ecan/models.py",
-					"semi_transient": false,
-					"settings":
-					{
-						"buffer_size": 4488,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								4157,
-								4157
-							]
-						],
-						"settings":
-						{
-							"syntax": "Packages/Python/Python.tmLanguage",
-							"tab_size": 4,
-							"translate_tabs_to_spaces": true
-						},
-						"translation.x": 0.0,
-						"translation.y": 1408.0,
-						"zoom_level": 1.0
-					},
-					"stack_index": 4,
+					"stack_index": 2,
 					"type": "text"
 				}
 			]
@@ -1581,7 +1431,7 @@
 	],
 	"incremental_find":
 	{
-		"height": 30.0
+		"height": 28.0
 	},
 	"input":
 	{
@@ -1634,15 +1484,17 @@
 	{
 		"height": 116.0
 	},
+	"pinned_build_system": "",
 	"project": "GRA.sublime-project",
 	"replace":
 	{
-		"height": 66.0
+		"height": 52.0
 	},
 	"save_all_on_build": true,
 	"select_file":
 	{
 		"height": 0.0,
+		"last_filter": "",
 		"selected_items":
 		[
 			[
@@ -1707,6 +1559,7 @@
 	"select_project":
 	{
 		"height": 500.0,
+		"last_filter": "",
 		"selected_items":
 		[
 			[
@@ -1719,6 +1572,7 @@
 	"select_symbol":
 	{
 		"height": 0.0,
+		"last_filter": "",
 		"selected_items":
 		[
 		],
@@ -1732,7 +1586,7 @@
 	"show_open_files": false,
 	"show_tabs": true,
 	"side_bar_visible": true,
-	"side_bar_width": 227.0,
+	"side_bar_width": 214.0,
 	"status_bar_visible": true,
 	"template_settings":
 	{
