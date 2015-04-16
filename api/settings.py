@@ -64,8 +64,8 @@ INSTALLED_APPS = (
     'django.contrib.messages',
     'django.contrib.staticfiles',
     'django_extensions',
-    'storages',
-    'ecan'
+    # 'storages',
+    'ecan',
 )
 
 TEMPLATE_CONTEXT_PROCESSORS = (
