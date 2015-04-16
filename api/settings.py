@@ -116,7 +116,7 @@ if USER == 'JuanSantiagoMedina':
 if USER == 'jsm601':
     DEBUG = True
     DATABASES = {
-        'other': {
+        'default': {
             'ENGINE': 'django.db.backends.postgresql_psycopg2',
             'NAME': 'rudolph',
             'USER': 'jsm601',
@@ -126,7 +126,7 @@ if USER == 'jsm601':
             },
 
 
-        'default': {
+        'other': {
             'ENGINE': 'django.db.backends.mysql',
             'NAME': 'ecan',
             'USER': ' ',
