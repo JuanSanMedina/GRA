@@ -10,7 +10,7 @@ https://docs.djangoproject.com/en/1.7/ref/settings/
 
 # Build paths inside the project like this: os.path.join(BASE_DIR, ...)
 import os
-# import dj_database_url
+import dj_database_url
 import posixpath
 
 BASE_DIR = os.path.dirname(os.path.dirname(__file__))
@@ -63,9 +63,9 @@ INSTALLED_APPS = (
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
-    # 'django_extensions',
-    # 'storages',
-    'ecan',
+    'django_extensions',
+    'storages',
+    'ecan'
 )
 
 TEMPLATE_CONTEXT_PROCESSORS = (
@@ -116,17 +116,15 @@ if USER == 'JuanSantiagoMedina':
 if USER == 'jsm601':
     DEBUG = True
     DATABASES = {
-        'default': {
-            'ENGINE': 'django.db.backends.postgresql_psycopg2',
-            'NAME': 'rudolph',
-            'USER': 'jsm601',
-            'PASSWORD': '',
-            'HOST': '127.0.0.1',
-            'PORT': '5432',
-            },
-
-
         'other': {
+            'ENGINE': 'django.db.backends.postgresql_psycopg2',
+            'NAME': 'ecan_recognition',
+            'USER': 'jsm601',
+            'PASSWORD': 'jsm601',
+            'HOST': '127.0.0.1',
+            'PORT': '6543',
+            },
+        'default': {
             'ENGINE': 'django.db.backends.mysql',
             'NAME': 'ecan',
             'USER': ' ',
