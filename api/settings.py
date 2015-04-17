@@ -12,6 +12,9 @@ https://docs.djangoproject.com/en/1.7/ref/settings/
 import os
 import dj_database_url
 import posixpath
+import socket
+
+lhost = socket.gethostname()
 
 BASE_DIR = os.path.dirname(os.path.dirname(__file__))
 
@@ -115,23 +118,27 @@ if USER == 'JuanSantiagoMedina':
 
 if USER == 'jsm601':
     DEBUG = True
-    DATABASES = {
-        'other': {
-            'ENGINE': 'django.db.backends.postgresql_psycopg2',
-            'NAME': 'ecan_recognition',
-            'USER': 'jsm601',
-            'PASSWORD': 'jsm601',
-            'HOST': '127.0.0.1',
-            'PORT': '6543',
-            },
-        'default': {
-            'ENGINE': 'django.db.backends.mysql',
-            'NAME': 'ecan',
-            'USER': ' ',
-            'PASSWORD': '',
-            'HOST': 'localhost',   # Or an IP Address that your DB is hosted on
-            'PORT': '3306',
+    if lhost == 'compute.cusp.nyu.edu':
+        DATABASES = {
+            'default': {
+                'ENGINE': 'django.db.backends.postgresql_psycopg2',
+                'NAME': 'ecan_recognition',
+                # 'USER': 'jsm601',
+                # 'PASSWORD': 'jsm601',
+                # 'HOST': '127.0.0.1',
+                # 'PORT': '6543',
+                }
             }
+    else:
+        DATABASES = {
+            'default': {
+                'ENGINE': 'django.db.backends.mysql',
+                'NAME': 'ecan',
+                'USER': ' ',
+                'PASSWORD': '',
+                'HOST': 'localhost',   # Or an IP Address that your DB is hosted on
+                'PORT': '3306',
+                }
         }
 
 
