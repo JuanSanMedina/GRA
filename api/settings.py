@@ -122,7 +122,7 @@ if USER == 'jsm601':
         DATABASES = {
             'default': {
                 'ENGINE': 'django.db.backends.postgresql_psycopg2',
-                'NAME': 'ecan_recognition',
+                'NAME': 'rudolph',
                 # 'USER': 'jsm601',
                 # 'PASSWORD': 'jsm601',
                 # 'HOST': '127.0.0.1',
