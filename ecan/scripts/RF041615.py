@@ -75,8 +75,8 @@ def run():
     print p_rf_scores
 
     # write results
-    results[hogs[0].name]['10cv result'] = h_rf_scores
-    results[pixs[0].name]['10cv result'] = p_rf_scores
+    results[hogs[0].name]['10cv result'] = h_rf_scores.tolist()
+    results[pixs[0].name]['10cv result'] = p_rf_scores.tolist()
     end_global = datetime.now()
     results['end'] = str(end_global)
     results['total time'] = str(end_global - start_global)
