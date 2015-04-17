@@ -1,0 +1,1696 @@
+{
+	"auto_complete":
+	{
+		"selected_items":
+		[
+			[
+				"I",
+				"Item	class"
+			],
+			[
+				"it",
+				"item_att	statement"
+			],
+			[
+				"A",
+				"ATT_KEYS	statement"
+			],
+			[
+				"oto",
+				"oto_del	statement"
+			],
+			[
+				"att",
+				"attrs	param"
+			],
+			[
+				"sel",
+				"select"
+			],
+			[
+				"attr",
+				"attributes"
+			],
+			[
+				"o",
+				"object	class"
+			],
+			[
+				"upl",
+				"upload_insert"
+			],
+			[
+				"b",
+				"begidx	param"
+			],
+			[
+				"style",
+				"stylesheets"
+			],
+			[
+				"pr",
+				"PROJECT_ROOT	statement"
+			],
+			[
+				"s",
+				"static"
+			],
+			[
+				"wh",
+				"which"
+			],
+			[
+				"virt",
+				"virtualenvs"
+			],
+			[
+				"r",
+				"randint"
+			],
+			[
+				"pyp",
+				"pyplot	module"
+			],
+			[
+				"re",
+				"return	keyword"
+			],
+			[
+				"al",
+				"alpha	param"
+			],
+			[
+				"carl",
+				"complete_all_parameters"
+			],
+			[
+				"c",
+				"class	New Class"
+			],
+			[
+				"Da",
+				"DataFrame	class"
+			],
+			[
+				"ara",
+				"array	function"
+			],
+			[
+				"pand",
+				"pandas	module"
+			],
+			[
+				"ran",
+				"np.random.rand"
+			],
+			[
+				"nump",
+				"numpy"
+			],
+			[
+				"rand",
+				"__rand__	magic"
+			],
+			[
+				"aran",
+				"array2string	(imported, function)"
+			],
+			[
+				"arr",
+				"array	(imported, instance)"
+			],
+			[
+				"im",
+				"import"
+			],
+			[
+				"n",
+				"numpy"
+			],
+			[
+				"num",
+				"numpy"
+			],
+			[
+				"pyl",
+				"matplotlib.pyplot"
+			],
+			[
+				"via",
+				"viajetotal"
+			],
+			[
+				"new",
+				"newaxis"
+			],
+			[
+				"vs",
+				"np.vstack"
+			],
+			[
+				"p",
+				"p3b"
+			],
+			[
+				"p3",
+				"p3a"
+			],
+			[
+				"in",
+				"integers"
+			],
+			[
+				"bvc",
+				"bvc_data"
+			],
+			[
+				"url",
+				"url0"
+			],
+			[
+				"code",
+				"code3"
+			],
+			[
+				"sta",
+				"status_code"
+			],
+			[
+				"inde",
+				"index"
+			],
+			[
+				"range",
+				"ranges_erres"
+			],
+			[
+				"err",
+				"ranges_erres"
+			],
+			[
+				"av",
+				"avg_corr3"
+			],
+			[
+				"avr",
+				"avg_corr3"
+			],
+			[
+				"fig",
+				"fig0"
+			],
+			[
+				"fi",
+				"fig0"
+			],
+			[
+				"time",
+				"timeout"
+			],
+			[
+				"kd",
+				"kdtreeIndices"
+			],
+			[
+				"spa",
+				"spatial  (module)"
+			],
+			[
+				"item",
+				"itemfreq"
+			],
+			[
+				"avg",
+				"avg_corr3"
+			],
+			[
+				"df",
+				"df_corr"
+			],
+			[
+				"to",
+				"to_csv"
+			],
+			[
+				"tocs",
+				"tocsv"
+			],
+			[
+				"toc",
+				"tocsv2"
+			],
+			[
+				"avg_c",
+				"avg_corr3"
+			],
+			[
+				"ar",
+				"argv  (variable)"
+			],
+			[
+				"pro",
+				"problem1"
+			],
+			[
+				"save",
+				"savefig"
+			],
+			[
+				"lo",
+				"low_memory"
+			],
+			[
+				"df_",
+				"df_311"
+			],
+			[
+				"ny",
+				"ny_zips"
+			],
+			[
+				"x1",
+				"x1_1"
+			],
+			[
+				"x_",
+				"x1_2"
+			],
+			[
+				"interp",
+				"interpeak_pvalue"
+			],
+			[
+				"pre",
+				"pre_pdi"
+			],
+			[
+				"In",
+				"interpeak"
+			],
+			[
+				"pre_",
+				"pre_peakduration"
+			],
+			[
+				"sh",
+				"show"
+			],
+			[
+				"Interpeak",
+				"interpeakduration"
+			],
+			[
+				"dp",
+				"dpdi_pvalue"
+			],
+			[
+				"interpeak",
+				"interpeakduration"
+			],
+			[
+				"d",
+				"dpdi"
+			],
+			[
+				"model",
+				"model1"
+			],
+			[
+				"corr",
+				"corrcoef"
+			],
+			[
+				"xl",
+				"xlim  (function)"
+			],
+			[
+				"gr",
+				"grid  (function)"
+			],
+			[
+				"N",
+				"N_pdi"
+			],
+			[
+				"N_",
+				"N_pre_Pdi"
+			],
+			[
+				"fon",
+				"fontweight"
+			],
+			[
+				"font",
+				"fontsize"
+			],
+			[
+				"l",
+				"legend"
+			],
+			[
+				"hou",
+				"hour_df"
+			],
+			[
+				"hor",
+				"hour_df"
+			],
+			[
+				"top",
+				"top_df"
+			],
+			[
+				"date",
+				"datetime"
+			],
+			[
+				"topd",
+				"top_data"
+			],
+			[
+				"ZIP",
+				"Zip"
+			],
+			[
+				"data_",
+				"data_ag"
+			],
+			[
+				"ro",
+				"rows_with_strings"
+			],
+			[
+				"count",
+				"count_zip"
+			],
+			[
+				"value",
+				"values_count"
+			],
+			[
+				"get",
+				"get_weight"
+			],
+			[
+				"w",
+				"weight"
+			],
+			[
+				"alligator",
+				"alligator_gray9"
+			],
+			[
+				"req",
+				"requests"
+			],
+			[
+				"Choice",
+				"ChoiceCreate"
+			],
+			[
+				"fare",
+				"fares_jan18"
+			],
+			[
+				"png_",
+				"png_grayscale/juan3"
+			],
+			[
+				"neur",
+				"neural_and"
+			],
+			[
+				"prin",
+				"print_result"
+			],
+			[
+				"ne",
+				"neural_nor"
+			],
+			[
+				"neura",
+				"neural_not"
+			],
+			[
+				"fa",
+				"fares_feb1"
+			],
+			[
+				"far",
+				"fares_jan18"
+			],
+			[
+				"f",
+				"fares_jan18"
+			],
+			[
+				"pd",
+				"p_df2"
+			],
+			[
+				"res",
+				"results_victims"
+			],
+			[
+				"rs",
+				"rs_sorted"
+			],
+			[
+				"igno",
+				"  ignore_index : boolean, default False"
+			],
+			[
+				"sor",
+				"sortedfips"
+			],
+			[
+				"Ac",
+				"ACV_data"
+			],
+			[
+				"a",
+				"ACV_data"
+			],
+			[
+				"check",
+				"check_variable"
+			],
+			[
+				"AC",
+				"ACV_data"
+			],
+			[
+				"y_",
+				"y_hi"
+			],
+			[
+				"bin",
+				"bins_dict"
+			],
+			[
+				"qn",
+				"qn_y"
+			],
+			[
+				"bui",
+				"buildOneDim"
+			],
+			[
+				"in_",
+				"in_y"
+			],
+			[
+				"ind",
+				"inside"
+			],
+			[
+				"qu",
+				"queryNaive"
+			],
+			[
+				"sea",
+				"searchInRange"
+			],
+			[
+				"se",
+				"searchGreaterNotSorted"
+			]
+		]
+	},
+	"buffers":
+	[
+		{
+			"contents": "auth_group\nauth_group_permissions\nauth_permission\nauth_user\nauth_user_groups\nauth_user_user_permissions\ndjango_admin_log\ndjango_content_type\ndjango_migrations\ndjango_session\necan_back_ground\necan_common_name\necan_ecan\necan_item\necan_feature\necan_logo\necan_material\necan_sample\necan_shape\n\necho 'SELECT * FROM auth_group' | mysql -B ecan | tr \"\\\\t\" \",\" > auth_group.csv\necho 'SELECT * FROM auth_group_permissions' | mysql -B ecan | tr \"\\\\t\" \",\" > auth_group_permissions.csv\necho 'SELECT * FROM auth_permission' | mysql -B ecan | tr \"\\\\t\" \",\" > auth_permission.csv\necho 'SELECT * FROM auth_user' | mysql -B ecan | tr \"\\\\t\" \",\" > auth_user.csv\necho 'SELECT * FROM auth_user_groups' | mysql -B ecan | tr \"\\\\t\" \",\" > auth_user_groups.csv\necho 'SELECT * FROM auth_user_user_permissions' | mysql -B ecan | tr \"\\\\t\" \",\" > auth_user_user_permissions.csv\necho 'SELECT * FROM django_admin_log' | mysql -B ecan | tr \"\\\\t\" \",\" > django_admin_log.csv\necho 'SELECT * FROM django_content_type' | mysql -B ecan | tr \"\\\\t\" \",\" > django_content_type.csv\necho 'SELECT * FROM django_migrations' | mysql -B ecan | tr \"\\\\t\" \",\" > django_migrations.csv\necho 'SELECT * FROM django_session' | mysql -B ecan | tr \"\\\\t\" \",\" > django_session.csv\necho 'SELECT * FROM ecan_back_ground' | mysql -B ecan | tr \"\\\\t\" \",\" > ecan_back_ground.csv\necho 'SELECT * FROM ecan_common_name' | mysql -B ecan | tr \"\\\\t\" \",\" > ecan_common_name.csv\necho 'SELECT * FROM ecan_ecan' | mysql -B ecan | tr \"\\\\t\" \",\" > ecan_ecan.csv\necho 'SELECT * FROM ecan_item' | mysql -B ecan | tr \"\\\\t\" \",\" > ecan_item.csv\necho 'SELECT * FROM ecan_logo' | mysql -B ecan | tr \"\\\\t\" \",\" > ecan_logo.csv\necho 'SELECT * FROM ecan_material' | mysql -B ecan | tr \"\\\\t\" \",\" > ecan_material.csv\necho 'SELECT * FROM ecan_sample' | mysql -B ecan | tr \"\\\\t\" \",\" > ecan_sample.csv\necho 'SELECT * FROM ecan_shape' | mysql -B ecan | tr \"\\\\t\" \",\" > ecan_shape.csv\necho 'SELECT * FROM ecan_feature' | mysql -B ecan | tr \"\\\\t\" \",\" > ecan_feature.csv",
+			"settings":
+			{
+				"buffer_size": 1966,
+				"line_ending": "Unix",
+				"name": "auth_group"
+			}
+		},
+		{
+			"file": "/Users/jsm601/Documents/Google_Drive/Academico_Profesional/NYU/drive_GRA/ecan-recognition/shell_scripts/get_pi_ip",
+			"settings":
+			{
+				"buffer_size": 357,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "/Users/jsm601/Library/Application Support/Sublime Text 3/Packages/User/Preferences.sublime-settings",
+			"settings":
+			{
+				"buffer_size": 1353,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"contents": "Package Control Messages\n========================\n\nAnaconda:\n--------\n\n  Changes in 1.4.7\n  ================\n  \n  ## Fixes\n  * Wrap Jedi API call to 'clear_time_caches' into a try, except and fallback to\n    'clear_caches' for users that uses their own Jedi version (old version)\n  \n  For more detailed information about those changes run git v1.4.6..v1.4.7 on git repository\n  \n\n  Changes in 1.4.6\n  ================\n  \n  ## Fixes\n  * Fix incompatible API call into Jedi cache clearing features. Solves #297\n  \n  For more detailed information about those changes run git v1.4.5..v1.4.6 on git repository\n  \n\n  Changes in 1.4.5\n  ================\n  \n  ## Third party\n  * Bump version for Jedi library\n  \n  ## Fixes\n  * Allows relative rcfile path #73 #291\n  * Fix for #164\n  \n  For more detailed information about those changes run git v1.4.4..v1.4.5 on git repository\n  \n  ",
+			"settings":
+			{
+				"buffer_size": 874,
+				"line_ending": "Unix",
+				"name": "Package Control Messages",
+				"scratch": true
+			}
+		},
+		{
+			"file": "/Users/jsm601/Documents/Google_Drive/Academico_Profesional/NYU/drive_GRA/ecan-recognition/shell_scripts/cuspshell",
+			"settings":
+			{
+				"buffer_size": 41,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "/Users/jsm601/.bash_profile",
+			"settings":
+			{
+				"buffer_size": 643,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "/Users/jsm601/Documents/Google_Drive/Academico_Profesional/NYU/drive_GRA/ecan-recognition/shell_scripts/connect_to_pi",
+			"settings":
+			{
+				"buffer_size": 62,
+				"line_ending": "Unix"
+			}
+		}
+	],
+	"build_system": "Anaconda Python Builder",
+	"build_system_choices":
+	[
+	],
+	"build_varint": "",
+	"command_palette":
+	{
+		"height": 374.0,
+		"last_filter": "",
+		"selected_items":
+		[
+			[
+				"push",
+				"Git: Push"
+			],
+			[
+				"qc",
+				"Git: Quick Commit"
+			],
+			[
+				"pus",
+				"Git: Push"
+			],
+			[
+				"qc ",
+				"Git: Quick Commit"
+			],
+			[
+				"pu",
+				"Git: Push"
+			],
+			[
+				"pull",
+				"Git: Pull"
+			],
+			[
+				"q a",
+				"Git: Quick Add"
+			],
+			[
+				"git p",
+				"Git: Push"
+			],
+			[
+				"git push",
+				"Git: Push"
+			],
+			[
+				"q ad",
+				"Git: Quick Add"
+			],
+			[
+				"qui",
+				"Git: Quick Add"
+			],
+			[
+				"q",
+				"Git: Quick Commit"
+			],
+			[
+				"qa",
+				"Git: Quick Add"
+			],
+			[
+				"git pul",
+				"Git: Pull"
+			],
+			[
+				"QC",
+				"Git: Quick Commit"
+			],
+			[
+				"q c",
+				"Git: Quick Commit"
+			],
+			[
+				"stat",
+				"Git: Status"
+			],
+			[
+				"lis",
+				"Package Control: List Packages"
+			],
+			[
+				"g q a",
+				"Git: Quick Add"
+			],
+			[
+				"GIT PUL",
+				"Git: Pull"
+			],
+			[
+				"git qu c",
+				"Git: Quick Commit"
+			],
+			[
+				"git add",
+				"Git: Quick Add"
+			],
+			[
+				"git stat",
+				"Git: Status"
+			],
+			[
+				"git ",
+				"Git: Push"
+			],
+			[
+				"git quic",
+				"Git: Quick Commit"
+			],
+			[
+				"git pus",
+				"Git: Push"
+			],
+			[
+				"git com",
+				"Git: Commit"
+			],
+			[
+				"git che",
+				"Git: Checkout"
+			],
+			[
+				"git",
+				"Git: Push"
+			],
+			[
+				"git rem",
+				"Git: Remote"
+			],
+			[
+				"git bran",
+				"Git: Checkout New Branch"
+			],
+			[
+				"remote",
+				"Git: Remote"
+			],
+			[
+				"git remo",
+				"Git: Remote"
+			],
+			[
+				"install",
+				"Package Control: Install Package"
+			],
+			[
+				"atah",
+				"Evernote: Attach current file to a note"
+			],
+			[
+				"open ever",
+				"Evernote: Open Evernote Note"
+			],
+			[
+				"atta",
+				"Evernote: Attach current file to a note"
+			],
+			[
+				"ins",
+				"Package Control: Install Package"
+			],
+			[
+				"insta",
+				"Package Control: Install Package"
+			],
+			[
+				"virt",
+				"SublimeREPL: Python - virtualenv"
+			],
+			[
+				"she",
+				"SublimeREPL: Shell"
+			],
+			[
+				"shel",
+				"SublimeREPL: Shell"
+			],
+			[
+				"py",
+				"SublimeREPL: Python"
+			],
+			[
+				"pyt",
+				"SublimeREPL: Python"
+			],
+			[
+				"pyth",
+				"SublimeREPL: Python"
+			],
+			[
+				"python",
+				"SublimeREPL: Python"
+			],
+			[
+				"ipy",
+				"SublimeREPL: Python - IPython"
+			],
+			[
+				"ipyt",
+				"SublimeREPL: Python - IPython"
+			],
+			[
+				"remo",
+				"Package Control: Remove Package"
+			],
+			[
+				"ip",
+				"SublimeREPL: Python - IPython"
+			],
+			[
+				"instal",
+				"Package Control: Install Package"
+			],
+			[
+				"anaconda",
+				"Anaconda: Autoformat PEP8 Errors"
+			],
+			[
+				"ipyth",
+				"SublimeREPL: Python - IPython"
+			],
+			[
+				"list pa",
+				"Package Control: List Packages"
+			],
+			[
+				"pac li",
+				"Package Control: List Packages"
+			],
+			[
+				"dis",
+				"Package Control: Disable Package"
+			],
+			[
+				"disa",
+				"Package Control: Disable Package"
+			],
+			[
+				"ena",
+				"Package Control: Enable Package"
+			],
+			[
+				"shell",
+				"SublimeREPL: Shell"
+			],
+			[
+				"repl r",
+				"SublimeREPL: R"
+			],
+			[
+				"repl",
+				"SublimeREPL: Python"
+			],
+			[
+				"inst",
+				"Package Control: Install Package"
+			],
+			[
+				"in",
+				"Package Control: Install Package"
+			],
+			[
+				"synta pyth",
+				"Set Syntax: Python"
+			],
+			[
+				"intel",
+				"SublimeCodeIntel: Reset"
+			],
+			[
+				"SHEL",
+				"SublimeREPL: Shell"
+			],
+			[
+				"Instal",
+				"Package Control: Install Package"
+			],
+			[
+				"instal ",
+				"Package Control: Install Package"
+			],
+			[
+				"remove",
+				"Package Control: Remove Package"
+			],
+			[
+				"instl",
+				"Package Control: Install Package"
+			],
+			[
+				"dele",
+				"z:AAAPackageDev: Delete Package"
+			],
+			[
+				"rem",
+				"Package Control: Remove Package"
+			],
+			[
+				"enable",
+				"Package Control: Enable Package"
+			],
+			[
+				"disab",
+				"Package Control: Disable Package"
+			],
+			[
+				"disable",
+				"Package Control: Disable Package"
+			],
+			[
+				"Ip",
+				"SublimeREPL: Python - IPython"
+			],
+			[
+				"glue",
+				"Glue - Launch"
+			],
+			[
+				"gl",
+				"Glue - Launch"
+			],
+			[
+				"Ipytho",
+				"SublimeREPL: Python - IPython"
+			],
+			[
+				"open",
+				"Open IPython Notebook"
+			],
+			[
+				"octave",
+				"SublimeREPL: Octave"
+			],
+			[
+				"Ipy",
+				"SublimeREPL: Python - IPython"
+			],
+			[
+				"FindKeyConflicts: All Key Maps to Quick Panel",
+				"FindKeyConflicts: All Key Maps to Quick Panel"
+			],
+			[
+				"FFin",
+				"FindKeyConflicts: Command Search"
+			],
+			[
+				"sublimeCode",
+				"SublimeCodeIntel: Reset"
+			],
+			[
+				"Insta",
+				"Package Control: Install Package"
+			],
+			[
+				"remove ",
+				"Package Control: Remove Package"
+			],
+			[
+				"remove pa",
+				"Package Control: Remove Package"
+			],
+			[
+				"theme",
+				"ColorSchemeSelector: Next Color Scheme"
+			],
+			[
+				"paca",
+				"Package Control: Install Package"
+			],
+			[
+				"",
+				"SublimeREPL: Python"
+			],
+			[
+				"color",
+				"ColorSchemeSelector: Next Color Scheme"
+			],
+			[
+				"col",
+				"ColorSchemeSelector: Random Color Scheme"
+			],
+			[
+				"pac",
+				"Package Control: Install Package"
+			],
+			[
+				"Color Sche",
+				"ColorSchemeSelector: Select Color Scheme"
+			],
+			[
+				"packa",
+				"Package Control: Install Package"
+			],
+			[
+				"Package Control:",
+				"Package Control: Install Package"
+			],
+			[
+				"Remove",
+				"Package Control: Remove Package"
+			],
+			[
+				"INSTAL",
+				"Package Control: Install Package"
+			],
+			[
+				"readm",
+				"ReadmePlease"
+			],
+			[
+				"Package Control: Ins",
+				"Package Control: Install Package"
+			]
+		],
+		"width": 435.0
+	},
+	"console":
+	{
+		"height": 122.0,
+		"history":
+		[
+			"import urllib.request,os,hashlib; h = '2deb499853c4371624f5a07e27c334aa' + 'bf8c4e67d14fb0525ba4f89698a6d7e1'; pf = 'Package Control.sublime-package'; ipp = sublime.installed_packages_path(); urllib.request.install_opener( urllib.request.build_opener( urllib.request.ProxyHandler()) ); by = urllib.request.urlopen( 'http://packagecontrol.io/' + pf.replace(' ', '%20')).read(); dh = hashlib.sha256(by).hexdigest(); print('Error validating download (got %s instead of %s), please try manual install' % (dh, h)) if dh != h else open(os.path.join( ipp, pf), 'wb' ).write(by)"
+		]
+	},
+	"distraction_free":
+	{
+		"menu_visible": true,
+		"show_minimap": false,
+		"show_open_files": false,
+		"show_tabs": false,
+		"side_bar_visible": false,
+		"status_bar_visible": false
+	},
+	"expanded_folders":
+	[
+		"/Users/jsm601/Documents/Google_Drive/Academico_Profesional/NYU/drive_GRA/ecan-recognition",
+		"/Users/jsm601/Documents/Google_Drive/Academico_Profesional/NYU/drive_GRA/ecan-recognition/shell_scripts"
+	],
+	"file_history":
+	[
+		"/Users/jsm601/Documents/Google_Drive/Academico_Profesional/NYU/drive_GRA/ecan-recognition/requirements.txt",
+		"/Users/jsm601/Documents/Google_Drive/Academico_Profesional/NYU/GRA/ecan-recognition/ipython/hog_032415_model.ipynb",
+		"/Users/jsm601/Documents/Google_Drive/Academico_Profesional/NYU/GRA/ecan-recognition/ecan/models.py",
+		"/Users/jsm601/Documents/Google_Drive/Academico_Profesional/NYU/GRA/ecan-recognition/ecan/views.py",
+		"/Users/jsm601/Documents/Google_Drive/Academico_Profesional/NYU/GRA/ecan-recognition/raspberry/upload_functions.py",
+		"/Users/jsm601/Documents/Google_Drive/Academico_Profesional/NYU/GRA/ecan-recognition/raspberry/interface.py",
+		"/Users/jsm601/Documents/Google_Drive/Academico_Profesional/NYU/GRA/ecan-recognition/ipython/hog_032415_ml.ipynb",
+		"/Users/jsm601/Documents/Google_Drive/Academico_Profesional/NYU/GRA/ecan-recognition/api/site_media/media/pi_cam/im_Q00j09b",
+		"/Users/jsm601/Documents/Google_Drive/Academico_Profesional/NYU/GRA/ecan-recognition/shell_scripts/get_pi_ip",
+		"/Users/jsm601/Library/Application Support/Sublime Text 3/Packages/User/Anaconda.sublime-settings",
+		"/Users/jsm601/Documents/Google_Drive/Academico_Profesional/NYU/GRA/ecan-recognition/ecan/urls.py",
+		"/Users/jsm601/Documents/Google_Drive/Academico_Profesional/NYU/GRA/ecan-recognition/api/urls.py",
+		"/Users/jsm601/Documents/Google_Drive/Academico_Profesional/NYU/GRA/ecan-recognition/ecan/forms.py",
+		"/Users/jsm601/Documents/Google_Drive/Academico_Profesional/NYU/GRA/ecan-recognition/ecan/templates/ecan/sample.html",
+		"/Users/jsm601/Documents/Google_Drive/Academico_Profesional/NYU/GRA/ecan-recognition/api.txt",
+		"/Users/jsm601/.bash_profile",
+		"/Users/jsm601/Documents/Google_Drive/Academico_Profesional/NYU/GRA/ecan-recognition/raspberry/weight.py",
+		"/Users/jsm601/Documents/Google_Drive/Academico_Profesional/NYU/GRA/ecan-recognition/api/settings.py",
+		"/Users/jsm601/Documents/Google_Drive/Academico_Profesional/NYU/GRA/ecan-recognition/ecan/templates/ecan/index.html",
+		"/Users/jsm601/Documents/Google_Drive/Academico_Profesional/NYU/GRA/ecan-recognition/sublime_project/GRA.sublime-project",
+		"/Users/jsm601/Library/Application Support/Sublime Text 3/Packages/User/Preferences.sublime-settings",
+		"/Users/jsm601/Library/Application Support/Sublime Text 3/Packages/User/pm.sublime-settings",
+		"/Users/jsm601/Documents/Google_Drive/Academico_Profesional/NYU/GRA/ecan-recognition/raspberry/requirements.txt",
+		"/Users/jsm601/Documents/Google_Drive/Academico_Profesional/NYU/GRA/ecan-recognition/api/site_media/media/pi_cam/im_qCEBKBz",
+		"/Users/jsm601/Documents/Google_Drive/Academico_Profesional/NYU/GRA/ecan-recognition/api/site_media/media/pi_cam/im_Q61lcq9",
+		"/Users/jsm601/Documents/Google_Drive/Academico_Profesional/Software/Sublime/ST3/User/Projects - JuanSanMedina/library.json",
+		"/Users/jsm601/Documents/Google_Drive/Academico_Profesional/NYU/GRA/ecan-recognition/raspberry/run_interfacev2.py",
+		"/Users/jsm601/Documents/Google_Drive/Academico_Profesional/NYU/GRA/ecan-recognition/raspberry/run_interface.py",
+		"/Users/jsm601/Documents/Google_Drive/Academico_Profesional/Software/Sublime/ST3/User/Projects/1PP-16/library.json",
+		"/Users/jsm601/Documents/Google_Drive/Academico_Profesional/Software/Sublime/ST3/User/Projects - 1PP-16/library.json",
+		"/Users/jsm601/Documents/Google_Drive/Academico_Profesional/Software/Sublime/ST3/User/Projects/JuanSanMedina/library.json",
+		"/Users/jsm601/Documents/Google_Drive/Academico_Profesional/NYU/GRA/ecan-recognition/raspberry/helloworld_interface.py",
+		"/Users/jsm601/Documents/Google_Drive/Academico_Profesional/NYU/GRA/ecan-recognition/classes.txt",
+		"/Users/jsm601/Documents/Google_Drive/Academico_Profesional/NYU/GRA/ecan-recognition/raspberry/get_weight.py",
+		"/Users/jsm601/Documents/Google_Drive/Academico_Profesional/NYU/GRA/ecan-recognition/api/site_media/media/pi_cam/im_gI4lZIQ",
+		"/Users/jsm601/Documents/Google_Drive/Academico_Profesional/NYU/GRA/ecan-recognition/api/site_media/media/pi_cam/im_gsI16TI",
+		"/Users/jsm601/Documents/Google_Drive/Academico_Profesional/NYU/GRA/ecan-recognition/api/site_media/media/pi_cam/im_GItJiXp",
+		"/Users/jsm601/Documents/Google_Drive/Academico_Profesional/NYU/GRA/ecan-recognition/requirements.txt",
+		"/Users/jsm601/.my.cnf",
+		"/Users/JuanSantiagoMedina/Documents/Google_Drive/Academico_Profesional/NYU/GRA/ecan-recognition/ecan/views.py",
+		"/Users/JuanSantiagoMedina/Documents/Google_Drive/Academico_Profesional/NYU/GRA/ecan-recognition/ecan/urls.py",
+		"/Users/JuanSantiagoMedina/Documents/Google_Drive/Academico_Profesional/NYU/GRA/ecan-recognition/ecan/static/ecan/stylesheets/print.css",
+		"/Users/JuanSantiagoMedina/Documents/Google_Drive/Academico_Profesional/NYU/GRA/ecan-recognition/ecan/static/ecan/stylesheets/pygment_trac.css",
+		"/Users/JuanSantiagoMedina/Documents/Google_Drive/Academico_Profesional/NYU/GRA/ecan-recognition/ecan/templates/ecan/index.html",
+		"/Users/JuanSantiagoMedina/Documents/Google_Drive/Academico_Profesional/NYU/GRA/ecan-recognition/api/settings.py",
+		"/Users/JuanSantiagoMedina/Documents/Google_Drive/Academico_Profesional/NYU/GRA/ecan-recognition/ecan/static/ecan/stylesheets/stylesheet.css",
+		"/Users/JuanSantiagoMedina/Documents/Google_Drive/Academico_Profesional/NYU/GRA/ecan-recognition/ecan/static/ecan/s.css",
+		"/Users/JuanSantiagoMedina/Documents/Google_Drive/Academico_Profesional/NYU/GRA/ecan-recognition/sublime_project/GRA.sublime-project",
+		"/Users/JuanSantiagoMedina/Documents/Google_Drive/Academico_Profesional/NYU/GRA/ecan-recognition/ecan/migrations/0001_initial.py",
+		"/Users/JuanSantiagoMedina/Documents/Google_Drive/Academico_Profesional/NYU/GRA/ecan-recognition/requirements.txt",
+		"/Users/JuanSantiagoMedina/Documents/Google_Drive/Academico_Profesional/NYU/GRA/ecan-recognition/api.txt",
+		"/Users/JuanSantiagoMedina/Documents/Google_Drive/Academico_Profesional/NYU/GRA/ecan-recognition/api/templates/ecan/Icon",
+		"/Users/JuanSantiagoMedina/Documents/Google_Drive/Academico_Profesional/NYU/GRA/ecan-recognition/ecan/Icon",
+		"/Users/JuanSantiagoMedina/Documents/Google_Drive/Academico_Profesional/NYU/GRA/ecan-recognition/api/templates/admin/base_site.html",
+		"/Users/JuanSantiagoMedina/Documents/Google_Drive/Academico_Profesional/NYU/GRA/ecan-recognition/api/templates/ecan/sample.html",
+		"/Users/JuanSantiagoMedina/Documents/Google_Drive/Academico_Profesional/NYU/GRA/ecan-recognition/api/templates/ecan/home.html",
+		"/Users/JuanSantiagoMedina/Documents/Google_Drive/Academico_Profesional/NYU/GRA/ecan-recognition/ecan/templates/ecan/sample.html",
+		"/Users/JuanSantiagoMedina/Documents/Google_Drive/Academico_Profesional/NYU/GRA/ecan-recognition/ecan/templates/ecan/home.html",
+		"/Users/JuanSantiagoMedina/Documents/Google_Drive/Academico_Profesional/NYU/GRA/ecan-recognition/sublime_project/Juan Santiago Medina Martínez’s MacBook/library.json",
+		"/Users/JuanSantiagoMedina/Library/Application Support/Sublime Text 3/Packages/User/Preferences.sublime-settings",
+		"/Users/JuanSantiagoMedina/Documents/Google_Drive/Academico_Profesional/NYU/GRA/ecan-recognition/.gitignore",
+		"/Users/JuanSantiagoMedina/Documents/Google_Drive/Academico_Profesional/NYU/GRA/ecan-recognition/sublime_project/ecan-recognition/.gitignore",
+		"/Users/JuanSantiagoMedina/Documents/Google_Drive/Academico_Profesional/NYU/GRA/ecan-recognition/sublime_project/ecan-recognition/try.py",
+		"/Users/JuanSantiagoMedina/Documents/Google_Drive/Academico_Profesional/NYU/GRA/ecan-recognition/sublime_project/ecan-recognition/requirements.txt",
+		"/Users/jsm601/Library/Application Support/Sublime Text 3/Packages/User/SublimeREPL.sublime-settings",
+		"/Users/jsm601/Documents/Google_Drive/Academico_Profesional/NYU/Fall_2014/GRA/GRA_Sublime_Project/ecan-recognition/requirements.txt",
+		"/Users/jsm601/Documents/Google_Drive/Academico_Profesional/NYU/Fall_2014/GRA/GRA_Sublime_Project/GRA.sublime-project",
+		"/Users/jsm601/Documents/Google_Drive/Academico_Profesional/NYU/Fall_2014/GRA/GRA_Sublime_Project/ecan-recognition/Icon",
+		"/Users/jsm601/Documents/Google_Drive/Academico_Profesional/NYU/Fall_2014/GRA/GRA_Sublime_Project/ecan-recognition/venv/bin/instance_events",
+		"/Users/jsm601/Documents/Google_Drive/Academico_Profesional/NYU/Fall_2014/GRA/GRA_Sublime_Project/ecan-recognition/manage.py",
+		"/Users/jsm601/Documents/Google_Drive/Academico_Profesional/NYU/Spring_2015/Sublime Project/Juan/kss",
+		"/Users/jsm601/Documents/Google_Drive/Academico_Profesional/NYU/Spring_2015/Juan/dtd",
+		"/Users/jsm601/Documents/Google_Drive/Academico_Profesional/NYU/Spring_2015/Juan/sd",
+		"/Users/jsm601/Documents/Google_Drive/Academico_Profesional/NYU/Spring_2015/Sublime Project/Spring_2015.sublime-project",
+		"/Users/jsm601/Google Drive/Academico_Profesional/NYU/Spring_2015/Sublime Project/Spring_2015.sublime-project",
+		"/Users/JuanSantiagoMedina/Documents/Google_Drive/Academico_Profesional/NYU/Spring_2015/Course_Selection/top_courses.txt",
+		"/Users/JuanSantiagoMedina/Documents/Google_Drive/Academico_Profesional/NYU/Spring_2015/Machine Learning/Coursera/ML.py",
+		"/Users/JuanSantiagoMedina/Documents/Google_Drive/Academico_Profesional/NYU/Spring_2015/Sublime Project/Spring_2015.sublime-project",
+		"/Users/JuanSantiagoMedina/juan",
+		"/Users/JuanSantiagoMedina/.emacs.d/el-get/el-get/recipes/emacswiki/thing-opt.rcp",
+		"/Users/JuanSantiagoMedina/Desktop/Ex_Git/first_directory/third.txt",
+		"/Users/JuanSantiagoMedina/Documents/Google_Drive/Academico_Profesional/Software/Sublime/ST3/User/snippets/docstring",
+		"/Users/JuanSantiagoMedina/.emacs.d/el-get/yasnippet/snippets/LICENSE",
+		"/Users/JuanSantiagoMedina/Desktop/Ex_Files_GIT_EssT/Exercise Files/Chapter 13/13_06/lynda_version/.gitignore",
+		"/Users/JuanSantiagoMedina/.emacs.d/.python-environments/default/lib/python2.7/distutils/__init__.py",
+		"/Users/JuanSantiagoMedina/Desktop/Ex_Files_GIT_EssT/Exercise Files/new.py",
+		"/Users/JuanSantiagoMedina/.emacs.d/el-get/el-get/recipes/emacswiki/no-word.rcp",
+		"/Users/JuanSantiagoMedina/.emacs.d/el-get/el-get/recipes/emacswiki/mon-aliases.rcp",
+		"/Users/JuanSantiagoMedina/Documents/Google_Drive/Academico_Profesional/NYU/Spring_2015/Machine Learning/Coursera/learn.py",
+		"/Users/JuanSantiagoMedina/.emacs.d/settings/auto-complete-settings.el",
+		"/Users/JuanSantiagoMedina/Desktop/Ex_Git/untitled.py",
+		"/Users/JuanSantiagoMedina/Library/Application Support/Sublime Text 3/Packages/User/Python.sublime-settings",
+		"/Users/JuanSantiagoMedina/.emacs",
+		"/Users/JuanSantiagoMedina/.emacs.d/settings/python-settings.el",
+		"/Users/JuanSantiagoMedina/.emacs.d/settings/general-settings.el",
+		"/Users/JuanSantiagoMedina/.emacs.d/settings/el-get-settings.el",
+		"/Users/JuanSantiagoMedina/.emacs.d/settings/custom.el",
+		"/Users/JuanSantiagoMedina/Library/Application Support/Sublime Text 3/Packages/User/Anaconda.sublime-settings",
+		"/Users/JuanSantiagoMedina/Library/Application Support/Sublime Text 3/Packages/Anaconda/Anaconda.sublime-settings",
+		"/Users/JuanSantiagoMedina/Library/Application Support/Sublime Text 3/Packages/Python/Completion",
+		"/Users/JuanSantiagoMedina/Library/Application Support/Sublime Text 3/Packages/Python/Rules.tmPreferences",
+		"/Users/JuanSantiagoMedina/Desktop/Ex_Git/secondary.txt",
+		"/Users/JuanSantiagoMedina/Desktop/Ex_Git/primary.txt",
+		"/Users/JuanSantiagoMedina/Library/Application Support/Sublime Text 2/Packages/User/Preferences.sublime-settings",
+		"/Users/JuanSantiagoMedina/Desktop/untitled.py",
+		"/Users/JuanSantiagoMedina/Library/Application Support/Sublime Text 2/Packages/User/SublimeCodeIntel.sublime-settings",
+		"/Users/JuanSantiagoMedina/Library/Application Support/Sublime Text 2/Packages/SublimeCodeIntel/SublimeCodeIntel.sublime-settings",
+		"/Users/JuanSantiagoMedina/Desktop/Ex_Git/notes.txt",
+		"/Users/JuanSantiagoMedina/Documents/Google_Drive/Academico_Profesional/NYU/Spring_2015/Sublime Project/Icon",
+		"/Users/JuanSantiagoMedina/Library/Application Support/Sublime Text 2/Packages/User/SublimeREPL.sublime-settings",
+		"/Users/JuanSantiagoMedina/Desktop/Ex_Git/delete.txt",
+		"/Users/JuanSantiagoMedina/Desktop/Ex_Git/delete2.txt",
+		"/Users/JuanSantiagoMedina/Desktop/Ex_Files_GIT_EssT/Exercise Files/new",
+		"/Users/JuanSantiagoMedina/l.py",
+		"/el-get-settings.el",
+		"/Users/JuanSantiagoMedina/.emacs.d/settings/custom-functions.el",
+		"/Users/JuanSantiagoMedina/.emacs.d/settings/camelcase-settings.el",
+		"/Users/JuanSantiagoMedina/.emacs.d/settings/general-settings",
+		"/Users/JuanSantiagoMedina/cd",
+		"/Users/JuanSantiagoMedina/Library/Application Support/Sublime Text 2/Packages/SublimeREPL/SublimeREPL.sublime-settings",
+		"/Users/JuanSantiagoMedina/Library/Application Support/Sublime Text 2/Packages/User/SublimeRope.sublime-settings",
+		"/Users/JuanSantiagoMedina/Library/Application Support/Sublime Text 2/Packages/SublimeRope/SublimeRope.sublime-settings",
+		"/Users/JuanSantiagoMedina/Documents/Google_Drive/Academico_Profesional/NYU/Spring_2015/Sublime Project/Spring_2015.sublime-workspace",
+		"/Users/JuanSantiagoMedina/Library/Application Support/Sublime Text 2/Packages/User/Default (OSX).sublime-keymap",
+		"/Users/JuanSantiagoMedina/Documents/Google_Drive/Finanzas/BVCdata/bolsa.py",
+		"/Users/JuanSantiagoMedina/Documents/Google_Drive/Academico_Profesional/NYU/Fall_2014/Principles of Urban Informatics/Assignments_PUI/Assignment 1/problem1.py",
+		"/Users/JuanSantiagoMedina/Library/Application Support/Sublime Text 2/Packages/Default/Default (OSX).sublime-keymap",
+		"/Users/JuanSantiagoMedina/Documents/Google_Drive/Finanzas/BVCdata/CI_quiz.py"
+	],
+	"find":
+	{
+		"height": 35.0
+	},
+	"find_in_files":
+	{
+		"height": 97.0,
+		"where_history":
+		[
+			"<open folders>",
+			"<open files>",
+			""
+		]
+	},
+	"find_state":
+	{
+		"case_sensitive": true,
+		"find_history":
+		[
+			"tsv",
+			"ecan_common_name",
+			" ",
+			"|",
+			"'y'",
+			" 'y'",
+			"y",
+			"flag",
+			"weight",
+			")\n",
+			"delete",
+			"upload",
+			"pep8",
+			"ignore",
+			"Do not",
+			"do no",
+			"do not",
+			"'",
+			"url(r'",
+			"                       ",
+			"os.",
+			"'''",
+			"forward",
+			"stepper",
+			"Back",
+			"KF",
+			"| ",
+			"get_w",
+			"get",
+			"do_ge",
+			"do_gfe",
+			"weigh",
+			"get",
+			"do_g",
+			"do_we",
+			"do_pre",
+			"do_prE",
+			"do_pre",
+			"':\n",
+			"select",
+			" \")",
+			"select",
+			" \")",
+			"select",
+			"selec",
+			"print '\\n'",
+			"print '\\n",
+			"print '\\n'",
+			"print '\\n' ",
+			"take",
+			"do_",
+			"MEDIA_URL",
+			"ecan_venv",
+			"preview",
+			"pre",
+			"get",
+			"self.",
+			"objects",
+			"lower",
+			"indent",
+			"tab",
+			"description",
+			"Description",
+			"Brand",
+			"brand",
+			"Description",
+			"'arg'",
+			"print",
+			"FRIENDS",
+			"name",
+			"arg",
+			"brand",
+			"insert_url ",
+			"self.BRANDS",
+			"brand",
+			" ' + result",
+			"current",
+			" print result",
+			"print result",
+			"split",
+			"' '.join",
+			"url",
+			"print",
+			"jason",
+			"wei",
+			"shape",
+			"materialS",
+			"shape",
+			"SHAPE",
+			"shape",
+			"do_insert_shape",
+			"brand",
+			"Brand",
+			"BRAND",
+			"brand",
+			"greeting",
+			"person",
+			"name",
+			"show",
+			"shape",
+			"Shape",
+			"material",
+			"Material",
+			"Shape",
+			"UploadBrandForm",
+			"UploadItemForm",
+			"cmd",
+			"Brand",
+			"models",
+			"material",
+			"shape",
+			"brand",
+			"item_class",
+			"true",
+			"false",
+			"/",
+			"=\"../../../../../",
+			"media",
+			"medina",
+			"media_path",
+			"default",
+			"down",
+			"static",
+			"base_dir",
+			"base",
+			"static",
+			"stylesheets",
+			"ecan/"
+		],
+		"highlight": true,
+		"in_selection": false,
+		"preserve_case": false,
+		"regex": false,
+		"replace_history":
+		[
+			"common_name",
+			"Common_Name",
+			"Logo",
+			"logo",
+			"Name",
+			"juan",
+			"juana",
+			"\"",
+			" PCT",
+			" ",
+			"",
+			" "
+		],
+		"reverse": false,
+		"show_context": true,
+		"use_buffer2": false,
+		"whole_word": false,
+		"wrap": true
+	},
+	"groups":
+	[
+		{
+			"selected": 2,
+			"sheets":
+			[
+				{
+					"buffer": 0,
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 1966,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								640,
+								640
+							]
+						],
+						"settings":
+						{
+							"auto_name": "auth_group",
+							"syntax": "Packages/Text/Plain text.tmLanguage"
+						},
+						"translation.x": 0.0,
+						"translation.y": 76.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 5,
+					"type": "text"
+				},
+				{
+					"buffer": 1,
+					"file": "/Users/jsm601/Documents/Google_Drive/Academico_Profesional/NYU/drive_GRA/ecan-recognition/shell_scripts/get_pi_ip",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 357,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								357,
+								357
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/Text/Plain text.tmLanguage"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 1,
+					"type": "text"
+				},
+				{
+					"buffer": 2,
+					"file": "/Users/jsm601/Library/Application Support/Sublime Text 3/Packages/User/Preferences.sublime-settings",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 1353,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								0,
+								0
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/JavaScript/JSON.tmLanguage",
+							"translate_tabs_to_spaces": false
+						},
+						"translation.x": -0.0,
+						"translation.y": 2.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 0,
+					"type": "text"
+				},
+				{
+					"buffer": 3,
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 874,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								874,
+								874
+							]
+						],
+						"settings":
+						{
+							"auto_indent": false,
+							"syntax": "Packages/Text/Plain text.tmLanguage",
+							"word_wrap": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 4,
+					"type": "text"
+				},
+				{
+					"buffer": 4,
+					"file": "/Users/jsm601/Documents/Google_Drive/Academico_Profesional/NYU/drive_GRA/ecan-recognition/shell_scripts/cuspshell",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 41,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								41,
+								41
+							]
+						],
+						"settings":
+						{
+							"open_with_edit": true,
+							"syntax": "Packages/ShellScript/Shell-Unix-Generic.tmLanguage"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 2,
+					"type": "text"
+				},
+				{
+					"buffer": 5,
+					"file": "/Users/jsm601/.bash_profile",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 643,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								379,
+								379
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/ShellScript/Shell-Unix-Generic.tmLanguage"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 6,
+					"type": "text"
+				},
+				{
+					"buffer": 6,
+					"file": "/Users/jsm601/Documents/Google_Drive/Academico_Profesional/NYU/drive_GRA/ecan-recognition/shell_scripts/connect_to_pi",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 62,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								62,
+								62
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/ShellScript/Shell-Unix-Generic.tmLanguage"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 3,
+					"type": "text"
+				}
+			]
+		}
+	],
+	"incremental_find":
+	{
+		"height": 30.0
+	},
+	"input":
+	{
+		"height": 40.0
+	},
+	"layout":
+	{
+		"cells":
+		[
+			[
+				0,
+				0,
+				1,
+				1
+			]
+		],
+		"cols":
+		[
+			0.0,
+			1.0
+		],
+		"rows":
+		[
+			0.0,
+			1.0
+		]
+	},
+	"menu_visible": true,
+	"output.anaconda_documentation":
+	{
+		"height": 272.0
+	},
+	"output.exec":
+	{
+		"height": 120.0
+	},
+	"output.find_results":
+	{
+		"height": 232.0
+	},
+	"output.git-commit":
+	{
+		"height": 140.0
+	},
+	"output.git-pull":
+	{
+		"height": 140.0
+	},
+	"output.git-push":
+	{
+		"height": 116.0
+	},
+	"pinned_build_system": "",
+	"project": "GRA.sublime-project",
+	"replace":
+	{
+		"height": 66.0
+	},
+	"save_all_on_build": true,
+	"select_file":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+			[
+				"top",
+				"Course_Selection/top_courses.txt"
+			],
+			[
+				"",
+				"Sublime Project/Icon"
+			],
+			[
+				"pr",
+				"Ex_Git/primary.txt"
+			],
+			[
+				"no",
+				"Ex_Git/notes.txt"
+			],
+			[
+				"note",
+				"Ex_Git/notes.txt"
+			],
+			[
+				"ne",
+				"Ex_Git/new.py"
+			],
+			[
+				"shel",
+				"*REPL* [shell]"
+			],
+			[
+				"lea",
+				"Machine Learning/Coursera/learn.py"
+			],
+			[
+				"pro1",
+				"Assingment 1/problem1.py"
+			],
+			[
+				"p2",
+				"Assingment 1/Problem2.py"
+			],
+			[
+				"p1",
+				"Assingment 1/Problem1.py"
+			],
+			[
+				"packa",
+				"Package Control Messages"
+			],
+			[
+				"er",
+				"/Users/JuanSantiagoMedina/Documents/Google_Drive/Académico:Profesional/NYU/SkillSet Assingments/Sublime Text 2/Ex_Files_UaR_SublimeTxt_2/Exercise Files/roux_website/error.htm"
+			],
+			[
+				"ind",
+				"/Users/JuanSantiagoMedina/Documents/Google_Drive/Académico:Profesional/NYU/SkillSet Assingments/Sublime Text 2/Ex_Files_UaR_SublimeTxt_2/Exercise Files/roux_website/index.htm"
+			]
+		],
+		"width": 0.0
+	},
+	"select_project":
+	{
+		"height": 500.0,
+		"last_filter": "",
+		"selected_items":
+		[
+			[
+				"",
+				"~/Documents/Google_Drive/Academico_Profesional/NYU/Spring_2015/Spring_2015.sublime-project"
+			]
+		],
+		"width": 380.0
+	},
+	"select_symbol":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"selected_group": 0,
+	"settings":
+	{
+	},
+	"show_minimap": true,
+	"show_open_files": false,
+	"show_tabs": true,
+	"side_bar_visible": true,
+	"side_bar_width": 227.0,
+	"status_bar_visible": true,
+	"template_settings":
+	{
+	}
+}

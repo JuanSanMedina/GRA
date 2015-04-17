@@ -1,0 +1,22 @@
+
+\copy ecan_item FROM 'ecan_item.csv' DELIMITER ',' NULL as NULL CSV HEADER
+\copy ecan_feature FROM 'ecan_feature.csv' DELIMITER ',' NULL as NULL CSV HEADER
+
+
+\copy auth_group FROM 'auth_group.csv' DELIMITER ',' NULL as NULL CSV HEADER
+\copy django_content_type FROM 'django_content_type.csv' DELIMITER ',' NULL as NULL CSV HEADER
+\copy auth_user FROM 'auth_user.csv' DELIMITER ',' NULL as NULL CSV HEADER
+\copy auth_user_groups FROM 'auth_user_groups.csv' DELIMITER ',' NULL as NULL CSV HEADER
+\copy auth_user_user_permissions FROM 'auth_user_user_permissions.csv' DELIMITER ',' NULL as NULL CSV HEADER
+\copy django_admin_log FROM 'django_admin_log.csv' DELIMITER ',' NULL as NULL CSV HEADER
+\copy auth_group_permissions FROM 'auth_group_permissions.csv' DELIMITER ',' NULL as NULL CSV HEADER
+\copy django_migrations FROM 'django_migrations.csv' DELIMITER ',' NULL as NULL CSV HEADER
+\copy ecan_logo FROM 'ecan_logo.csv' DELIMITER ',' NULL as NULL CSV HEADER
+\copy auth_permission FROM 'auth_permission.csv' DELIMITER ',' NULL as NULL CSV HEADER
+\copy django_session FROM 'django_session.csv' DELIMITER ',' NULL as NULL CSV HEADER
+\copy ecan_material FROM 'ecan_material.csv' DELIMITER ',' NULL as NULL CSV HEADER
+\copy ecan_back_ground FROM 'ecan_back_ground.csv' DELIMITER ',' NULL as NULL CSV HEADER
+\copy ecan_sample FROM 'ecan_sample.csv' DELIMITER ',' NULL as NULL CSV HEADER
+\copy ecan_common_name FROM 'ecan_common_name.csv' DELIMITER ',' NULL as NULL CSV HEADER
+\copy ecan_shape FROM 'ecan_shape.csv' DELIMITER ',' NULL as NULL CSV HEADER
+\copy ecan_ecan FROM 'ecan_ecan.csv' DELIMITER ',' NULL as NULL CSV HEADER
