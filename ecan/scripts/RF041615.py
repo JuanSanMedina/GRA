@@ -81,6 +81,6 @@ def run():
     results['end'] = str(end_global)
     results['total time'] = str(end_global - start_global)
 
-    with open('results/RF041615.json', 'w') as f:
+    with open('RF041615.json', 'w') as f:
         json.dump(results, f)
     pass

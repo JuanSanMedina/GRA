@@ -48,7 +48,7 @@ def run():
     data = np.array([e.feature for e in hogs])
     start_ft = datetime.now()
     results[hogs[0].name]['start'] = str(start_ft)
-    h_rf_clf = svm()
+    h_rf_clf = svm.SVC()
     h_rf_scores = cross_validation.cross_val_score(h_rf_clf,
                                                    data,
                                                    target.tolist(),
@@ -63,7 +63,7 @@ def run():
     data = np.array([e.feature for e in pixs])
     start_ft = datetime.now()
     results[pixs[0].name]['start'] = str(start_ft)
-    p_rf_clf = svm()
+    p_rf_clf = svm.SVC()
     p_rf_scores = cross_validation.cross_val_score(p_rf_clf,
                                                    data,
                                                    target.tolist(),
@@ -81,6 +81,6 @@ def run():
     results['end'] = str(end_global)
     results['total time'] = str(end_global - start_global)
 
-    with open('results/SVM041615.json', 'w') as f:
+    with open('SVM041615.json', 'w') as f:
         json.dump(results, f)
     pass
