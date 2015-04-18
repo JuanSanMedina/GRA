@@ -1,82 +1,60 @@
 {% load staticfiles %}
-<!DOCTYPE html>
-<html>
+<html prefix="og: http://ogp.me/ns#">
   <head>
-    <meta charset='utf-8'>
+    <!-- open graph protocol : http://ogp.me/ -->
+    <title>Juan S. Medina-Martínez</title>
+    <meta property="og:title" content="Juan S. Medina-Martínez" />
+    <meta property="og:type" content="profile" />
+    <meta property="og:url" content="http://jsmedmar.github.io/index.html" />
+    <meta property="og:image" content="images/cl1.png" />
+    <!-- github original settings -->
+    <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="chrome=1">
-    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-    <link href='https://fonts.googleapis.com/css?family=Architects+Daughter' rel='stylesheet' type='text/css'>
-    <link rel="stylesheet" type="text/css" href="{% static 'ecan/stylesheets/pygment_trac.css' %}" media="screen">
-    <link rel="stylesheet" type="text/css" href="{% static 'ecan/stylesheets/print.css' %}" media="print">
-    <link rel="stylesheet" type="text/css" href="{% static 'ecan/stylesheets/stylesheet.css' %}" media="screen">
-
+    <title>Juan S. Medina-Martínez</title>
+    <link rel="stylesheet" href="stylesheets/styles.css">
+    <link rel="stylesheet" href="stylesheets/pygment_trac.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <!-- Icon -->
+    <link rel="shortcut icon" href="images/imico/favicon.ico" type="image/x-icon">
+    <link rel="icon" href="images/imico/favicon.ico" type="image/x-icon">
+    <link rel="apple-touch-icon" sizes="57x57" href="images/imico/apple-icon-57x57.png">
+    <link rel="apple-touch-icon" sizes="60x60" href="images/imico/apple-icon-60x60.png">
+    <link rel="apple-touch-icon" sizes="72x72" href="images/imico/apple-icon-72x72.png">
+    <link rel="apple-touch-icon" sizes="76x76" href="images/imico/apple-icon-76x76.png">
+    <link rel="apple-touch-icon" sizes="114x114" href="images/imico/apple-icon-114x114.png">
+    <link rel="apple-touch-icon" sizes="120x120" href="images/imico/apple-icon-120x120.png">
+    <link rel="apple-touch-icon" sizes="144x144" href="images/imico/apple-icon-144x144.png">
+    <link rel="apple-touch-icon" sizes="152x152" href="images/imico/apple-icon-152x152.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="images/imico/apple-icon-180x180.png">
+    <link rel="icon" type="image/png" sizes="192x192"  href="images/imico/android-icon-192x192.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="images/imico/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="96x96" href="images/imico/favicon-96x96.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="images/imico/favicon-16x16.png">
+    <link rel="manifest" href="images/imico/manifest.json">
+    <meta name="msapplication-TileColor" content="#ffffff">
+    <meta name="msapplication-TileImage" content="images/imico/ms-icon-144x144.png">
+    <meta name="theme-color" content="#ffffff">
     <!--[if lt IE 9]>
     <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
     <![endif]-->
-
-    <title>Preview</title>
   </head>
-
   <body>
-    <header>
-      <div class="inner">
-        <h1>Ecan Preview</h1>
-        <h2></h2>
-        <a href="https://github.com/JuanSanMedina/ecan_recognition" class="button"><small>View project on</small> GitHub</a>
-      </div>
-    </header>
+    <div class="wrapper">
+      <header>
+        <center><img src="images/github_profile.png" height="180" width="180" align="top|middle"></center>
+        <h1 align="center"><br>Automated Solid Waste Classification</h1>
 
-    <div id="content-wrapper">
-      <div class="inner clearfix">
-        <section id="main-content">
+        <p class="view" align="center"><a href="./publications.html"> Publications </a></p>
+        <!-- <p class="view"><a href="./links.html"> Links </a></p> -->
+        <p class="view" align="center"><a href="https://github.com/jsmedmar">GitHub Profile</a></p>
+        <p class="view" align="center"><a href="https://www.linkedin.com/in/jsmedmar">LinkedIn Profile</a></p>
+
+      </header>
+      <section>
 
 <img src="{{ STATIC_URL }}/{{ sample.im }}"
 alt= "{{ STATIC_URL }}" width="540" height="380"/>
 
-<h3><a id="welcome-to-github-pages" class="anchor" href="#welcome-to-github-pages" aria-hidden="true"><span class="octicon octicon-link"></span></a>Welcome to ecan image preview</h3>
-
-<p>To get a new preview run:</p>
-
-<pre><code>$ python manage.py runserver 128.122.72.105:8000
-$ workon ecan
-</code></pre>
-
-<p>Then run on RPI:</p>
-
-<pre><code>$ workon ecan
-$ cd ecan_recognition
-$ sudo /home/pi/Envs/ecan/bin/python interface.py
-$ take_preview
-</code></pre>
-
-
-<!--
-<p>You can <a href="https://github.com/blog/821" class="user-mention">@mention</a> a GitHub username to generate a link to their profile. The resulting <code>&lt;a&gt;</code> element will link to the contributor's GitHub Profile. For example: In 2007, Chris Wanstrath (<a href="https://github.com/defunkt" class="user-mention">@defunkt</a>), PJ Hyett (<a href="https://github.com/pjhyett" class="user-mention">@pjhyett</a>), and Tom Preston-Werner (<a href="https://github.com/mojombo" class="user-mention">@mojombo</a>) founded GitHub.</p> -->
-
-<!-- <h3>
-<a id="support-or-contact" class="anchor" href="#support-or-contact" aria-hidden="true"><span class="octicon octicon-link"></span></a>Support or Contact</h3>
-
-<p>Having trouble with Pages? Check out the documentation at <a href="https://help.github.com/pages">https://help.github.com/pages</a> or contact <a href="mailto:support@github.com">support@github.com</a> and we’ll help you sort it out.</p> -->
-
-</section>
-
-        <aside id="sidebar">
-          <a href="https://github.com/JuanSanMedina/ecan_recognition/zipball/master" class="button">
-            <small>Download</small>
-            .zip file
-          </a>
-          <a href="https://github.com/JuanSanMedina/ecan_recognition/tarball/master" class="button">
-            <small>Download</small>
-            .tar.gz file
-          </a>
-
-          <p class="repo-owner"><a href="https://github.com/JuanSanMedina/ecan_recognition"></a> this project is maintained by <a href="https://github.com/JuanSanMedina">JuanSanMedina</a>.</p>
-
-          <p>This page was generated by <a href="https://pages.github.com">GitHub Pages</a> using the Architect theme by <a href="https://twitter.com/jasonlong">Jason Long</a>.</p>
-        </aside>
-      </div>
-    </div>
-
-
+      </section>
   </body>
 </html>

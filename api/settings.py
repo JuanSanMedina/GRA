@@ -170,6 +170,7 @@ USE_TZ = True
 # https://docs.djangoproject.com/en/1.7/howto/static-files/
 
 PROJECT_ROOT = os.path.normpath(os.path.dirname(__file__))
+DATA_ROOT = os.path.join(PROJECT_ROOT, 'data')
 MEDIA_ROOT = os.path.join(PROJECT_ROOT, 'site_media', 'media')
 MEDIA_URL = '/site_media/media/'
 STATIC_ROOT = os.path.join(PROJECT_ROOT, 'site_media', 'static')
