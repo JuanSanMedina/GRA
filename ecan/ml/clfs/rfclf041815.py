@@ -27,7 +27,7 @@ def run():
 
     le = preprocessing.LabelEncoder()
     le.fit(target_matrix[:, 0])
-    target = le.transform(target_matrix[:, 0]).tolist(),
+    target = le.transform(target_matrix[:, 0]).tolist()
     data = np.array([e.feature for e in hogs])
 
     clf = RandomForestClassifier(n_estimators=100)
