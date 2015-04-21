@@ -20,10 +20,10 @@ def run():
     results['total_time'] = time.time()
     hogs = Feature.objects.filter(name='hog_032415')
     target_matrix = np.array([
-        [e.item.common_name.value,
-                e.item.material.value,
-                e.item.shape.value,
-                e.item.logo.value] for e in hogs])
+        [e.item.common_name.value] for e in hogs])
+                # e.item.material.value,
+                # e.item.shape.value,
+                # e.item.logo.value] for e in hogs])
 
     le = preprocessing.LabelEncoder()
     le.fit(target_matrix[:, 0])
