@@ -48,8 +48,8 @@ var arc = d3.svg.arc()
 // row, and can receive the csv as an array of arrays.
 d3.text("/static/ecan/data/visit-sequences2.csv", function(text) {
   var csv = d3.csv.parseRows(text);
-  var json = buildHierarchy(csv);
   console.log(csv)
+  var json = buildHierarchy(csv);
   createVisualization(json);
 });
 

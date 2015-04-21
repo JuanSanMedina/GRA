@@ -25,6 +25,37 @@ def index(request):
     return render(request, 'ecan/index.html')
 
 
+def predict(request):
+    cn = ["packet", "knife", "bottle", "box", "can", "stick", "bag", "napkin", "sheet", "towel", "plate", "cup", "container", "spoon", "cap", "envelope", "fork"]
+
+    val = ["cuboid", "plane", "deformed", "cylinder"]
+    mat = ["glass", "paper", "plastic", "wood", "foam", "metal"]
+
+    p_cn = np.random.dirichlet(np.ones(len(cn)), size=1)
+    txt = ''
+    dout = {}
+    out = []
+    s = []
+    for i, c in enumerate(cn):
+        p_mat = np.random.dirichlet(np.ones(len(mat)), size=1)
+        p_mat = p_mat*p_cn[0, i]
+        for j, m in enumerate(mat):
+            p_vl = np.random.dirichlet(np.ones(len(val)),
+                                        size=1)
+            p_vl = p_vl*p_mat[0, j]
+            for k, v in enumerate(val):
+                txt = '-'.join([c, m, v])
+                s.append(p_vl[0, k])
+                out.append([txt, p_vl[0, k]])
+    dout['out'] = out
+    dout['cn'] = cn
+    dout['mat'] = mat
+    dout['val'] = val
+    return render(request,
+                  'ecan/predict.html',
+                  {'out': dout},
+                  context_instance=RequestContext(request))
+
 def show_sample(request):
     pks = [e.pk for e in Sample.objects.all()]
     sample = get_object_or_404(Sample, pk=max(pks))

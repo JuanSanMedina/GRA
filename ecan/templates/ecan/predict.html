@@ -1,0 +1,73 @@
+{% load staticfiles %}
+<html prefix="og: http://ogp.me/ns#">
+  <head>
+    <title>Prototype</title>
+    <!-- open graph protocol : http://ogp.me/ -->
+    <link rel="stylesheet" type="text/css"
+      href="https://fonts.googleapis.com/css?family=Open+Sans:400,600">
+    <meta property="og:title" content="Juan S. Medina-Martínez" />
+    <meta property="og:type" content="profile" />
+    <meta property="og:url" content="http://jsmedmar.github.io/index.html" />
+    <meta property="og:image" content="images/cl1.png" />
+
+    <!-- github original settings -->
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <title>ASWAC</title>
+
+    <!-- CSS -->
+    <link rel="stylesheet" type="text/css" href="{% static 'ecan/stylesheets/pygment_trac.css' %}" media="screen">
+    <link rel="stylesheet" type="text/css" href="{% static 'ecan/stylesheets/stylesheet.css' %}" media="screen">
+    <link rel="stylesheet" type="text/css" href="{% static 'ecan/stylesheets/sequences.css' %}"/>
+
+    <!-- D3.js -->
+    <script src="{% static 'ecan/javascripts/d3.js' %}"></script>
+    <script src="{% static 'ecan/javascripts/jquery-2.1.3.min.js' %}"></script>
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+  </head>
+  <body>
+    <div class="wrapper">
+      <header>
+        <h1 align="center"><br>ASWAC</h1>
+        <p align="center"><small>Automated <br>Solid Waste Classification</small></p>
+        <p class="view" align="center"><a href="{% url 'ecan:home' %}"> Home </a></p>
+        <p class="view" align="center"><a href="https://github.com/jsmedmar">GitHub Profile</a></p>
+        <p class="view" align="center"><a href="https://www.linkedin.com/in/jsmedmar">LinkedIn Profile</a></p>
+<!--         <div id="sidebar" align="left">
+            <input type="checkbox" id="togglelegend"> Legend<br/>
+        <div id="legend" style="visibility: hidden;"></div>
+        </div> -->
+
+        </header>
+        <section id="section">
+    <!-- <div id="main"> -->
+        <div id="sequence"></div>
+        <svg id="chart"
+            width="450" height="450"
+            viewBox="0 0 450 450"
+            preserveAspectRatio="xMidYMid">
+        </div>
+        </svg>
+
+<!--       <div id="chart">
+        <div id="explanation" style="visibility: hidden;">
+          <span id="percentage"></span>
+        </div>
+      </div>
+    </div> -->
+<!--     <script type="text/javascript" src="{% static 'ecan/javascripts/sequence.js' %}"></script>
+ -->
+    <script src="{% static 'ecan/javascripts/vis.js' %}" ></script>
+    <script type="text/javascript">
+        MYLIBRARY.init({{ out|safe }})
+    </script>
+
+    <script type="text/javascript">
+      // Hack to make this example display correctly in an iframe on bl.ocks.org
+      d3.select(self.frameElement).style("height", "700px");
+  </script>
+    </section>
+  </body>
+</html>

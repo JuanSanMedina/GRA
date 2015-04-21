@@ -520,74 +520,52 @@
 	"buffers":
 	[
 		{
-			"file": "/Users/JuanSantiagoMedina/Documents/Google_Drive/Academico_Profesional/NYU/drive_GRA/ecan/ecan/templates/ecan/home.html",
+			"file": "/Users/JuanSantiagoMedina/Documents/Google_Drive/Academico_Profesional/NYU/drive_GRA/ecan/ecan/views.py",
 			"settings":
 			{
-				"buffer_size": 1130,
+				"buffer_size": 9431,
 				"line_ending": "Unix"
 			}
 		},
 		{
-			"file": "/Users/JuanSantiagoMedina/Documents/Google_Drive/Academico_Profesional/NYU/drive_GRA/ecan/ecan/templates/ecan/visit-sequences.csv",
+			"file": "/Users/JuanSantiagoMedina/Documents/Google_Drive/Academico_Profesional/NYU/drive_GRA/ecan/ecan/static/ecan/javascripts/vis.js",
 			"settings":
 			{
-				"buffer_size": 742875,
+				"buffer_size": 13171,
 				"line_ending": "Unix"
 			}
 		},
 		{
-			"file": "/Users/JuanSantiagoMedina/Documents/Google_Drive/Academico_Profesional/NYU/drive_GRA/ecan/ecan/static/ecan/javascripts/sequence.js",
+			"contents": "var cn_clrs = [\"#737373\", \"#737373\",\"#737373\", \"#737373\",\"#737373\", \"#737373\",\"#737373\", \"#737373\",\"#737373\", \"#737373\",\"#737373\", \"#737373\",\"#737373\", \"#737373\",\"#737373\", \"#737373\",\"#737373\", \"#737373\",\"#737373\", \"#737373\",\"#737373\", \"#737373\",\"#737373\", \"#737373\",\"#737373\", \"#737373\",\"#737373\", \"#737373\",\"#737373\", \"#737373\",\"#737373\", \"#737373\"]\nvar mat_clrs = [\"#737373\", \"#737373\",\"#737373\", \"#737373\",\"#737373\", \"#737373\",\"#737373\", \"#737373\",\"#737373\", \"#737373\",\"#737373\", \"#737373\",\"#737373\", \"#737373\",\"#737373\", \"#737373\",\"#737373\", \"#737373\",\"#737373\", \"#737373\",\"#737373\", \"#737373\",\"#737373\", \"#737373\",\"#737373\", \"#737373\",\"#737373\", \"#737373\",\"#737373\", \"#737373\",\"#737373\", \"#737373\"]\nvar val_clrs = [\"#737373\", \"#737373\",\"#737373\", \"#737373\",\"#737373\", \"#737373\",\"#737373\", \"#737373\",\"#737373\", \"#737373\",\"#737373\", \"#737373\",\"#737373\", \"#737373\",\"#737373\", \"#737373\",\"#737373\", \"#737373\",\"#737373\", \"#737373\",\"#737373\", \"#737373\",\"#737373\", \"#737373\",\"#737373\", \"#737373\",\"#737373\", \"#737373\",\"#737373\", \"#737373\",\"#737373\", \"#737373\"]",
 			"settings":
 			{
-				"buffer_size": 9008,
+				"buffer_size": 1057,
 				"line_ending": "Unix"
 			}
 		},
 		{
-			"file": "/Users/JuanSantiagoMedina/Documents/Google_Drive/Academico_Profesional/NYU/drive_GRA/ecan/ecan/visit-sequences.csv",
+			"file": "/Users/JuanSantiagoMedina/Documents/Google_Drive/Academico_Profesional/NYU/drive_GRA/ecan/ecan/ml/hw.py",
 			"settings":
 			{
-				"buffer_size": 742875,
+				"buffer_size": 44,
 				"line_ending": "Unix"
 			}
 		},
 		{
-			"file": "/Users/JuanSantiagoMedina/Documents/Google_Drive/Academico_Profesional/NYU/drive_GRA/ecan/ecan/static/ecan/stylesheets/sequences.css",
+			"contents": "Package Control Messages\n========================\n\nAnaconda:\n--------\n\n  Changes in 1.4.8\n  ================\n  \n  Minor release that just adds a new gutters theme for retina display devices\n  \n  For more detailed information about those changes run git v1.4.7..v1.4.8 on git repository\n  \n  ",
 			"settings":
 			{
-				"buffer_size": 649,
-				"line_ending": "Unix"
+				"buffer_size": 291,
+				"line_ending": "Unix",
+				"name": "Package Control Messages",
+				"scratch": true
 			}
 		},
 		{
 			"file": "/Users/JuanSantiagoMedina/Documents/Google_Drive/Academico_Profesional/NYU/drive_GRA/ecan/ecan/static/ecan/stylesheets/stylesheet.css",
 			"settings":
 			{
-				"buffer_size": 3559,
-				"line_ending": "Unix"
-			}
-		},
-		{
-			"contents": "{% load staticfiles %}\n<html prefix=\"og: http://ogp.me/ns#\">\n  <head>\n    <title>Prototype</title>\n    <!-- open graph protocol : http://ogp.me/ -->\n    <link rel=\"stylesheet\" type=\"text/css\"\n      href=\"https://fonts.googleapis.com/css?family=Open+Sans:400,600\">\n    <meta property=\"og:title\" content=\"Juan S. Medina-Martínez\" />\n    <meta property=\"og:type\" content=\"profile\" />\n    <meta property=\"og:url\" content=\"http://jsmedmar.github.io/index.html\" />\n    <!-- <meta property=\"og:image\" content=\"images/cl1.png\" /> -->\n\n    <!-- github original settings -->\n    <meta charset=\"utf-8\">\n    <meta http-equiv=\"X-UA-Compatible\" content=\"chrome=1\">\n    <title>ASWAC</title>\n\n    <!-- CSS -->\n<!--     <link rel=\"stylesheet\" type=\"text/css\" href=\"{% static 'ecan/stylesheets/pygment_trac.css' %}\" media=\"screen\">\n    <link rel=\"stylesheet\" type=\"text/css\" href=\"{% static 'ecan/stylesheets/stylesheet.css' %}\" media=\"screen\"> -->\n    <link rel=\"stylesheet\" type=\"text/css\" href=\"{% static 'ecan/stylesheets/sequences.css' %}\"/>\n\n    <!-- D3.js -->\n    <script src=\"{% static 'ecan/javascripts/d3.js' %}\"></script>\n    <!--[if lt IE 9]>\n    <script src=\"//html5shiv.googlecode.com/svn/trunk/html5.js\"></script>\n    <![endif]-->\n  </head>\n  <body>\n    <div class=\"wrapper\">\n      <header>\n        <h1 align=\"center\"><br>ASWAC</h1>\n        <p align=\"center\"><small>Automated <br>Solid Waste Classification</small></p>\n\n<!--         <p class=\"view\" align=\"center\"><a href=\"./publications.html\"> Publications </a></p>\n        <p class=\"view\" align=\"center\"><a href=\"https://github.com/jsmedmar\">GitHub Profile</a></p>\n        <p class=\"view\" align=\"center\"><a href=\"https://www.linkedin.com/in/jsmedmar\">LinkedIn Profile</a></p> -->\n\n      </header>\n      <section>\n    <div id=\"main\">\n      <div id=\"sequence\"></div>\n      <div id=\"chart\">\n        <div id=\"explanation\" style=\"visibility: hidden;\">\n          <span id=\"percentage\"></span><br/>\n          of visits begin with this sequence of pages\n        </div>\n      </div>\n    </div>\n    <div id=\"sidebar\">\n      <input type=\"checkbox\" id=\"togglelegend\"> Legend<br/>\n      <div id=\"legend\" style=\"visibility: hidden;\"></div>\n    </div>\n    <script type=\"text/javascript\" src=\"{% static 'ecan/javascripts/sequence.js' %}\"></script>\n    <script type=\"text/javascript\">\n      // Hack to make this example display correctly in an iframe on bl.ocks.org\n      d3.select(self.frameElement).style(\"height\", \"700px\");\n  </script>\n    </section>\n  </body>\n</html>\n",
-			"settings":
-			{
-				"buffer_size": 2504,
-				"line_ending": "Unix"
-			}
-		},
-		{
-			"file": "/Users/JuanSantiagoMedina/Documents/Google_Drive/Academico_Profesional/NYU/drive_GRA/ecan/ecan/views.py",
-			"settings":
-			{
-				"buffer_size": 8302,
-				"line_ending": "Unix"
-			}
-		},
-		{
-			"file": "/Users/JuanSantiagoMedina/Documents/Google_Drive/Academico_Profesional/NYU/drive_GRA/ecan/ecan/templates/ecan/s.html",
-			"settings":
-			{
-				"buffer_size": 3533,
+				"buffer_size": 3583,
 				"line_ending": "Unix"
 			}
 		}
@@ -599,10 +577,14 @@
 	"build_varint": "",
 	"command_palette":
 	{
-		"height": 186.0,
-		"last_filter": "push",
+		"height": 362.0,
+		"last_filter": "shell",
 		"selected_items":
 		[
+			[
+				"shell",
+				"SublimeREPL: Shell"
+			],
 			[
 				"push",
 				"Git: Push"
@@ -836,10 +818,6 @@
 				"Package Control: Enable Package"
 			],
 			[
-				"shell",
-				"SublimeREPL: Shell"
-			],
-			[
 				"repl r",
 				"SublimeREPL: R"
 			],
@@ -1031,18 +1009,37 @@
 	[
 		"/Users/JuanSantiagoMedina/Documents/Google_Drive/Academico_Profesional/NYU/drive_GRA/ecan",
 		"/Users/JuanSantiagoMedina/Documents/Google_Drive/Academico_Profesional/NYU/drive_GRA/ecan/ecan",
+		"/Users/JuanSantiagoMedina/Documents/Google_Drive/Academico_Profesional/NYU/drive_GRA/ecan/ecan/ml",
+		"/Users/JuanSantiagoMedina/Documents/Google_Drive/Academico_Profesional/NYU/drive_GRA/ecan/ecan/ml/clfs",
+		"/Users/JuanSantiagoMedina/Documents/Google_Drive/Academico_Profesional/NYU/drive_GRA/ecan/ecan/ml/test",
+		"/Users/JuanSantiagoMedina/Documents/Google_Drive/Academico_Profesional/NYU/drive_GRA/ecan/ecan/static",
 		"/Users/JuanSantiagoMedina/Documents/Google_Drive/Academico_Profesional/NYU/drive_GRA/ecan/ecan/static/ecan",
 		"/Users/JuanSantiagoMedina/Documents/Google_Drive/Academico_Profesional/NYU/drive_GRA/ecan/ecan/static/ecan/javascripts",
 		"/Users/JuanSantiagoMedina/Documents/Google_Drive/Academico_Profesional/NYU/drive_GRA/ecan/ecan/static/ecan/stylesheets",
-		"/Users/JuanSantiagoMedina/Documents/Google_Drive/Academico_Profesional/NYU/drive_GRA/ecan/ecan/templates"
+		"/Users/JuanSantiagoMedina/Documents/Google_Drive/Academico_Profesional/NYU/drive_GRA/ecan/ecan/templates",
+		"/Users/JuanSantiagoMedina/Documents/Google_Drive/Academico_Profesional/NYU/drive_GRA/ecan/ecan/templates/ecan"
 	],
 	"file_history":
 	[
+		"/Users/JuanSantiagoMedina/Documents/Google_Drive/Academico_Profesional/NYU/drive_GRA/ecan/ecan/static/ecan/stylesheets/sequences.css",
 		"/Users/JuanSantiagoMedina/Documents/Google_Drive/Academico_Profesional/NYU/drive_GRA/ecan/ecan/templates/ecan/predict.html",
+		"/Users/JuanSantiagoMedina/Documents/Google_Drive/Academico_Profesional/NYU/drive_GRA/ecan/ecan/static/ecan/javascripts/jquery-2.1.3.min.js",
+		"/Users/JuanSantiagoMedina/Documents/Google_Drive/Academico_Profesional/NYU/drive_GRA/ecan/ecan/urls.py",
+		"/Users/JuanSantiagoMedina/Documents/Google_Drive/Academico_Profesional/NYU/drive_GRA/ecan/ecan/static/ecan/javascripts/sequence.js",
+		"/Users/JuanSantiagoMedina/Documents/Google_Drive/Academico_Profesional/NYU/drive_GRA/ecan/ecan/ml/clfs/rfclf041815.py",
+		"/Users/JuanSantiagoMedina/Documents/Google_Drive/Academico_Profesional/NYU/drive_GRA/ecan/ecan/ml/hw.py",
+		"/Users/JuanSantiagoMedina/Documents/Google_Drive/Academico_Profesional/NYU/drive_GRA/ecan/ecan/ml/build_clf/dummy.py",
+		"/Users/JuanSantiagoMedina/Documents/Google_Drive/Academico_Profesional/NYU/drive_GRA/ecan/ecan/templates/ecan/s.html",
+		"/Users/JuanSantiagoMedina/Documents/Google_Drive/Academico_Profesional/NYU/drive_GRA/ecan/ecan/templates/ecan/home.html",
+		"/Users/JuanSantiagoMedina/Documents/Google_Drive/Academico_Profesional/NYU/drive_GRA/ecan/ecan/static/ecan/data/visit-sequences2.csv",
+		"/Users/JuanSantiagoMedina/Documents/Google_Drive/Academico_Profesional/NYU/drive_GRA/ecan/api/data/visit-sequences.csv",
+		"/Users/JuanSantiagoMedina/Documents/Google_Drive/Academico_Profesional/NYU/drive_GRA/ecan/api/settings.py",
+		"/Users/JuanSantiagoMedina/Documents/Google_Drive/Academico_Profesional/NYU/drive_GRA/ecan/ecan/views.py",
+		"/Users/JuanSantiagoMedina/Documents/Google_Drive/Academico_Profesional/NYU/drive_GRA/ecan/ecan/static/ecan/stylesheets/stylesheet.css",
+		"/Users/JuanSantiagoMedina/Documents/Google_Drive/Academico_Profesional/NYU/drive_GRA/ecan/ecan/visit-sequences.csv",
 		"/Users/JuanSantiagoMedina/Documents/Google_Drive/Academico_Profesional/NYU/drive_GRA/ecan/ecan/templates/ecan/visit-sequences.csv",
 		"/Users/JuanSantiagoMedina/Documents/Google_Drive/Academico_Profesional/NYU/drive_GRA/ecan/ecan/static/ecan/javascripts/visit-sequences.csv",
 		"/Users/JuanSantiagoMedina/Documents/Google_Drive/Academico_Profesional/NYU/drive_GRA/ecan/ecan/templates/ecan/sample.html",
-		"/Users/JuanSantiagoMedina/Documents/Google_Drive/Academico_Profesional/NYU/drive_GRA/ecan/ecan/static/ecan/javascripts/sequence.js",
 		"/Users/JuanSantiagoMedina/.zshrc",
 		"/Users/JuanSantiagoMedina/.bash_profile",
 		"/Users/JuanSantiagoMedina/.profile",
@@ -1050,7 +1047,6 @@
 		"/Users/JuanSantiagoMedina/Documents/Google_Drive/Academico_Profesional/NYU/drive_GRA/ecan/ecan/scripts/results/toolbox.py",
 		"/Users/JuanSantiagoMedina/Documents/Google_Drive/Academico_Profesional/NYU/drive_GRA/ecan/ecan/scripts/feat_test.py",
 		"/Users/JuanSantiagoMedina/Documents/Google_Drive/Academico_Profesional/NYU/drive_GRA/ecan/ecan/scripts/RF041615.py",
-		"/Users/JuanSantiagoMedina/Documents/Google_Drive/Academico_Profesional/NYU/drive_GRA/ecan/api/settings.py",
 		"/Users/JuanSantiagoMedina/Documents/Google_Drive/Academico_Profesional/NYU/drive_GRA/ecan/.gitignore",
 		"/Users/JuanSantiagoMedina/Documents/Google_Drive/Academico_Profesional/NYU/drive_GRA/ecan/ecan/scripts/SVM041615.py",
 		"/Users/JuanSantiagoMedina/Documents/Google_Drive/Academico_Profesional/NYU/drive_GRA/ecan-recognition/ecan/templates/ecan/index.html",
@@ -1152,20 +1148,7 @@
 		"/Users/JuanSantiagoMedina/.emacs.d/settings/general-settings.el",
 		"/Users/JuanSantiagoMedina/.emacs.d/settings/el-get-settings.el",
 		"/Users/JuanSantiagoMedina/.emacs.d/settings/custom.el",
-		"/Users/JuanSantiagoMedina/Library/Application Support/Sublime Text 3/Packages/User/Anaconda.sublime-settings",
-		"/Users/JuanSantiagoMedina/Library/Application Support/Sublime Text 3/Packages/Anaconda/Anaconda.sublime-settings",
-		"/Users/JuanSantiagoMedina/Library/Application Support/Sublime Text 3/Packages/Python/Completion",
-		"/Users/JuanSantiagoMedina/Library/Application Support/Sublime Text 3/Packages/Python/Rules.tmPreferences",
-		"/Users/JuanSantiagoMedina/Desktop/Ex_Git/secondary.txt",
-		"/Users/JuanSantiagoMedina/Desktop/Ex_Git/primary.txt",
-		"/Users/JuanSantiagoMedina/Library/Application Support/Sublime Text 2/Packages/User/Preferences.sublime-settings",
-		"/Users/JuanSantiagoMedina/Desktop/untitled.py",
-		"/Users/JuanSantiagoMedina/Library/Application Support/Sublime Text 2/Packages/User/SublimeCodeIntel.sublime-settings",
-		"/Users/JuanSantiagoMedina/Library/Application Support/Sublime Text 2/Packages/SublimeCodeIntel/SublimeCodeIntel.sublime-settings",
-		"/Users/JuanSantiagoMedina/Desktop/Ex_Git/notes.txt",
-		"/Users/JuanSantiagoMedina/Documents/Google_Drive/Academico_Profesional/NYU/Spring_2015/Sublime Project/Icon",
-		"/Users/JuanSantiagoMedina/Library/Application Support/Sublime Text 2/Packages/User/SublimeREPL.sublime-settings",
-		"/Users/JuanSantiagoMedina/Desktop/Ex_Git/delete.txt"
+		"/Users/JuanSantiagoMedina/Library/Application Support/Sublime Text 3/Packages/User/Anaconda.sublime-settings"
 	],
 	"find":
 	{
@@ -1186,6 +1169,56 @@
 		"case_sensitive": true,
 		"find_history":
 		[
+			"section",
+			"height",
+			"scroll",
+			"header",
+			"wrapper",
+			"section",
+			"wrapper",
+			"\"#bdbdbd\"",
+			"\"#d9d9d9\"",
+			"\"#737373\"",
+			"450",
+			"\"#969696\"",
+			"\"#bdbdbd\"",
+			"bdbdbd",
+			"predict",
+			"mouseleave",
+			"trail",
+			"contain",
+			"io",
+			"circle",
+			"center",
+			"position",
+			"960",
+			"max",
+			"main",
+			"600",
+			"400",
+			"chart[Object.keys(chart)[i]]",
+			"chart",
+			"600",
+			"chart[Object.keys(chart)[i]]",
+			"chart",
+			"$",
+			"chart[Object.keys(chart)[i]]",
+			"chart[svg_name]",
+			"250",
+			"container",
+			"percentage",
+			"mouseover",
+			"explanation",
+			"togglelegend",
+			"vl",
+			"u\"",
+			"'",
+			", '",
+			"home",
+			"4 | ",
+			":",
+			"explanation",
+			"sequence of pages",
 			":",
 			"svm",
 			"pixs[0].name",
@@ -1263,57 +1296,7 @@
 			"description",
 			"Description",
 			"Brand",
-			"brand",
-			"Description",
-			"'arg'",
-			"print",
-			"FRIENDS",
-			"name",
-			"arg",
-			"brand",
-			"insert_url ",
-			"self.BRANDS",
-			"brand",
-			" ' + result",
-			"current",
-			" print result",
-			"print result",
-			"split",
-			"' '.join",
-			"url",
-			"print",
-			"jason",
-			"wei",
-			"shape",
-			"materialS",
-			"shape",
-			"SHAPE",
-			"shape",
-			"do_insert_shape",
-			"brand",
-			"Brand",
-			"BRAND",
-			"brand",
-			"greeting",
-			"person",
-			"name",
-			"show",
-			"shape",
-			"Shape",
-			"material",
-			"Material",
-			"Shape",
-			"UploadBrandForm",
-			"UploadItemForm",
-			"cmd",
-			"Brand",
-			"models",
-			"material",
-			"shape",
-			"brand",
-			"item_class",
-			"true",
-			"false"
+			"brand"
 		],
 		"highlight": true,
 		"in_selection": false,
@@ -1343,238 +1326,24 @@
 	"groups":
 	[
 		{
-			"selected": 3,
+			"selected": 4,
 			"sheets":
 			[
 				{
 					"buffer": 0,
-					"file": "/Users/JuanSantiagoMedina/Documents/Google_Drive/Academico_Profesional/NYU/drive_GRA/ecan/ecan/templates/ecan/home.html",
-					"semi_transient": false,
-					"settings":
-					{
-						"buffer_size": 1130,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								921,
-								921
-							]
-						],
-						"settings":
-						{
-							"bs_sintax": "html",
-							"buffer_scroll_name": "29329bcd",
-							"spell_check": false,
-							"syntax": "Packages/HTML/HTML.tmLanguage"
-						},
-						"translation.x": 0.0,
-						"translation.y": 24.0,
-						"zoom_level": 1.0
-					},
-					"stack_index": 1,
-					"type": "text"
-				},
-				{
-					"buffer": 1,
-					"file": "/Users/JuanSantiagoMedina/Documents/Google_Drive/Academico_Profesional/NYU/drive_GRA/ecan/ecan/templates/ecan/visit-sequences.csv",
-					"semi_transient": true,
-					"settings":
-					{
-						"buffer_size": 742875,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								0,
-								742875
-							]
-						],
-						"settings":
-						{
-							"bs_sintax": "plain text",
-							"buffer_scroll_name": "5fc96d4e",
-							"spell_check": false,
-							"syntax": "Packages/Text/Plain text.tmLanguage"
-						},
-						"translation.x": 0.0,
-						"translation.y": 343924.0,
-						"zoom_level": 1.0
-					},
-					"stack_index": 2,
-					"type": "text"
-				},
-				{
-					"buffer": 2,
-					"file": "/Users/JuanSantiagoMedina/Documents/Google_Drive/Academico_Profesional/NYU/drive_GRA/ecan/ecan/static/ecan/javascripts/sequence.js",
-					"semi_transient": false,
-					"settings":
-					{
-						"buffer_size": 9008,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								1258,
-								1258
-							]
-						],
-						"settings":
-						{
-							"bs_sintax": "javascript",
-							"buffer_scroll_name": "05ab95cd",
-							"spell_check": false,
-							"syntax": "Packages/JavaScript/JavaScript.tmLanguage"
-						},
-						"translation.x": 0.0,
-						"translation.y": 573.0,
-						"zoom_level": 1.0
-					},
-					"stack_index": 3,
-					"type": "text"
-				},
-				{
-					"buffer": 3,
-					"file": "/Users/JuanSantiagoMedina/Documents/Google_Drive/Academico_Profesional/NYU/drive_GRA/ecan/ecan/visit-sequences.csv",
-					"semi_transient": false,
-					"settings":
-					{
-						"buffer_size": 742875,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								741548,
-								741548
-							]
-						],
-						"settings":
-						{
-							"bs_sintax": "plain text",
-							"buffer_scroll_name": "f22eed5f",
-							"open_with_edit": true,
-							"syntax": "Packages/Text/Plain text.tmLanguage"
-						},
-						"translation.x": 0.0,
-						"translation.y": 343857.0,
-						"zoom_level": 1.0
-					},
-					"stack_index": 0,
-					"type": "text"
-				},
-				{
-					"buffer": 4,
-					"file": "/Users/JuanSantiagoMedina/Documents/Google_Drive/Academico_Profesional/NYU/drive_GRA/ecan/ecan/static/ecan/stylesheets/sequences.css",
-					"semi_transient": false,
-					"settings":
-					{
-						"buffer_size": 649,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								0,
-								649
-							]
-						],
-						"settings":
-						{
-							"bs_sintax": "css",
-							"buffer_scroll_name": "2593ad31",
-							"open_with_edit": true,
-							"syntax": "Packages/CSS/CSS.tmLanguage"
-						},
-						"translation.x": 0.0,
-						"translation.y": 0.0,
-						"zoom_level": 1.0
-					},
-					"stack_index": 5,
-					"type": "text"
-				},
-				{
-					"buffer": 5,
-					"file": "/Users/JuanSantiagoMedina/Documents/Google_Drive/Academico_Profesional/NYU/drive_GRA/ecan/ecan/static/ecan/stylesheets/stylesheet.css",
-					"semi_transient": false,
-					"settings":
-					{
-						"buffer_size": 3559,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								113,
-								113
-							]
-						],
-						"settings":
-						{
-							"bs_sintax": "css",
-							"buffer_scroll_name": "90e49f6c",
-							"spell_check": false,
-							"syntax": "Packages/CSS/CSS.tmLanguage"
-						},
-						"translation.x": 0.0,
-						"translation.y": 0.0,
-						"zoom_level": 1.0
-					},
-					"stack_index": 6,
-					"type": "text"
-				},
-				{
-					"buffer": 6,
-					"semi_transient": false,
-					"settings":
-					{
-						"buffer_size": 2504,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								2280,
-								2186
-							]
-						],
-						"settings":
-						{
-							"bs_sintax": "plain text",
-							"syntax": "Packages/HTML/HTML.tmLanguage"
-						},
-						"translation.x": 0.0,
-						"translation.y": 728.0,
-						"zoom_level": 1.0
-					},
-					"stack_index": 4,
-					"type": "text"
-				},
-				{
-					"buffer": 7,
 					"file": "/Users/JuanSantiagoMedina/Documents/Google_Drive/Academico_Profesional/NYU/drive_GRA/ecan/ecan/views.py",
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 8302,
+						"buffer_size": 9431,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								834,
-								834
+								1829,
+								1829
 							]
 						],
 						"settings":
@@ -1585,41 +1354,172 @@
 							"syntax": "Packages/Python/Python.tmLanguage"
 						},
 						"translation.x": 0.0,
-						"translation.y": 40.0,
+						"translation.y": 625.0,
 						"zoom_level": 1.0
 					},
-					"stack_index": 7,
+					"stack_index": 3,
 					"type": "text"
 				},
 				{
-					"buffer": 8,
-					"file": "/Users/JuanSantiagoMedina/Documents/Google_Drive/Academico_Profesional/NYU/drive_GRA/ecan/ecan/templates/ecan/s.html",
+					"buffer": 1,
+					"file": "/Users/JuanSantiagoMedina/Documents/Google_Drive/Academico_Profesional/NYU/drive_GRA/ecan/ecan/static/ecan/javascripts/vis.js",
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 3533,
+						"buffer_size": 13171,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								612,
-								660
+								2732,
+								2732
+							],
+							[
+								2865,
+								2865
+							],
+							[
+								2998,
+								2998
 							]
 						],
 						"settings":
 						{
-							"bs_sintax": "html",
-							"buffer_scroll_name": "4a99f55a",
+							"bs_sintax": "javascript",
+							"buffer_scroll_name": "c81b0f5a",
 							"open_with_edit": true,
-							"syntax": "Packages/HTML/HTML.tmLanguage"
+							"spell_check": false,
+							"syntax": "Packages/JavaScript/JavaScript.tmLanguage",
+							"tab_size": 4,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 1580.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 4,
+					"type": "text"
+				},
+				{
+					"buffer": 2,
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 1057,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								0,
+								1057
+							]
+						],
+						"settings":
+						{
+							"bs_sintax": "plain text",
+							"syntax": "Packages/JavaScript/JavaScript.tmLanguage"
 						},
 						"translation.x": 0.0,
 						"translation.y": 0.0,
 						"zoom_level": 1.0
 					},
-					"stack_index": 8,
+					"stack_index": 5,
+					"type": "text"
+				},
+				{
+					"buffer": 3,
+					"file": "/Users/JuanSantiagoMedina/Documents/Google_Drive/Academico_Profesional/NYU/drive_GRA/ecan/ecan/ml/hw.py",
+					"semi_transient": true,
+					"settings":
+					{
+						"buffer_size": 44,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								44,
+								44
+							]
+						],
+						"settings":
+						{
+							"bs_sintax": "python",
+							"buffer_scroll_name": "1c7ab61b",
+							"spell_check": false,
+							"syntax": "Packages/Python/Python.tmLanguage"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 1,
+					"type": "text"
+				},
+				{
+					"buffer": 4,
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 291,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								291,
+								291
+							]
+						],
+						"settings":
+						{
+							"auto_indent": false,
+							"bs_sintax": "plain text",
+							"syntax": "Packages/Text/Plain text.tmLanguage",
+							"word_wrap": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 0,
+					"type": "text"
+				},
+				{
+					"buffer": 5,
+					"file": "/Users/JuanSantiagoMedina/Documents/Google_Drive/Academico_Profesional/NYU/drive_GRA/ecan/ecan/static/ecan/stylesheets/stylesheet.css",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 3583,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								2177,
+								2183
+							]
+						],
+						"settings":
+						{
+							"bs_sintax": "css",
+							"buffer_scroll_name": "4858453f",
+							"spell_check": false,
+							"syntax": "Packages/CSS/CSS.tmLanguage"
+						},
+						"translation.x": 0.0,
+						"translation.y": 2360.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 2,
 					"type": "text"
 				}
 			]
@@ -1782,7 +1682,7 @@
 	"show_open_files": false,
 	"show_tabs": true,
 	"side_bar_visible": true,
-	"side_bar_width": 214.0,
+	"side_bar_width": 249.0,
 	"status_bar_visible": true,
 	"template_settings":
 	{
