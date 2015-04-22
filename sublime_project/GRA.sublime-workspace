@@ -4,6 +4,10 @@
 		"selected_items":
 		[
 			[
+				"dir",
+				"dirp	statement"
+			],
+			[
 				"if",
 				"if	keyword"
 			],
@@ -510,62 +514,32 @@
 			[
 				"qu",
 				"queryNaive"
-			],
-			[
-				"sea",
-				"searchInRange"
 			]
 		]
 	},
 	"buffers":
 	[
 		{
-			"file": "/Users/JuanSantiagoMedina/Documents/Google_Drive/Academico_Profesional/NYU/drive_GRA/ecan/ecan/views.py",
+			"file": "/Users/JuanSantiagoMedina/Documents/Google_Drive/Academico_Profesional/NYU/drive_GRA/ecan/ecan/ml/clfs/rfclf041815.py",
 			"settings":
 			{
-				"buffer_size": 9431,
+				"buffer_size": 1914,
 				"line_ending": "Unix"
 			}
 		},
 		{
-			"file": "/Users/JuanSantiagoMedina/Documents/Google_Drive/Academico_Profesional/NYU/drive_GRA/ecan/ecan/static/ecan/javascripts/vis.js",
+			"file": "/Users/JuanSantiagoMedina/Documents/Google_Drive/Academico_Profesional/NYU/drive_GRA/ecan/ecan/ml/clfs/rfclf_on_cn_042115.pklresults.json",
 			"settings":
 			{
-				"buffer_size": 13171,
+				"buffer_size": 33,
 				"line_ending": "Unix"
 			}
 		},
 		{
-			"contents": "var cn_clrs = [\"#737373\", \"#737373\",\"#737373\", \"#737373\",\"#737373\", \"#737373\",\"#737373\", \"#737373\",\"#737373\", \"#737373\",\"#737373\", \"#737373\",\"#737373\", \"#737373\",\"#737373\", \"#737373\",\"#737373\", \"#737373\",\"#737373\", \"#737373\",\"#737373\", \"#737373\",\"#737373\", \"#737373\",\"#737373\", \"#737373\",\"#737373\", \"#737373\",\"#737373\", \"#737373\",\"#737373\", \"#737373\"]\nvar mat_clrs = [\"#737373\", \"#737373\",\"#737373\", \"#737373\",\"#737373\", \"#737373\",\"#737373\", \"#737373\",\"#737373\", \"#737373\",\"#737373\", \"#737373\",\"#737373\", \"#737373\",\"#737373\", \"#737373\",\"#737373\", \"#737373\",\"#737373\", \"#737373\",\"#737373\", \"#737373\",\"#737373\", \"#737373\",\"#737373\", \"#737373\",\"#737373\", \"#737373\",\"#737373\", \"#737373\",\"#737373\", \"#737373\"]\nvar val_clrs = [\"#737373\", \"#737373\",\"#737373\", \"#737373\",\"#737373\", \"#737373\",\"#737373\", \"#737373\",\"#737373\", \"#737373\",\"#737373\", \"#737373\",\"#737373\", \"#737373\",\"#737373\", \"#737373\",\"#737373\", \"#737373\",\"#737373\", \"#737373\",\"#737373\", \"#737373\",\"#737373\", \"#737373\",\"#737373\", \"#737373\",\"#737373\", \"#737373\",\"#737373\", \"#737373\",\"#737373\", \"#737373\"]",
+			"file": "/Users/JuanSantiagoMedina/Documents/Google_Drive/Academico_Profesional/NYU/drive_GRA/ecan/ecan/ml/tests/RF041615.py",
 			"settings":
 			{
-				"buffer_size": 1057,
-				"line_ending": "Unix"
-			}
-		},
-		{
-			"file": "/Users/JuanSantiagoMedina/Documents/Google_Drive/Academico_Profesional/NYU/drive_GRA/ecan/ecan/ml/hw.py",
-			"settings":
-			{
-				"buffer_size": 44,
-				"line_ending": "Unix"
-			}
-		},
-		{
-			"contents": "Package Control Messages\n========================\n\nAnaconda:\n--------\n\n  Changes in 1.4.8\n  ================\n  \n  Minor release that just adds a new gutters theme for retina display devices\n  \n  For more detailed information about those changes run git v1.4.7..v1.4.8 on git repository\n  \n  ",
-			"settings":
-			{
-				"buffer_size": 291,
-				"line_ending": "Unix",
-				"name": "Package Control Messages",
-				"scratch": true
-			}
-		},
-		{
-			"file": "/Users/JuanSantiagoMedina/Documents/Google_Drive/Academico_Profesional/NYU/drive_GRA/ecan/ecan/static/ecan/stylesheets/stylesheet.css",
-			"settings":
-			{
-				"buffer_size": 3583,
+				"buffer_size": 2866,
 				"line_ending": "Unix"
 			}
 		}
@@ -577,7 +551,7 @@
 	"build_varint": "",
 	"command_palette":
 	{
-		"height": 362.0,
+		"height": 374.0,
 		"last_filter": "shell",
 		"selected_items":
 		[
@@ -1011,16 +985,16 @@
 		"/Users/JuanSantiagoMedina/Documents/Google_Drive/Academico_Profesional/NYU/drive_GRA/ecan/ecan",
 		"/Users/JuanSantiagoMedina/Documents/Google_Drive/Academico_Profesional/NYU/drive_GRA/ecan/ecan/ml",
 		"/Users/JuanSantiagoMedina/Documents/Google_Drive/Academico_Profesional/NYU/drive_GRA/ecan/ecan/ml/clfs",
-		"/Users/JuanSantiagoMedina/Documents/Google_Drive/Academico_Profesional/NYU/drive_GRA/ecan/ecan/ml/test",
-		"/Users/JuanSantiagoMedina/Documents/Google_Drive/Academico_Profesional/NYU/drive_GRA/ecan/ecan/static",
-		"/Users/JuanSantiagoMedina/Documents/Google_Drive/Academico_Profesional/NYU/drive_GRA/ecan/ecan/static/ecan",
-		"/Users/JuanSantiagoMedina/Documents/Google_Drive/Academico_Profesional/NYU/drive_GRA/ecan/ecan/static/ecan/javascripts",
-		"/Users/JuanSantiagoMedina/Documents/Google_Drive/Academico_Profesional/NYU/drive_GRA/ecan/ecan/static/ecan/stylesheets",
-		"/Users/JuanSantiagoMedina/Documents/Google_Drive/Academico_Profesional/NYU/drive_GRA/ecan/ecan/templates",
-		"/Users/JuanSantiagoMedina/Documents/Google_Drive/Academico_Profesional/NYU/drive_GRA/ecan/ecan/templates/ecan"
+		"/Users/JuanSantiagoMedina/Documents/Google_Drive/Academico_Profesional/NYU/drive_GRA/ecan/ecan/ml/clfs/rfclf",
+		"/Users/JuanSantiagoMedina/Documents/Google_Drive/Academico_Profesional/NYU/drive_GRA/ecan/ecan/ml/tests",
+		"/Users/JuanSantiagoMedina/Documents/Google_Drive/Academico_Profesional/NYU/drive_GRA/ecan/ecan/templates"
 	],
 	"file_history":
 	[
+		"/Users/JuanSantiagoMedina/Documents/Google_Drive/Academico_Profesional/NYU/drive_GRA/ecan/.git/config",
+		"/Users/JuanSantiagoMedina/Documents/Google_Drive/Academico_Profesional/NYU/drive_GRA/ecan/ecan/static/ecan/stylesheets/stylesheet.css",
+		"/Users/JuanSantiagoMedina/Documents/Google_Drive/Academico_Profesional/NYU/drive_GRA/ecan/ecan/static/ecan/javascripts/vis.js",
+		"/Users/JuanSantiagoMedina/Documents/Google_Drive/Academico_Profesional/NYU/drive_GRA/ecan/ecan/views.py",
 		"/Users/JuanSantiagoMedina/Documents/Google_Drive/Academico_Profesional/NYU/drive_GRA/ecan/ecan/static/ecan/stylesheets/sequences.css",
 		"/Users/JuanSantiagoMedina/Documents/Google_Drive/Academico_Profesional/NYU/drive_GRA/ecan/ecan/templates/ecan/predict.html",
 		"/Users/JuanSantiagoMedina/Documents/Google_Drive/Academico_Profesional/NYU/drive_GRA/ecan/ecan/static/ecan/javascripts/jquery-2.1.3.min.js",
@@ -1034,8 +1008,6 @@
 		"/Users/JuanSantiagoMedina/Documents/Google_Drive/Academico_Profesional/NYU/drive_GRA/ecan/ecan/static/ecan/data/visit-sequences2.csv",
 		"/Users/JuanSantiagoMedina/Documents/Google_Drive/Academico_Profesional/NYU/drive_GRA/ecan/api/data/visit-sequences.csv",
 		"/Users/JuanSantiagoMedina/Documents/Google_Drive/Academico_Profesional/NYU/drive_GRA/ecan/api/settings.py",
-		"/Users/JuanSantiagoMedina/Documents/Google_Drive/Academico_Profesional/NYU/drive_GRA/ecan/ecan/views.py",
-		"/Users/JuanSantiagoMedina/Documents/Google_Drive/Academico_Profesional/NYU/drive_GRA/ecan/ecan/static/ecan/stylesheets/stylesheet.css",
 		"/Users/JuanSantiagoMedina/Documents/Google_Drive/Academico_Profesional/NYU/drive_GRA/ecan/ecan/visit-sequences.csv",
 		"/Users/JuanSantiagoMedina/Documents/Google_Drive/Academico_Profesional/NYU/drive_GRA/ecan/ecan/templates/ecan/visit-sequences.csv",
 		"/Users/JuanSantiagoMedina/Documents/Google_Drive/Academico_Profesional/NYU/drive_GRA/ecan/ecan/static/ecan/javascripts/visit-sequences.csv",
@@ -1146,9 +1118,7 @@
 		"/Users/JuanSantiagoMedina/.emacs",
 		"/Users/JuanSantiagoMedina/.emacs.d/settings/python-settings.el",
 		"/Users/JuanSantiagoMedina/.emacs.d/settings/general-settings.el",
-		"/Users/JuanSantiagoMedina/.emacs.d/settings/el-get-settings.el",
-		"/Users/JuanSantiagoMedina/.emacs.d/settings/custom.el",
-		"/Users/JuanSantiagoMedina/Library/Application Support/Sublime Text 3/Packages/User/Anaconda.sublime-settings"
+		"/Users/JuanSantiagoMedina/.emacs.d/settings/el-get-settings.el"
 	],
 	"find":
 	{
@@ -1169,6 +1139,7 @@
 		"case_sensitive": true,
 		"find_history":
 		[
+			"fp",
 			"section",
 			"height",
 			"scroll",
@@ -1295,8 +1266,7 @@
 			"tab",
 			"description",
 			"Description",
-			"Brand",
-			"brand"
+			"Brand"
 		],
 		"highlight": true,
 		"in_selection": false,
@@ -1326,88 +1296,47 @@
 	"groups":
 	[
 		{
-			"selected": 4,
+			"selected": 1,
 			"sheets":
 			[
 				{
 					"buffer": 0,
-					"file": "/Users/JuanSantiagoMedina/Documents/Google_Drive/Academico_Profesional/NYU/drive_GRA/ecan/ecan/views.py",
+					"file": "/Users/JuanSantiagoMedina/Documents/Google_Drive/Academico_Profesional/NYU/drive_GRA/ecan/ecan/ml/clfs/rfclf041815.py",
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 9431,
+						"buffer_size": 1914,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								1829,
-								1829
+								959,
+								872
 							]
 						],
 						"settings":
 						{
 							"bs_sintax": "python",
-							"buffer_scroll_name": "5a922833",
+							"buffer_scroll_name": "839828e4",
 							"spell_check": false,
 							"syntax": "Packages/Python/Python.tmLanguage"
 						},
 						"translation.x": 0.0,
-						"translation.y": 625.0,
+						"translation.y": 539.0,
 						"zoom_level": 1.0
 					},
-					"stack_index": 3,
+					"stack_index": 1,
 					"type": "text"
 				},
 				{
 					"buffer": 1,
-					"file": "/Users/JuanSantiagoMedina/Documents/Google_Drive/Academico_Profesional/NYU/drive_GRA/ecan/ecan/static/ecan/javascripts/vis.js",
-					"semi_transient": false,
+					"file": "/Users/JuanSantiagoMedina/Documents/Google_Drive/Academico_Profesional/NYU/drive_GRA/ecan/ecan/ml/clfs/rfclf_on_cn_042115.pklresults.json",
+					"semi_transient": true,
 					"settings":
 					{
-						"buffer_size": 13171,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								2732,
-								2732
-							],
-							[
-								2865,
-								2865
-							],
-							[
-								2998,
-								2998
-							]
-						],
-						"settings":
-						{
-							"bs_sintax": "javascript",
-							"buffer_scroll_name": "c81b0f5a",
-							"open_with_edit": true,
-							"spell_check": false,
-							"syntax": "Packages/JavaScript/JavaScript.tmLanguage",
-							"tab_size": 4,
-							"translate_tabs_to_spaces": true
-						},
-						"translation.x": 0.0,
-						"translation.y": 1580.0,
-						"zoom_level": 1.0
-					},
-					"stack_index": 4,
-					"type": "text"
-				},
-				{
-					"buffer": 2,
-					"semi_transient": false,
-					"settings":
-					{
-						"buffer_size": 1057,
+						"buffer_size": 33,
 						"regions":
 						{
 						},
@@ -1415,74 +1344,14 @@
 						[
 							[
 								0,
-								1057
+								0
 							]
 						],
 						"settings":
 						{
-							"bs_sintax": "plain text",
-							"syntax": "Packages/JavaScript/JavaScript.tmLanguage"
-						},
-						"translation.x": 0.0,
-						"translation.y": 0.0,
-						"zoom_level": 1.0
-					},
-					"stack_index": 5,
-					"type": "text"
-				},
-				{
-					"buffer": 3,
-					"file": "/Users/JuanSantiagoMedina/Documents/Google_Drive/Academico_Profesional/NYU/drive_GRA/ecan/ecan/ml/hw.py",
-					"semi_transient": true,
-					"settings":
-					{
-						"buffer_size": 44,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								44,
-								44
-							]
-						],
-						"settings":
-						{
-							"bs_sintax": "python",
-							"buffer_scroll_name": "1c7ab61b",
-							"spell_check": false,
-							"syntax": "Packages/Python/Python.tmLanguage"
-						},
-						"translation.x": 0.0,
-						"translation.y": 0.0,
-						"zoom_level": 1.0
-					},
-					"stack_index": 1,
-					"type": "text"
-				},
-				{
-					"buffer": 4,
-					"semi_transient": false,
-					"settings":
-					{
-						"buffer_size": 291,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								291,
-								291
-							]
-						],
-						"settings":
-						{
-							"auto_indent": false,
-							"bs_sintax": "plain text",
-							"syntax": "Packages/Text/Plain text.tmLanguage",
-							"word_wrap": true
+							"bs_sintax": "json",
+							"buffer_scroll_name": "9ed6a273",
+							"syntax": "Packages/JavaScript/JSON.tmLanguage"
 						},
 						"translation.x": 0.0,
 						"translation.y": 0.0,
@@ -1492,31 +1361,31 @@
 					"type": "text"
 				},
 				{
-					"buffer": 5,
-					"file": "/Users/JuanSantiagoMedina/Documents/Google_Drive/Academico_Profesional/NYU/drive_GRA/ecan/ecan/static/ecan/stylesheets/stylesheet.css",
+					"buffer": 2,
+					"file": "/Users/JuanSantiagoMedina/Documents/Google_Drive/Academico_Profesional/NYU/drive_GRA/ecan/ecan/ml/tests/RF041615.py",
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 3583,
+						"buffer_size": 2866,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								2177,
-								2183
+								2268,
+								2252
 							]
 						],
 						"settings":
 						{
-							"bs_sintax": "css",
-							"buffer_scroll_name": "4858453f",
+							"bs_sintax": "python",
+							"buffer_scroll_name": "b735cc47",
 							"spell_check": false,
-							"syntax": "Packages/CSS/CSS.tmLanguage"
+							"syntax": "Packages/Python/Python.tmLanguage"
 						},
 						"translation.x": 0.0,
-						"translation.y": 2360.0,
+						"translation.y": 758.0,
 						"zoom_level": 1.0
 					},
 					"stack_index": 2,
