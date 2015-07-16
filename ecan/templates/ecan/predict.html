@@ -30,11 +30,11 @@
   <body>
     <div class="wrapper">
       <header>
-        <h1 align="center"><br>ASWAC</h1>
+        <h1 align="center"><br>SWAC</h1>
         <p align="center"><small>Automated <br>Solid Waste Classification</small></p>
         <p class="view" align="center"><a href="{% url 'ecan:home' %}"> Home </a></p>
-        <p class="view" align="center"><a href="https://github.com/jsmedmar">GitHub Profile</a></p>
-        <p class="view" align="center"><a href="https://www.linkedin.com/in/jsmedmar">LinkedIn Profile</a></p>
+        <p class="view" align="center"><a href="https://github.com/jsmedmar/GRA">GitHub</a></p>
+<!--         <p class="view" align="center"><a href="https://www.linkedin.com/in/jsmedmar">LinkedIn Profile</a></p> -->
 <!--         <div id="sidebar" align="left">
             <input type="checkbox" id="togglelegend"> Legend<br/>
         <div id="legend" style="visibility: hidden;"></div>
@@ -61,7 +61,7 @@
  -->
     <script src="{% static 'ecan/javascripts/vis.js' %}" ></script>
     <script type="text/javascript">
-        MYLIBRARY.init({{ out|safe }})
+        MYLIBRARY.vis({{ out|safe }})
     </script>
 
     <script type="text/javascript">

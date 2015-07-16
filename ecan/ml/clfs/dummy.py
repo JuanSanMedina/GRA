@@ -3,6 +3,7 @@ from sklearn.ensemble import RandomForestClassifier
 from sklearn import datasets
 import os
 
+
 def run():
     clf = RandomForestClassifier(n_estimators=100)
     iris = datasets.load_iris()
@@ -11,7 +12,13 @@ def run():
 
     fname = 'rfclf'
     dirp = os.path.join('ecan', 'ml', 'clfs', fname)
-    fp = os.mkdir(dirp, fname + '.pkl')
+    try:
+        os.mkdir(dirp)
+    except OSError as e:
+        print str(e)
+        pass
+
+    fp = os.path.join(dirp, fname + '.pkl')
 
     from sklearn.externals import joblib
     joblib.dump(clf, fp)

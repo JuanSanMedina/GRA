@@ -1,0 +1,155 @@
+#! /usr/local/bin/python
+# -*- coding: utf-8 -*-
+import requests
+import numpy as np
+import codecs
+
+
+def header(str):
+    h = u'<h3><a id="CONTENT"\
+                class="anchor"\
+                href="#CONTENT"\
+                aria-hidden="true">\
+                <span class="octicon octicon-link">\
+                </span></a>CONTENT</h3>'
+    return h.replace('CONTENT', str)
+
+
+def experience(ex):
+    text = \
+u'''<p align="justify">
+<b>POSITION</b>
+<br>
+INSERTLOCATION
+<br>
+INSERTLIST
+</p>'''
+    out = '<!--%s-->' % ex[0]
+    out = "\n".join([out, header(ex[0])])
+    here = np.where(np.array([not e.startswith('*') for e in ex[1:]]))[0]
+    events = np.split(ex[1:], here)
+    for e in events[1:]:
+        pos, loc = e[0].split(' - ', 1)
+        nt = text.replace('POSITION', pos)
+        nt = nt.replace('INSERTLOCATION', loc)
+        ul = ulist([i[2:] for i in e[1:]])
+        nt = nt.replace('INSERTLIST', ul)
+        out = "\n".join([out, nt])
+    return out
+
+
+def education(ed):
+    text = \
+u'''<p align="justify">
+<b>INSTITUTION - </b>
+<i>DEGREE</i><br>
+INSERTITEMS
+</p>'''
+    out = '<!--%s-->' % ed[0]
+    out = "\n".join([out, header(ed[0])])
+    events = np.split(ed[1:], range(len(ed[1:]))[::2])
+    for e in events[1:]:
+        ins, deg = e[0].split(' - ', 1)
+        rc = e[1].split(': ', 1)
+        nt = text.replace('INSTITUTION', ins)
+        nt = nt.replace('DEGREE', deg)
+        nt = nt.replace('INSERTITEMS', bolditem(rc))
+        out = "\n".join([out, nt])
+    return out
+
+
+def general(gen):
+    text = \
+u'''<p align="justify">
+INSERTITEMS
+</p>'''
+    out = '<!--%s-->' % gen[0]
+    out = "\n".join([out, header(gen[0])])
+    items = ''
+    for e in gen[1:]:
+        item = e.split(': ', 1)
+        items = "\n".join([items, bolditem(item)])
+    return "\n".join([out, text.replace(u'INSERTITEMS', items)])
+
+
+def references(ref):
+    par = \
+u'''<p align="justify">
+INSERTITEMS
+</p>'''
+    bold = \
+u'''<b>INITEM: </b><br>'''
+    br = \
+u'''INITEM<br>'''
+    out = '<!--%s-->' % ref[0]
+    out = "\n".join([out, header(ref[0])])
+    items = ''
+    for i, e in enumerate(ref[1:]):
+        if i % 2 == 0:
+            items = "\n".join([items, bold.replace('INITEM', e)])
+        else:
+            items = "\n".join([items, br.replace('INITEM', e)])
+    return "\n".join([out, par.replace('INSERTITEMS', items)])
+
+
+def publications(pub):
+    par = \
+u'''<p align="justify">
+INSERTITEMS
+</p>'''
+    bold = \
+u'''<b>Medina-Martínez JS</b>'''
+    out = '<!--%s-->' % pub[0]
+    out = "\n".join([out, header(pub[0])])
+    for i, e in enumerate(pub[1:]):
+        out = "\n".join([out, par.replace('INSERTITEMS', e)])
+    return out.replace(u'Medina-Martínez JS', bold)
+
+
+def ulist(l):
+    point = "<li> REPLACE </li>"
+    return "\n".join(point.replace('REPLACE', e) for e in l)
+
+
+def bolditem(l):
+    boldi = "<b>INITEM: </b>INVALUE<br>"
+    boldi = boldi.replace('INITEM', l[0])
+    boldi = boldi.replace('INVALUE', l[1])
+    return boldi
+
+url = "https://docs.google.com/feeds/download/documents/export/\
+Export?id=1SNaU-kAvoTmCVB4lqFWJrTFJelgYPDUu8k0AGC5oGv8&exportFormat=txt"
+
+r = requests.get(url)
+data = np.array(r.text.split('\r\n'))
+data = data[data != '']
+
+with codecs.open('./index_temp.html', mode='r', encoding='utf-8') as f:
+    temp = f.read()
+
+temp = temp.replace('INSERTPROFILE', data[3])
+
+ix = {}
+sections = data[np.array([e.isupper() for e in data])]
+for s in sections:
+    ix[s] = np.where(data == s)[0]
+
+sections = sorted(ix, key=lambda k: ix[k])
+here = np.where(np.in1d(data, sections))[0]
+
+content = {}
+for i, c in enumerate(np.split(data, here)[1:]):
+    content[sections[i]] = c
+
+replace = "\n".join([
+        education(content['EDUCATION']),
+        experience(content['RESEARCH']),
+        general(content['SKILLS']),
+        general(content['HONORS']),
+        publications(content['PUBLICATIONS']),
+        references(content['REFERENCES'])])
+
+temp = temp.replace('INSERTSECTION', replace)
+
+with codecs.open('./index.html', mode='w', encoding='utf-8') as f:
+    f.write(temp)

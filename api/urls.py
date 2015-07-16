@@ -7,6 +7,7 @@ urlpatterns = patterns('',
                        # Examples:
                        url(r'^admin/', include(admin.site.urls)),
                        url(r'^ecan/', include('ecan.urls', namespace="ecan")),
+                       url(r'^api/', include('api.urls', namespace="api")),
                        )
 
 # if settings.SERVE_MEDIA:

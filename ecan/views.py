@@ -14,7 +14,38 @@ from skimage.feature import hog
 import numpy as np
 import StringIO
 from django.core.files.uploadedfile import InMemoryUploadedFile
+from sklearn.externals import joblib
+from sklearn.ensemble import RandomForestClassifier
+from sklearn import preprocessing
+import pickle
+from ecan.ml.feat_extract.compute_feature import compute_hog, compute_thumb
+import paramiko
 
+
+Features = Feature.objects.filter(name='hog_032415')
+cn_d = {int(e.pk): e.value for e in Common_Name.objects.all()}
+cn_d.pop(15, None)
+mat = {int(e.pk): e.value for e in Material.objects.all()}
+rf_pix_path = os.path.join('ecan', 'ml', 'clfs', 'rf_pix')
+rf_hog_path = os.path.join('ecan', 'ml', 'clfs', 'rf_hog')
+# rfs_paths = {e: os.path.join(rf_path,
+#                              e + '_to_mat',
+#                              e + '_to_mat.pkl')
+#             for e in cn.values()}
+
+
+clfs = {}
+cn_pix_path = os.path.join('.', rf_pix_path, 'cn', 'cn.pkl')
+cn_hog_path = os.path.join('.', rf_hog_path, 'cn', 'cn.pkl')
+
+clfs['cn_pix'] = joblib.load(cn_pix_path)
+clfs['cn_hog'] = joblib.load(cn_hog_path)
+
+# for e in rfs_paths:
+#     try:
+#         clfs[e] = joblib.load(rfs_paths[e])
+#     except:
+#         continue
 
 # Create your views here.
 def home(request):
@@ -25,7 +56,7 @@ def index(request):
     return render(request, 'ecan/index.html')
 
 
-def predict(request):
+def predict2(request):
     cn = ["packet", "knife", "bottle", "box", "can", "stick", "bag", "napkin", "sheet", "towel", "plate", "cup", "container", "spoon", "cap", "envelope", "fork"]
 
     val = ["cuboid", "plane", "deformed", "cylinder"]
@@ -55,6 +86,62 @@ def predict(request):
                   'ecan/predict.html',
                   {'out': dout},
                   context_instance=RequestContext(request))
+
+
+def predict(request):
+    ssh = paramiko.SSHClient()
+    ssh.set_missing_host_key_policy(paramiko.AutoAddPolicy())
+    ssh.connect('128.122.72.106', username='pi', password='raspberry')
+    stdin, stdout, stderr = ssh.exec_command(
+                "sudo python ecan_recognition/predict.py")
+    stdout.readlines()
+    pks = [e.pk for e in Sample.objects.all()]
+    sample = get_object_or_404(Sample, pk=max(pks))
+    # sample = compute_hog(sample)
+    sample = compute_thumb(sample)
+    print sample
+    cn = sorted(cn_d.keys())
+    print len(cn)
+
+    val = ["cuboid", "plane", "deformed", "cylinder"]
+    mat = ["glass", "paper", "plastic", "wood", "foam", "metal"]
+
+    p = clfs['cn_pix'].predict(sample)[0]
+    print p, cn_d[p]
+    p_cn = clfs['cn_pix'].predict_proba(sample)
+
+    # p = clfs['cn_hog'].predict(sample)[0]
+    # print p, cn_d[p]
+    # p_cn = clfs['cn_hog'].predict_proba(sample)
+
+    print p_cn
+    txt = ''
+    dout = {}
+    out = []
+    s = []
+    for i, c in enumerate(cn):
+        p_mat = np.random.dirichlet(np.ones(len(mat)), size=1)
+        p_mat = p_mat*p_cn[0, i]
+        for j, m in enumerate(mat):
+            txt = '-'.join([str(cn_d[c]), m])
+            s.append(p_mat[0, j])
+            out.append([txt, p_mat[0, j]])
+            # p_vl = np.random.dirichlet(np.ones(len(val)),
+            #                             size=1)
+            # p_vl = p_vl*p_mat[0, j]
+            # for k, v in enumerate(val):
+            #     txt = '-'.join([str(cn_d[c]), m, v])
+            #     s.append(p_vl[0, k])
+            #     out.append([txt, p_vl[0, k]])
+    dout['out'] = out
+    dout['cn'] = [str(e) for e in cn_d.values()]
+    dout['mat'] = mat
+    dout['val'] = val
+    return render(request,
+                  'ecan/predict.html',
+                  {'out': dout},
+                  context_instance=RequestContext(request))
+
 
 def show_sample(request):
     pks = [e.pk for e in Sample.objects.all()]
