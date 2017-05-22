@@ -15,7 +15,6 @@ import posixpath
 import socket
 
 lhost = socket.gethostname()
-
 BASE_DIR = os.path.dirname(os.path.dirname(__file__))
 
 try:
@@ -24,6 +23,7 @@ try:
 except ImportError:
     def getuser():
         return os.environ.get('USERNAME', os.environ.get('USER'))
+
 USER = getuser()
 
 ADMINS = (
@@ -98,14 +98,6 @@ WSGI_APPLICATION = 'api.wsgi.application'
 if USER == 'JuanSantiagoMedina':
     DEBUG = True
     DATABASES = {
-        # 'default': {
-        #     'ENGINE': 'django.db.backends.postgresql_psycopg2',
-        #     'NAME': 'ecan_recognition',
-        #     'USER': 'admin',
-        #     'PASSWORD': 'admin',
-        #     'HOST': '127.0.0.1',
-        #     'PORT': '5432',
-        #     }
         'default': {
             'ENGINE': 'django.db.backends.mysql',
             'NAME': 'ecan',
@@ -123,10 +115,6 @@ if USER == 'jsm601':
             'default': {
                 'ENGINE': 'django.db.backends.postgresql_psycopg2',
                 'NAME': 'rudolph',
-                # 'USER': 'jsm601',
-                # 'PASSWORD': 'jsm601',
-                # 'HOST': '127.0.0.1',
-                # 'PORT': '6543',
                 }
             }
     else:
@@ -213,26 +201,3 @@ LOGGING = {
         },
     }
 }
-
-
-#
-# Google Drive Storage Settings
-#
-
-# GOOGLE_DRIVE_STORAGE = {
-#     'service_account':{
-#         'email': '834513284060-dd4jciar26shkhahnkbai8ltb4rn5cfd@\
-#                         developer.gserviceaccount.com',
-#         'private_key_file_path': 'drive_api/\
-#                                            Ecan Recognition-e6c0dad10847.p12',
-#     }
-# }
-
-# if USER =='jsm601':
-#   DEBUG = True
-#   DATABASES = {
-#   'default': {
-#       'ENGINE': 'django.db.backends.sqlite3',
-#       'NAME': os.path.join(BASE_DIR, 'db.sqlite3'),
-#       }
-#   }
